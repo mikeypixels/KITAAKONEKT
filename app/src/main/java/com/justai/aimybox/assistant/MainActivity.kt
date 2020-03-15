@@ -18,10 +18,13 @@ class MainActivity : AppCompatActivity() {
         toolbar.title = "Home"
         setSupportActionBar(toolbar)
 
+        // Now get the support action bar
+        val actionBar = supportActionBar
 
-        supportActionBar?.setIcon(R.drawable.ic_menu_black_24dp)
-        supportActionBar?.setDisplayShowTitleEnabled(true)
-        supportActionBar?.setDisplayShowHomeEnabled(true)
+        actionBar?.elevation = 4.0F
+        actionBar?.setIcon(R.drawable.ic_menu_black_24dp)
+        actionBar?.setDisplayShowTitleEnabled(true)
+        actionBar?.setDisplayShowHomeEnabled(true)
         // Set the toolbar as support action bar
 
 //        supportActionBar?.title = "Mama"

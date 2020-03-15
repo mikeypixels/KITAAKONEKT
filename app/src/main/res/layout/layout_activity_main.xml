@@ -29,6 +29,7 @@
                     android:backgroundTint="@color/white"
                     app:layout_scrollFlags="scroll|enterAlways"
                     app:title="Home"
+                    android:elevation="4.0dp"
                     app:titleTextColor="@color/white"
                     app:titleMarginStart="50dp"
                     android:theme="@style/AppTheme.Toolbar"
