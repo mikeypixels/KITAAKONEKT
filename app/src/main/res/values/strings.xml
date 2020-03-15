@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Kitaa Konekt</string>
+    <string name="prompt">Karibu Kitaa Konekt! Nikusaidie nini?</string>
+    <string name="initial_phrase">Habari! Nikusaidie vipi?</string>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#B32ECC</color>
+    <color name="primary">#713F7C</color>
+    <color name="primaryDark">#49294f</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="text">@color/white</color>
+    <color name="recording">#99FFFFFF</color>
+    <color name="button_text">@color/text</color>
+
+    <color name="grey">#778899</color>
+    <color name="blue">#0f52ba</color>
+    <color name="shadowblue">#0abab5</color>
+    <color name="shadowDarkblue">#40e0d0</color>
+    <color name="startGrad">#f857a6</color>
+    <color name="endGrad">#ff5858</color>
+    <color name="tendGrad">#83EAF1</color>
+    <color name="blue2">#5D8AA8</color>
+    <color name="gray">#9ca9aa</color>
+    <color name="gray3">#eeeeee</color>
+    <color name="red">#ff3232</color>
+
+    <color name="user_input_color">#000</color>
+    <color name="unfocused_color">#778899</color>
+    <color name="green">#00574B</color>
+
+    <color name="defaultOutlineAmbientShadowColor">#0A000000</color>
+    <color name="defaultOutlineSpotShadowColor">#30000000</color>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="initial_phrase">Habari! Nikusaidie vipi?</string>
+
+    <string name="require_mic_access">Kitaa Konekt inahitaji kutumia kipaza sauti cha simu yako ili kufanya kazi</string>
+<!--    <string name="require_mic_access">Voice Assistant requires microphone access to work</string>-->
+    <string name="grant_permission">Tafadhali iruhusu hii programu</string>
+    <string name="grant">Ruhusu</string>
+    <string name="cancel">Usiruhusu</string>
+</resources>
