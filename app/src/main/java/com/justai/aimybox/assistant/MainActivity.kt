@@ -1,5 +1,6 @@
 package com.justai.aimybox.assistant
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.WindowManager
@@ -25,17 +26,6 @@ class MainActivity : AppCompatActivity() {
         actionBar?.setIcon(R.drawable.ic_menu_black_24dp)
         actionBar?.setDisplayShowTitleEnabled(true)
         actionBar?.setDisplayShowHomeEnabled(true)
-        // Set the toolbar as support action bar
-
-//        supportActionBar?.title = "Mama"
-//        collapsing_toolbar.title = "Nana"
-//        collapsing_toolbar.isTitleEnabled = true
-
-        // Now get the support action bar
-//        val actionBar = supportActionBar
-
-        // Set toolbar title/app title
-//        actionBar!!.title = "Hello APP"
 
         // Set action bar/toolbar sub title
         //actionBar.subtitle = "App subtitle"
@@ -47,6 +37,11 @@ class MainActivity : AppCompatActivity() {
 //        actionBar.setDisplayShowHomeEnabled(true)
 //        actionBar.setLogo(R.mipmap.kitaakonekt_logo)
 //        actionBar.setDisplayUseLogoEnabled(true)
+
+        knowYourself.setOnClickListener {
+            val intent = Intent(this, KnowYourself::class.java)
+            startActivity(intent)
+        }
 
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
 

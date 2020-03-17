@@ -29,7 +29,6 @@
                     android:backgroundTint="@color/white"
                     app:layout_scrollFlags="scroll|enterAlways"
                     app:title="Home"
-                    android:elevation="4.0dp"
                     app:titleTextColor="@color/white"
                     app:titleMarginStart="50dp"
                     android:theme="@style/AppTheme.Toolbar"
@@ -94,7 +93,8 @@
                             app:cardElevation="8dp"
                             android:alpha="1"
                             app:cardBackgroundColor="@color/white"
-                            app:cardPreventCornerOverlap="false">
+                            app:cardPreventCornerOverlap="false"
+                            android:id="@+id/knowYourself">
 
                             <RelativeLayout
                                 android:layout_width="wrap_content"
@@ -484,51 +484,26 @@
                         android:padding="5dp">
 
                         <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/question"
+                            android:layout_width="50dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/care"
                             android:tint="@color/gray4"/>
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/gray4"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginBottom="4dp"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
-                            android:text="Quiz"
-                            android:textSize="22sp"/>
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    card_view:cardCornerRadius="8dp"
-                    app:cardBackgroundColor="@color/white"
-                    app:contentPadding="5dp"
-                    android:layout_margin="8dp"
-                    android:elevation="8dp"
-                    app:cardElevation="8dp"
-                    app:cardCornerRadius="4dp"
-                    android:outlineAmbientShadowColor="@color/primaryDark">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="5dp">
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/question"
-                            android:tint="@color/gray4"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center_vertical"
-                            android:text="Quiz"
-                            android:textSize="22sp"/>
+                            android:layout_marginStart="10dp"
+                            android:text="Top questions"
+                            android:textSize="20sp"/>
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
