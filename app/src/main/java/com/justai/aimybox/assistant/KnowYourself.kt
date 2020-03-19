@@ -20,7 +20,7 @@ class KnowYourself : AppCompatActivity() {
         val actionBar = supportActionBar
 
 //        getActionBar()?.elevation = 4.0F
-        actionBar?.setIcon(R.drawable.ic_arrow_back_gray_24dp)
+        actionBar?.setIcon(R.drawable.ic_chevron_left_gray_24dp)
 //        actionBar?.setDisplayShowTitleEnabled(true)
 //        actionBar?.setDisplayShowHomeEnabled(true)
 
