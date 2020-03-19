@@ -46,12 +46,12 @@
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-            <LinearLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 android:orientation="vertical">
@@ -59,67 +59,119 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     android:text="Sex vs Gender"
                     android:gravity="center"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:fontFamily="@font/source_serif_pro_regular"/>
+                    android:fontFamily="@font/source_serif_pro_regular"
+                    android:id="@+id/sex_vs_gender"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sex_vs_gender"
                     android:layout_marginTop="5dp"
                     android:text="Sex"
                     android:textSize="17sp"
-                    android:fontFamily="@font/pt_serif_bold"/>
+                    android:fontFamily="@font/pt_serif_bold"
+                    android:id="@+id/sex_label"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sex_label"
                     android:textSize="16sp"
                     android:text="Is the biological differences between males and females, such as the genitalia and genetic differences."
-                    android:fontFamily="@font/pt_serif_regular"/>
+                    android:fontFamily="@font/pt_serif_regular"
+                    android:id="@+id/sex_content"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sex_content"
                     android:layout_marginTop="8dp"
                     android:text="Gender"
                     android:textSize="17sp"
-                    android:fontFamily="@font/pt_serif_bold"/>
+                    android:fontFamily="@font/pt_serif_bold"
+                    android:id="@+id/gender_label"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/gender_label"
                     android:textSize="16sp"
                     android:text="refers to the role of a male or female in society, known as a gender role, or an individual’s concept of themselves, or gender identity."
-                    android:fontFamily="@font/pt_serif_regular"/>
+                    android:fontFamily="@font/pt_serif_regular"
+                    android:id="@+id/gender_content"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/gender_content"
                     android:layout_marginTop="20dp"
                     android:text="Understand your body"
                     android:gravity="center"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:fontFamily="@font/source_serif_pro_regular"/>
+                    android:fontFamily="@font/source_serif_pro_regular"
+                    android:id="@+id/understand_body"/>
 
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/understand_body"
                     android:layout_marginTop="20dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/male"/>
+                    android:src="@drawable/male"
+                    android:id="@+id/male_icon"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/male_icon"
                     android:text="Male"
                     android:layout_gravity="center_horizontal"
-                    android:fontFamily="@font/pt_serif_regular"/>
+                    android:fontFamily="@font/pt_serif_regular"
+                    android:id="@+id/male_details"/>
 
-            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/male_details"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:background="@color/graytext"
+                    android:orientation="vertical">
+
+                    <ExpandableListView
+                        android:id="@+id/expandableListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:dividerHeight="0.5dp">
+
+                    </ExpandableListView>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.core.widget.NestedScrollView>
 
