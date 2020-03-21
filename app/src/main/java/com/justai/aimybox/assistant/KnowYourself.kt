@@ -10,7 +10,7 @@ import com.github.aakira.expandablelayout.ExpandableLinearLayout
 import kotlinx.android.synthetic.main.know_yourself_layout.*
 import kotlinx.android.synthetic.main.layout_activity_main.*
 
-class KnowYourself : AppCompatActivity() , View.OnClickListener {
+class KnowYourself : AppCompatActivity(), View.OnClickListener {
 
     internal var expPubertyLayout: ExpandableLinearLayout? = null
     internal var expReproductiveOrgaLayout: ExpandableLinearLayout? = null
@@ -20,7 +20,7 @@ class KnowYourself : AppCompatActivity() , View.OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.know_yourself_layout)
 
-        val toolbar : Toolbar = findViewById(R.id.tool_bar2)
+        val toolbar: Toolbar = findViewById(R.id.tool_bar2)
         toolbar.title = ""
         setSupportActionBar(toolbar)
 
@@ -28,7 +28,7 @@ class KnowYourself : AppCompatActivity() , View.OnClickListener {
         val actionBar = supportActionBar
         actionBar?.setIcon(R.drawable.ic_chevron_left_gray_24dp)
 
-        // Expendale buttons and Layouts
+        // Expendable buttons and Layouts
         expPubertyLayout = findViewById(R.id.pubertyLayout)
         btnPuberty?.setOnClickListener(this)
 
@@ -48,11 +48,13 @@ class KnowYourself : AppCompatActivity() , View.OnClickListener {
     override fun onClick(v: View?) {
 
         when (v?.id) {
-            R.id.btnPuberty -> { expPubertyLayout?.toggle()
+            R.id.btnPuberty -> {
+                expPubertyLayout?.toggle()
                 expReproductiveOrgaLayout?.collapse()
             }
 
-            R.id.btnReproductiveOrgans -> { expReproductiveOrgaLayout?.toggle()
+            R.id.btnReproductiveOrgans -> {
+                expReproductiveOrgaLayout?.toggle()
                 expPubertyLayout?.collapse()
             }
 
