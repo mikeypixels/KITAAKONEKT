@@ -92,27 +92,8 @@ class KnowYourself : AppCompatActivity() , View.OnClickListener {
         expandableButton?.setOnClickListener(this)
 
 
-//        initmyLayout()
-
-//        this.expandableListView.collapse()
         expandedtext.text = resources.getString(R.string.puberty)
         expandedtext2.text = resources.getString(R.string.puberty)
-
-//        if (expandableListView != null) {
-//            val listData = data
-//            titleList = ArrayList(listData.keys)
-//            adapter = ExpandableListAdapter(this, titleList as ArrayList<String>, listData)
-//            expandableListView!!.setAdapter(adapter)
-//
-//            expandableListView!!.setOnGroupExpandListener { groupPosition -> Toast.makeText(applicationContext, (titleList as ArrayList<String>)[groupPosition] + " List Expanded.", Toast.LENGTH_SHORT).show() }
-//
-//            expandableListView!!.setOnGroupCollapseListener { groupPosition -> Toast.makeText(applicationContext, (titleList as ArrayList<String>)[groupPosition] + " List Collapsed.", Toast.LENGTH_SHORT).show() }
-//
-//            expandableListView!!.setOnChildClickListener { parent, v, groupPosition, childPosition, id ->
-//                Toast.makeText(applicationContext, "Clicked: " + (titleList as ArrayList<String>)[groupPosition] + " -> " + listData[(titleList as ArrayList<String>)[groupPosition]]!!.get(childPosition), Toast.LENGTH_SHORT).show()
-//                false
-//            }
-//        }
 
     }
 
