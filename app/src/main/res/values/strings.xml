@@ -2,4 +2,5 @@
     <string name="app_name">Kitaa Konekt</string>
     <string name="prompt">Karibu Kitaa Konekt! Nikusaidie nini?</string>
     <string name="initial_phrase">Habari! Nikusaidie vipi?</string>
+    <string name="puberty">I want to mention something for people like me reaching this page because of Android Studio.\n In AS when you extract a string using the IDEs tool, it automatically strips newline characters. You can just manually add them back in and it will work fine. \nNot sure why it does this.</string>
 </resources>

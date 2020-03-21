@@ -76,4 +76,6 @@ dependencies {
     implementation("com.alexzh:circleimageview:1.2.0")
     implementation("androidx.cardview:cardview:1.0.0")
     implementation("com.google.android.material:material:1.2.0-alpha04")
+
+    implementation( "com.github.aakira:expandable-layout:1.6.0@aar")
 }

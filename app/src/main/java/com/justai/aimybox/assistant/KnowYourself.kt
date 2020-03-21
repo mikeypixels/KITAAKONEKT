@@ -1,15 +1,23 @@
 package com.justai.aimybox.assistant
 
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 import android.widget.ExpandableListView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import com.github.aakira.expandablelayout.ExpandableLinearLayout
+import kotlinx.android.synthetic.main.know_yourself_layout.*
 import kotlinx.android.synthetic.main.layout_activity_main.*
 
-class KnowYourself : AppCompatActivity() {
+class KnowYourself : AppCompatActivity() , View.OnClickListener {
 
-    internal var expandableListView: ExpandableListView? = null
+    internal var expandableListView: ExpandableLinearLayout? = null
+    internal var expandableLayout: ExpandableLinearLayout? = null
+    internal var expandableButton: Button? = null
+
+
     internal var adapter: ExpandableListAdapter? = null
     internal var titleList: List<String> ? = null
 
@@ -75,22 +83,59 @@ class KnowYourself : AppCompatActivity() {
 //        actionBar?.setDisplayShowHomeEnabled(true)
 
 
-        expandableListView = findViewById(R.id.expandableListView)
-        if (expandableListView != null) {
-            val listData = data
-            titleList = ArrayList(listData.keys)
-            adapter = ExpandableListAdapter(this, titleList as ArrayList<String>, listData)
-            expandableListView!!.setAdapter(adapter)
+        expandableListView = findViewById(R.id.expandableLayout1)
+        expandableButton = findViewById(R.id.btn1)
+        expandableButton?.setOnClickListener(this)
 
-            expandableListView!!.setOnGroupExpandListener { groupPosition -> Toast.makeText(applicationContext, (titleList as ArrayList<String>)[groupPosition] + " List Expanded.", Toast.LENGTH_SHORT).show() }
+        expandableLayout = findViewById(R.id.expandableLayout2)
+        expandableButton = findViewById(R.id.btn2)
+        expandableButton?.setOnClickListener(this)
 
-            expandableListView!!.setOnGroupCollapseListener { groupPosition -> Toast.makeText(applicationContext, (titleList as ArrayList<String>)[groupPosition] + " List Collapsed.", Toast.LENGTH_SHORT).show() }
 
-            expandableListView!!.setOnChildClickListener { parent, v, groupPosition, childPosition, id ->
-                Toast.makeText(applicationContext, "Clicked: " + (titleList as ArrayList<String>)[groupPosition] + " -> " + listData[(titleList as ArrayList<String>)[groupPosition]]!!.get(childPosition), Toast.LENGTH_SHORT).show()
-                false
+//        initmyLayout()
+
+//        this.expandableListView.collapse()
+        expandedtext.text = resources.getString(R.string.puberty)
+        expandedtext2.text = resources.getString(R.string.puberty)
+
+//        if (expandableListView != null) {
+//            val listData = data
+//            titleList = ArrayList(listData.keys)
+//            adapter = ExpandableListAdapter(this, titleList as ArrayList<String>, listData)
+//            expandableListView!!.setAdapter(adapter)
+//
+//            expandableListView!!.setOnGroupExpandListener { groupPosition -> Toast.makeText(applicationContext, (titleList as ArrayList<String>)[groupPosition] + " List Expanded.", Toast.LENGTH_SHORT).show() }
+//
+//            expandableListView!!.setOnGroupCollapseListener { groupPosition -> Toast.makeText(applicationContext, (titleList as ArrayList<String>)[groupPosition] + " List Collapsed.", Toast.LENGTH_SHORT).show() }
+//
+//            expandableListView!!.setOnChildClickListener { parent, v, groupPosition, childPosition, id ->
+//                Toast.makeText(applicationContext, "Clicked: " + (titleList as ArrayList<String>)[groupPosition] + " -> " + listData[(titleList as ArrayList<String>)[groupPosition]]!!.get(childPosition), Toast.LENGTH_SHORT).show()
+//                false
+//            }
+//        }
+
+    }
+
+    private fun initmyLayout() {
+        expandableListView?.initLayout()
+        expandableLayout?.initLayout()
+    }
+
+    override fun onClick(v: View?) {
+
+        when (v?.id) {
+            R.id.btn1 -> { expandableListView?.toggle()
+                expandableLayout?.collapse()
+            }
+
+            R.id.btn2 -> { expandableLayout?.toggle()
+                expandableListView?.collapse()
+            }
+
+            else -> {
+
             }
         }
-
+        initmyLayout()
     }
 }
