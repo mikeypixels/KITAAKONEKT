@@ -18,10 +18,6 @@ class KnowYourself : AppCompatActivity() , View.OnClickListener {
     internal var expandableButton: Button? = null
 
 
-    internal var adapter: ExpandableListAdapter? = null
-    internal var titleList: List<String> ? = null
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.know_yourself_layout)
