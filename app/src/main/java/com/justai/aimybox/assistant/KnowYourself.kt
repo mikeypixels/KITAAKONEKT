@@ -14,7 +14,6 @@ class KnowYourself : AppCompatActivity() , View.OnClickListener {
 
     internal var expPubertyLayout: ExpandableLinearLayout? = null
     internal var expReproductiveOrgaLayout: ExpandableLinearLayout? = null
-    internal var expandableButton: Button? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,19 +24,16 @@ class KnowYourself : AppCompatActivity() , View.OnClickListener {
         toolbar.title = ""
         setSupportActionBar(toolbar)
 
-        // Now get the support action bar
+        // get the support action bar
         val actionBar = supportActionBar
-
         actionBar?.setIcon(R.drawable.ic_chevron_left_gray_24dp)
 
+        // Expendale buttons and Layouts
         expPubertyLayout = findViewById(R.id.pubertyLayout)
-//        expandableButton = findViewById(R.id.btnPuberty)
         btnPuberty?.setOnClickListener(this)
 
         expReproductiveOrgaLayout = findViewById(R.id.reproductiveOrgansLayout)
-//        expandableButton = findViewById(R.id.btnReproductiveOrgans)
         btnReproductiveOrgans?.setOnClickListener(this)
-
 
         expandedtext.text = resources.getString(R.string.puberty)
         expandedtext2.text = resources.getString(R.string.puberty)
