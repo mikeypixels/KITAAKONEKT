@@ -3,7 +3,6 @@ package com.justai.aimybox.assistant
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.ExpandableListView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -13,8 +12,8 @@ import kotlinx.android.synthetic.main.layout_activity_main.*
 
 class KnowYourself : AppCompatActivity() , View.OnClickListener {
 
-    internal var expandableListView: ExpandableLinearLayout? = null
-    internal var expandableLayout: ExpandableLinearLayout? = null
+    internal var expPubertyLayout: ExpandableLinearLayout? = null
+    internal var expReproductiveOrgaLayout: ExpandableLinearLayout? = null
     internal var expandableButton: Button? = null
 
 
@@ -31,13 +30,13 @@ class KnowYourself : AppCompatActivity() , View.OnClickListener {
 
         actionBar?.setIcon(R.drawable.ic_chevron_left_gray_24dp)
 
-        expandableListView = findViewById(R.id.expandableLayout1)
-        expandableButton = findViewById(R.id.btn1)
-        expandableButton?.setOnClickListener(this)
+        expPubertyLayout = findViewById(R.id.pubertyLayout)
+//        expandableButton = findViewById(R.id.btnPuberty)
+        btnPuberty?.setOnClickListener(this)
 
-        expandableLayout = findViewById(R.id.expandableLayout2)
-        expandableButton = findViewById(R.id.btn2)
-        expandableButton?.setOnClickListener(this)
+        expReproductiveOrgaLayout = findViewById(R.id.reproductiveOrgansLayout)
+//        expandableButton = findViewById(R.id.btnReproductiveOrgans)
+        btnReproductiveOrgans?.setOnClickListener(this)
 
 
         expandedtext.text = resources.getString(R.string.puberty)
@@ -46,19 +45,19 @@ class KnowYourself : AppCompatActivity() , View.OnClickListener {
     }
 
     private fun initmyLayout() {
-        expandableListView?.initLayout()
-        expandableLayout?.initLayout()
+        expPubertyLayout?.initLayout()
+        expReproductiveOrgaLayout?.initLayout()
     }
 
     override fun onClick(v: View?) {
 
         when (v?.id) {
-            R.id.btn1 -> { expandableListView?.toggle()
-                expandableLayout?.collapse()
+            R.id.btnPuberty -> { expPubertyLayout?.toggle()
+                expReproductiveOrgaLayout?.collapse()
             }
 
-            R.id.btn2 -> { expandableLayout?.toggle()
-                expandableListView?.collapse()
+            R.id.btnReproductiveOrgans -> { expReproductiveOrgaLayout?.toggle()
+                expPubertyLayout?.collapse()
             }
 
             else -> {

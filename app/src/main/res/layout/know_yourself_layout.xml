@@ -166,16 +166,16 @@
                     android:textColor="@color/white"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:id="@+id/btn1"/>
+                    android:id="@+id/btnPuberty"/>
 
                 <com.github.aakira.expandablelayout.ExpandableLinearLayout
-                        android:layout_below="@id/btn1"
+                        android:layout_below="@id/btnPuberty"
                         app:ael_duration = "100"
                         app:ael_expanded = "false"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:id="@+id/expandableLayout1">
+                        android:id="@+id/pubertyLayout">
 
                         <TextView
                             android:id="@+id/expandedtext"
@@ -188,22 +188,22 @@
                     <Button
                         android:drawableRight="@android:drawable/arrow_down_float"
                         android:text="Reproductive organs"
-                        android:layout_below="@id/expandableLayout1"
+                        android:layout_below="@id/pubertyLayout"
                         android:background="@color/lightBlue"
                         android:backgroundTint="@color/lightBlue2"
                         android:textColor="@color/white"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/btn2"/>
+                        android:id="@+id/btnReproductiveOrgans"/>
 
                     <com.github.aakira.expandablelayout.ExpandableLinearLayout
-                        android:layout_below="@id/btn2"
+                        android:layout_below="@id/btnReproductiveOrgans"
                         app:ael_duration = "100"
                         app:ael_expanded = "false"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:id="@+id/expandableLayout2">
+                        android:id="@+id/reproductiveOrgansLayout">
 
                         <TextView
                             android:id="@+id/expandedtext2"
