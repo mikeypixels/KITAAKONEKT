@@ -156,34 +156,39 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/male_details"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:id="@+id/understand_male">
 
-                <Button
-                    android:drawableRight="@android:drawable/arrow_down_float"
-                    android:text="Puberty"
-                    android:background="@color/lightBlue"
-                    android:backgroundTint="@color/lightBlue"
-                    android:textColor="@color/white"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/btnPuberty"/>
-
-                <com.github.aakira.expandablelayout.ExpandableLinearLayout
-                        android:layout_below="@id/btnPuberty"
-                        app:ael_duration = "100"
-                        app:ael_expanded = "false"
+                    <Button
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:text="Puberty"
+                        android:background="@color/lightBlue"
+                        android:backgroundTint="@color/lightBlue"
+                        android:textColor="@color/white"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:id="@+id/pubertyLayout">
+                        android:id="@+id/btnPuberty"/>
 
-                        <TextView
-                            android:id="@+id/expandedtext"
+                    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                            android:layout_below="@id/btnPuberty"
+                            app:ael_duration = "100"
+                            app:ael_expanded = "false"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:fontFamily="@font/pt_serif_regular"/>
+                            android:orientation="vertical"
+                            android:paddingTop="2dp"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:paddingBottom="2dp"
+                            android:id="@+id/pubertyLayout">
 
-                    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+                            <TextView
+                                android:id="@+id/pubertyText"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/pt_serif_regular"/>
+
+                        </com.github.aakira.expandablelayout.ExpandableLinearLayout>
 
                     <Button
                         android:drawableRight="@android:drawable/arrow_down_float"
@@ -206,12 +211,268 @@
                         android:id="@+id/reproductiveOrgansLayout">
 
                         <TextView
-                            android:id="@+id/expandedtext2"
+                            android:id="@+id/reproductiveOrganText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/pt_serif_regular"/>
 
                     </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+                    <Button
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:text="Semen"
+                        android:layout_below="@id/reproductiveOrgansLayout"
+                        android:background="@color/lightBlue"
+                        android:backgroundTint="@color/lightBlue"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnSemen"/>
+
+                    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                        android:layout_below="@id/btnSemen"
+                        app:ael_duration = "100"
+                        app:ael_expanded = "false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/semenLayout">
+
+                        <TextView
+                            android:id="@+id/semenText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/pt_serif_regular"/>
+
+                    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+                    <Button
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:text="Sperm"
+                        android:layout_below="@id/semenLayout"
+                        android:background="@color/lightBlue"
+                        android:backgroundTint="@color/lightBlue2"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnSperm"/>
+
+                    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                        android:layout_below="@id/btnSperm"
+                        app:ael_duration = "100"
+                        app:ael_expanded = "false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/spermLayout">
+
+                        <TextView
+                            android:id="@+id/spermText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/pt_serif_regular"/>
+
+                    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+                    <Button
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:text="Hormones"
+                        android:layout_below="@id/spermLayout"
+                        android:background="@color/lightBlue"
+                        android:backgroundTint="@color/lightBlue"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnHormones"/>
+
+                    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                        android:layout_below="@id/btnHormones"
+                        app:ael_duration = "100"
+                        app:ael_expanded = "false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/hormonesLayout">
+
+                        <TextView
+                            android:id="@+id/hormonesText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/pt_serif_regular"/>
+
+                    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/understand_male"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/female2"
+                    android:id="@+id/female_icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/female_icon"
+                    android:text="Female"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/pt_serif_regular"
+                    android:id="@+id/female_details"/>
+
+                <RelativeLayout
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/female_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/understand_female">
+
+                    <Button
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:text="Puberty"
+                        android:background="@color/lightBlue"
+                        android:backgroundTint="@color/lightBlue"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnFemalePuberty"/>
+
+                    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                        android:layout_below="@id/btnFemalePuberty"
+                        app:ael_duration = "100"
+                        app:ael_expanded = "false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/pubertyFemaleLayout">
+
+                        <TextView
+                            android:id="@+id/pubertyFemaleText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/pt_serif_regular"/>
+
+                    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+                    <Button
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:text="Reproductive organs"
+                        android:layout_below="@id/pubertyFemaleLayout"
+                        android:background="@color/lightBlue"
+                        android:backgroundTint="@color/lightBlue2"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnFemaleReprOrgans"/>
+
+                    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                        android:layout_below="@id/btnFemaleReprOrgans"
+                        app:ael_duration = "100"
+                        app:ael_expanded = "false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/femaleReprOrgansLayout">
+
+                        <TextView
+                            android:id="@+id/femaleReprOrganText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/pt_serif_regular"/>
+
+                    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+                    <Button
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:text="Hormones"
+                        android:layout_below="@id/femaleReprOrgansLayout"
+                        android:background="@color/lightBlue"
+                        android:backgroundTint="@color/lightBlue"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnFemaleHormones"/>
+
+                    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                        android:layout_below="@id/btnFemaleHormones"
+                        app:ael_duration = "100"
+                        app:ael_expanded = "false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/femaleHormonesLayout">
+
+                        <TextView
+                            android:id="@+id/femaleHormonesText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/pt_serif_regular"/>
+
+                    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+                    <Button
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:text="Ovulation"
+                        android:layout_below="@id/femaleHormonesLayout"
+                        android:background="@color/lightBlue"
+                        android:backgroundTint="@color/lightBlue2"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnOvulation"/>
+
+                    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                        android:layout_below="@id/btnOvulation"
+                        app:ael_duration = "100"
+                        app:ael_expanded = "false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/ovulationLayout">
+
+                        <TextView
+                            android:id="@+id/ovulationText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/pt_serif_regular"/>
+
+                    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+                    <Button
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:text="Menstruation hygiene"
+                        android:layout_below="@id/ovulationLayout"
+                        android:background="@color/lightBlue"
+                        android:backgroundTint="@color/lightBlue"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnMenstruation"/>
+
+                    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                        android:layout_below="@id/btnMenstruation"
+                        app:ael_duration = "100"
+                        app:ael_expanded = "false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/menstruationLayout">
+
+                        <TextView
+                            android:id="@+id/menstruationText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/pt_serif_regular"/>
+
+                    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
 
                 </RelativeLayout>
 

@@ -14,6 +14,9 @@ class KnowYourself : AppCompatActivity(), View.OnClickListener {
 
     internal var expPubertyLayout: ExpandableLinearLayout? = null
     internal var expReproductiveOrgaLayout: ExpandableLinearLayout? = null
+    internal var expSemenLayout: ExpandableLinearLayout? = null
+    internal var expSpermLayout: ExpandableLinearLayout? = null
+    internal var expHormonesLayout: ExpandableLinearLayout? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,14 +38,29 @@ class KnowYourself : AppCompatActivity(), View.OnClickListener {
         expReproductiveOrgaLayout = findViewById(R.id.reproductiveOrgansLayout)
         btnReproductiveOrgans?.setOnClickListener(this)
 
-        expandedtext.text = resources.getString(R.string.puberty)
-        expandedtext2.text = resources.getString(R.string.puberty)
+        expSemenLayout = findViewById(R.id.semenLayout)
+        btnSemen?.setOnClickListener(this)
+
+        expSpermLayout = findViewById(R.id.spermLayout)
+        btnSperm?.setOnClickListener(this)
+
+        expHormonesLayout = findViewById(R.id.hormonesLayout)
+        btnHormones?.setOnClickListener(this)
+
+        pubertyText.text = resources.getString(R.string.puberty)
+        reproductiveOrganText.text = resources.getString(R.string.puberty)
+        semenText.text = resources.getString(R.string.puberty)
+        spermText.text = resources.getString(R.string.puberty)
+        hormonesText.text = resources.getString(R.string.puberty)
 
     }
 
     private fun initmyLayout() {
         expPubertyLayout?.initLayout()
         expReproductiveOrgaLayout?.initLayout()
+        expSemenLayout?.initLayout()
+        expSpermLayout?.initLayout()
+        expHormonesLayout?.initLayout()
     }
 
     override fun onClick(v: View?) {
@@ -51,11 +69,41 @@ class KnowYourself : AppCompatActivity(), View.OnClickListener {
             R.id.btnPuberty -> {
                 expPubertyLayout?.toggle()
                 expReproductiveOrgaLayout?.collapse()
+                expSemenLayout?.collapse()
+                expSpermLayout?.collapse()
+                expHormonesLayout?.collapse()
             }
 
             R.id.btnReproductiveOrgans -> {
                 expReproductiveOrgaLayout?.toggle()
                 expPubertyLayout?.collapse()
+                expSemenLayout?.collapse()
+                expSpermLayout?.collapse()
+                expHormonesLayout?.collapse()
+            }
+
+            R.id.btnSemen -> {
+                expSemenLayout?.toggle()
+                expPubertyLayout?.collapse()
+                expReproductiveOrgaLayout?.collapse()
+                expSpermLayout?.collapse()
+                expHormonesLayout?.collapse()
+            }
+
+            R.id.btnSperm -> {
+                expSpermLayout?.toggle()
+                expSemenLayout?.collapse()
+                expPubertyLayout?.collapse()
+                expReproductiveOrgaLayout?.collapse()
+                expHormonesLayout?.collapse()
+            }
+
+            R.id.btnHormones -> {
+                expHormonesLayout?.toggle()
+                expSpermLayout?.collapse()
+                expSemenLayout?.collapse()
+                expPubertyLayout?.collapse()
+                expReproductiveOrgaLayout?.collapse()
             }
 
             else -> {
