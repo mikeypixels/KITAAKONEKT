@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="accent">#B32ECC</color>
-    <color name="primary">#713F7C</color>
-    <color name="primaryDark">#49294f</color>
+    <color name="primary">#2e74ff</color>
+    <color name="primaryDark">#2e74ff</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
     <color name="text">@color/white</color>
@@ -32,10 +32,15 @@
     <color name="purple">#cc0e74</color>
     <color name="orange">#ef820d</color>
     <color name="lightOrange">#f79862</color>
+    <color name="colorOverlay">#78ffffff</color>
+    <color name="twitterColor">#00acee</color>
+    <color name="silver">#c0c0c0</color>
 
     <color name="user_input_color">#000</color>
     <color name="unfocused_color">#778899</color>
-    <color name="green">#00574B</color>
+    <color name="green">#1aa50d</color>
+
+    <color name="TransparentWhite">#cccccc</color>
 
     <color name="defaultOutlineAmbientShadowColor">#0A000000</color>
     <color name="defaultOutlineSpotShadowColor">#30000000</color>

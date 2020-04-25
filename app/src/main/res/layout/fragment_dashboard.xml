@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/slideViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/dotsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="55dp"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/expand_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/up_arrow" />
+
+    <View
+        android:id="@+id/relative_dim_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:visibility="gone" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="590dp"
+        android:background="@drawable/bottom_sheet_bg"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="55dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/bottom_txt"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:padding="16dp"-->
+        <!--            android:text="This is a Bottom Sheet for testing purposes!"-->
+        <!--            android:textSize="16sp" />-->
+
+        <LinearLayout
+            android:id="@+id/linear_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="15dp">
+
+            <com.hanks.htextview.rainbow.RainbowTextView
+                android:id="@+id/swipe_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/swipe_up"
+                android:textSize="20sp"
+                app:colorSpace="150dp"
+                app:colorSpeed="9dp"/>
+
+            <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent">-->
+            <!--                -->
+            <!--                -->
+            <!--                -->
+            <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/quiz_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/card_round_bg"
+                    app:cardBackgroundColor="@color/orange"
+                    app:cardCornerRadius="65dp"
+                    app:cardElevation="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/fact_card"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:paddingStart="40dp"
+                            android:paddingTop="30dp"
+                            android:paddingEnd="40dp"
+                            android:paddingBottom="40dp"
+                            android:src="@drawable/quizw" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="90dp"
+                            android:text="Quiz games"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/fact_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/card_round_bg"
+                    app:cardBackgroundColor="@color/twitterColor"
+                    app:cardCornerRadius="65dp"
+                    app:cardElevation="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/quiz_card"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:paddingStart="40dp"
+                            android:paddingTop="30dp"
+                            android:paddingEnd="40dp"
+                            android:paddingBottom="40dp"
+                            android:src="@drawable/factw" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="90dp"
+                            android:text="Did you know?"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/stories_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/card_round_bg"
+                    app:cardBackgroundColor="@color/accent"
+                    app:cardCornerRadius="65dp"
+                    app:cardElevation="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/help_card"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/quiz_card">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:paddingStart="40dp"
+                            android:paddingTop="30dp"
+                            android:paddingEnd="40dp"
+                            android:paddingBottom="40dp"
+                            android:src="@drawable/newsw" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="90dp"
+                            android:text="Stories"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/help_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/card_round_bg"
+                    app:cardBackgroundColor="@color/red"
+                    app:cardCornerRadius="65dp"
+                    app:cardElevation="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/stories_card"
+                    app:layout_constraintTop_toBottomOf="@+id/quiz_card">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:paddingStart="40dp"
+                            android:paddingTop="30dp"
+                            android:paddingEnd="40dp"
+                            android:paddingBottom="40dp"
+                            android:src="@drawable/helpw" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="90dp"
+                            android:text="Help centers"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/topQ_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/card_round_bg"
+                    app:cardBackgroundColor="@color/green"
+                    app:cardCornerRadius="65dp"
+                    app:cardElevation="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/forum_card"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/help_card">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:paddingStart="40dp"
+                            android:paddingTop="30dp"
+                            android:paddingEnd="40dp"
+                            android:paddingBottom="40dp"
+                            android:src="@drawable/questionsw" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="90dp"
+                            android:text="Top questions"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/forum_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/card_round_bg"
+                    app:cardBackgroundColor="#f5c01d "
+                    app:cardCornerRadius="65dp"
+                    app:cardElevation="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/topQ_card"
+                    app:layout_constraintTop_toBottomOf="@+id/help_card">
+
+                    <RelativeLayout
+                        android:id="@+id/forum_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:paddingStart="40dp"
+                            android:paddingTop="30dp"
+                            android:paddingEnd="40dp"
+                            android:paddingBottom="40dp"
+                            android:src="@drawable/forumw" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="90dp"
+                            android:text="Forum"
+                            android:textColor="@color/white" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/assistant_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="10dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

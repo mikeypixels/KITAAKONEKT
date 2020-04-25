@@ -71,6 +71,7 @@ class AimyboxAssistantFragment : Fragment(), CoroutineScope {
     ) =
         inflater.inflate(R.layout.fragment_aimybox_assistant, container, false)
 
+    @UseExperimental(ExperimentalCoroutinesApi::class)
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         view.apply {
             recycler = findViewById(R.id.fragment_aimybox_assistant_recycler)

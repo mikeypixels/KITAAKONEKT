@@ -6,9 +6,15 @@
 <!--        <item name="android:colorPrimaryDark">@color/primaryDark</item>-->
 <!--        <item name="android:colorAccent">@color/accent</item>-->
 <!--        <item name="android:colorPrimary">#214872</item>-->
-        <item name="android:colorPrimary">@color/blue</item>
-        <item name="android:colorPrimaryDark">@color/blue</item>
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primaryDark</item>
         <item name="android:colorAccent">@color/accent</item>
+
+<!--        <item name="android:windowNoTitle">true</item>-->
+<!--        <item name="android:windowActionBar">false</item>-->
+<!--        <item name="android:windowFullscreen">true</item>-->
+<!--        <item name="android:windowContentOverlay">@null</item>-->
+        <item name="android:fitsSystemWindows">true</item>
 
         <!-- Customize Assistant components here -->
 
@@ -19,6 +25,41 @@
         <item name="aimybox_buttonReplyTheme">@style/CustomButtonReplyWidgetTheme</item>
     </style>
 
+<!--    <style name="AppTheme.NoActionBar">-->
+<!--        <item name="windowActionBar">false</item>-->
+<!--        <item name="windowNoTitle">true</item>-->
+<!--    </style>-->
+
+<!--    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />-->
+
+<!--    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
+
+    <style name="AppTheme.FullScreen">
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primaryDark</item>
+        <item name="android:colorAccent">@color/accent</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="AppTheme.Transparent" parent="AppTheme">
+        <!-- Style for the second activity -->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
     <style name="CustomAssistantButtonTheme" parent="DefaultAssistantTheme.AssistantButton">
 
         <!-- Customize Assistant button theme here -->
@@ -26,6 +67,16 @@
         <!-- <item name="aimybox_backgroundColor">@color/primary</item> -->
         <!-- <item name="aimybox_recordingAnimationColor">@color/recording</item> -->
         <!-- <item name="aimybox_buttonExpandedColor">@color/white</item> -->
+    </style>
+
+    <style name="DialogAnimation">
+    <item name="android:windowEnterAnimation">@anim/down_to_up</item>
+    <item name="android:windowExitAnimation">@anim/real_up_to_down</item>
+    </style>
+
+    <style name="DimAnimation">
+        <item name="android:windowEnterAnimation">@anim/fragment_fade_enter</item>
+        <item name="android:windowExitAnimation">@anim/fragment_fade_exit</item>
     </style>
 
     <!-- Toolbar Theme -->

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.RelationshipsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appbar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:outlineSpotShadowColor="@android:color/transparent"
+            android:background="@color/white">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:backgroundTint="@color/white"
+                app:layout_scrollFlags="scroll|enterAlways"
+                android:theme="@style/AppTheme.Toolbar"
+                app:layout_collapseMode="pin"
+                android:id="@+id/tool_bar2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RELATIONSHIPS"
+                    android:fontFamily="@font/pt_serif_bold"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"/>
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@drawable/toolbar_shadow" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appbar"
+            app:layout_constraintTop_toTopOf="parent"
+            android:minHeight="35dp"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"
+            app:tabSelectedTextColor="@color/orange"
+            app:tabIndicatorColor="@color/orange"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tabLayout"
+            android:id="@+id/viewPager"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

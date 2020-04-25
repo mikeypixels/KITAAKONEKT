@@ -24,7 +24,7 @@ class AimyboxApplication : Application(), AimyboxProvider {
         val textToSpeech = GooglePlatformTextToSpeech(context, Locale.ENGLISH)
         val speechToText = GooglePlatformSpeechToText(context, Locale.ENGLISH)
 
-        val dialogApi = RasaDialogApi(unitId, "https://be1daa0d.ngrok.io/webhooks/rest/webhook")
+        val dialogApi = RasaDialogApi(unitId, "https://e5c6f0f1.ngrok.io/webhooks/rest/webhook")
 
         return Aimybox(Config.create(speechToText, textToSpeech, dialogApi))
     }

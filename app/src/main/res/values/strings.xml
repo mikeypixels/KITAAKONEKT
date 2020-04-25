@@ -3,4 +3,14 @@
     <string name="prompt">Karibu Kitaa Konekt! Nikusaidie nini?</string>
     <string name="initial_phrase">Habari! Nikusaidie vipi?</string>
     <string name="puberty">I want to mention something for people like me reaching this page because of Android Studio.\n In AS when you extract a string using the IDEs tool, it automatically strips newline characters. You can just manually add them back in and it will work fine. \nNot sure why it does this.</string>
+    <string name="desc">This is where you\'ll know everything about\n  you as a male or female so as to make\n\tbetter life decisions</string>
+    <string name="qn_sample">Why most African tribes don\'t consider family planning and see it as a bad practise?</string>
+    <string name="ans_sample">It is because most of the African societies believe in their own customs and traditions. Others believe that it is against God\'s will and others don\'t even want to talk about it, which is absurd.</string>
+    <string name="reg_heading">Tengeneza akaunti</string>
+    <string name="reg_heading_below">yako</string>
+    <string name="login_txt">Je huna akaunti? </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="swipe_up">Swipe up...</string>
 </resources>
