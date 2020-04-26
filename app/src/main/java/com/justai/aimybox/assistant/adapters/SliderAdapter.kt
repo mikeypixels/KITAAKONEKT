@@ -17,7 +17,9 @@ import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.justai.aimybox.assistant.MainActivity
 import com.justai.aimybox.assistant.R
 import com.justai.aimybox.assistant.fragments.DashboardFragment
+import com.justai.aimybox.assistant.fragments.HivAndStiFragment
 import com.justai.aimybox.assistant.fragments.KnowYourselfFragment
+import com.justai.aimybox.assistant.fragments.RelationshipsFragment
 import com.justai.aimybox.assistant.utils.AppUtils
 import com.justai.aimybox.assistant.utils.findLocationOfCenterOnTheScreen
 import com.justai.aimybox.assistant.utils.open
@@ -160,9 +162,23 @@ class SliderAdapter(val context: Context) : PagerAdapter() {
 //                fragmentTransaction.func()
 //                fragmentTransaction.commit()
 //            }
-            
-            (context as AppCompatActivity).supportFragmentManager.open {
-                add(R.id.container_layout, KnowYourselfFragment.newInstance(positions)).addToBackStack(null)
+
+            if(position == 0){
+                (context as AppCompatActivity).supportFragmentManager.open {
+                    add(R.id.container_layout, KnowYourselfFragment.newInstance(positions)).addToBackStack(null)
+                }
+            }else if(position == 1){
+                (context as AppCompatActivity).supportFragmentManager.open {
+                    add(R.id.container_layout, RelationshipsFragment.newInstance(positions)).addToBackStack(null)
+                }
+            }else if(position == 2){
+                (context as AppCompatActivity).supportFragmentManager.open {
+                    add(R.id.container_layout, KnowYourselfFragment.newInstance(positions)).addToBackStack(null)
+                }
+            }else{
+                (context as AppCompatActivity).supportFragmentManager.open {
+                    add(R.id.container_layout, HivAndStiFragment.newInstance(positions)).addToBackStack(null)
+                }
             }
 
         }
@@ -171,6 +187,8 @@ class SliderAdapter(val context: Context) : PagerAdapter() {
 
         return view
     }
+
+
 
 //    public fun presentActivity(view: View) {
 //        val options =

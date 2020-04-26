@@ -187,6 +187,7 @@
                                 android:id="@+id/pubertyText"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:text="This is puberty text"
                                 android:fontFamily="@font/pt_serif_regular"/>
 
                         </com.github.aakira.expandablelayout.ExpandableLinearLayout>

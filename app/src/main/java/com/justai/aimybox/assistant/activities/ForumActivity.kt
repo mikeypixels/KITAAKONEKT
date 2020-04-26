@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 import com.justai.aimybox.assistant.R
-import com.justai.aimybox.assistant.adapters.TabViewAdapter
+import com.justai.aimybox.assistant.adapters.ForumTabViewAdapter
 
 
 class ForumActivity : AppCompatActivity() {
@@ -22,7 +22,7 @@ class ForumActivity : AppCompatActivity() {
 
         val viewPager: ViewPager = findViewById(R.id.viewPager)
         val myTabViewAdapter =
-            TabViewAdapter(
+            ForumTabViewAdapter(
                 supportFragmentManager
             )
         viewPager.adapter = myTabViewAdapter

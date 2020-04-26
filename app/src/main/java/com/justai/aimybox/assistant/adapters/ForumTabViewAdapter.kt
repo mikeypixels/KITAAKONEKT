@@ -7,7 +7,7 @@ import com.justai.aimybox.assistant.fragments.AnsweredQFragment
 import com.justai.aimybox.assistant.fragments.QAForYouFragment
 import com.justai.aimybox.assistant.fragments.UnansweredQFragment
 
-class TabViewAdapter(fm: FragmentManager): FragmentStatePagerAdapter(fm) {
+class ForumTabViewAdapter(fm: FragmentManager): FragmentStatePagerAdapter(fm) {
 
     override fun getItem(position: Int): Fragment {
         when (position) {
