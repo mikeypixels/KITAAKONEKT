@@ -69,7 +69,7 @@ class KnowYourselfFragment : Fragment(), ExitWithAnimation {
         val reproductiveOrganText: TextView = view.findViewById(R.id.reproductiveOrganText)
         val semenText: TextView = view.findViewById(R.id.semenText)
         val spermText: TextView = view.findViewById(R.id.spermText)
-        val hormonesText: TextView = view.findViewById(R.id.pubertyText)
+        val hormonesText: TextView = view.findViewById(R.id.hormonesText)
 
         val btnPuberty: Button = view.findViewById(R.id.btnPuberty)
         val btnReproductiveOrgans: Button = view.findViewById(R.id.btnReproductiveOrgans)
@@ -103,7 +103,7 @@ class KnowYourselfFragment : Fragment(), ExitWithAnimation {
             onClick(btnHormones)
         }
 
-        pubertyText.text = resources.getString(R.string.puberty)
+        pubertyText.text = resources.getString(R.string.pubertySwahili)
         reproductiveOrganText.text = resources.getString(R.string.puberty)
         semenText.text = resources.getString(R.string.puberty)
         spermText.text = resources.getString(R.string.puberty)
