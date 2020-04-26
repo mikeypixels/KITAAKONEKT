@@ -1,6 +1,7 @@
 package com.justai.aimybox.assistant.fragments
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -28,7 +29,14 @@ class KnowYourselfFragment : Fragment(), ExitWithAnimation {
     internal var expSpermLayout: ExpandableLinearLayout? = null
     internal var expHormonesLayout: ExpandableLinearLayout? = null
 
-    internal var expEnlargementLayout: ExpandableLinearLayout? = null
+//    internal var expEnlargementLayout: ExpandableLinearLayout? = null
+//    internal var expPubicHairLayout: ExpandableLinearLayout? = null
+//    internal var expPenisGrowthLayout: ExpandableLinearLayout? = null
+//    internal var expErectionLayout: ExpandableLinearLayout? = null
+//    internal var expEjaculationLayout: ExpandableLinearLayout? = null
+//    internal var expWetDreamsLayout: ExpandableLinearLayout? = null
+//    internal var expBodyChangesLayout: ExpandableLinearLayout? = null
+//    internal var expVoiceChangesLayout: ExpandableLinearLayout? = null
 
     override var posX: Int? = null
     override var posY: Int? = null
@@ -75,6 +83,13 @@ class KnowYourselfFragment : Fragment(), ExitWithAnimation {
 
         //male puberty
         val enlargementText: TextView = view.findViewById(R.id.enlargmentTxt)
+        val pubicHairText: TextView = view.findViewById(R.id.pubicHairTxt)
+        val penisGrowthText: TextView = view.findViewById(R.id.growthPenisTxt)
+        val erectionText: TextView = view.findViewById(R.id.erectionTxt)
+        val ejaculationText: TextView = view.findViewById(R.id.ejaculationTxt)
+        val wetDreamsText: TextView = view.findViewById(R.id.wetDreamsTxt)
+        val bodyChangesText: TextView = view.findViewById(R.id.changesBodyTxt)
+        val voiceChangesText: TextView = view.findViewById(R.id.changesVoiceTxt)
 
         val btnPuberty: Button = view.findViewById(R.id.btnPuberty)
         val btnReproductiveOrgans: Button = view.findViewById(R.id.btnReproductiveOrgans)
@@ -112,10 +127,17 @@ class KnowYourselfFragment : Fragment(), ExitWithAnimation {
         }
 
         //male Puberty
-        expEnlargementLayout = view.findViewById(R.id.enlargmentLayout)
-        btnEnlargement.setOnClickListener{
-            onClick(btnEnlargement)
-        }
+//        expEnlargementLayout = view.findViewById(R.id.enlargmentLayout)
+//        expPubicHairLayout = view.findViewById(R.id.pubicHairLayout)
+//        expBodyChangesLayout = view.findViewById(R.id.changesBodyLayout)
+//        expVoiceChangesLayout = view.findViewById(R.id.changesVoiceLayout)
+//        expEjaculationLayout = view.findViewById(R.id.ejaculationLayout)
+//        expErectionLayout = view.findViewById(R.id.erectionLayout)
+//        expPenisGrowthLayout = view.findViewById(R.id.growthPenisLayout)
+//        expWetDreamsLayout = view.findViewById(R.id.wetDreamsLayout)
+//        btnEnlargement.setOnClickListener{
+//            onClick(btnEnlargement)
+//        }
 
         pubertyText.text = resources.getString(R.string.pubertySwahili)
         reproductiveOrganText.text = resources.getString(R.string.puberty)
@@ -150,10 +172,95 @@ class KnowYourselfFragment : Fragment(), ExitWithAnimation {
                     expSpermLayout?.collapse()
                     expHormonesLayout?.collapse()
 
-                    enlargmentBtn.setOnClickListener(View.OnClickListener {
-                        expEnlargementLayout?.toggle()
+                    pubicHairBtn.setOnClickListener(View.OnClickListener {
+//                        expPubicHairLayout?.toggle()
+//                        expEnlargementLayout?.collapse()
+//                        expPenisGrowthLayout?.collapse()
+//                        expErectionLayout?.collapse()
+//                        expEjaculationLayout?.collapse()
+//                        expWetDreamsLayout?.collapse()
+//                        expBodyChangesLayout?.collapse()
+//                        expVoiceChangesLayout?.collapse()
+                        Log.d("Know Your self", "pubicHair clicked")
                     })
 
+                    enlargmentBtn.setOnClickListener(View.OnClickListener {
+//                        expEnlargementLayout?.toggle()
+//                        expPubicHairLayout?.collapse()
+//                        expPenisGrowthLayout?.collapse()
+//                        expErectionLayout?.collapse()
+//                        expEjaculationLayout?.collapse()
+//                        expWetDreamsLayout?.collapse()
+//                        expBodyChangesLayout?.collapse()
+//                        expVoiceChangesLayout?.collapse()
+                        Log.d("Know Your self", "enlargment clicked")
+                    })
+
+                    growthPenisBtn.setOnClickListener(View.OnClickListener {
+//                        expPubicHairLayout?.toggle()
+//                        expEnlargementLayout?.collapse()
+//                        expPenisGrowthLayout?.collapse()
+//                        expErectionLayout?.collapse()
+//                        expEjaculationLayout?.collapse()
+//                        expWetDreamsLayout?.collapse()
+//                        expBodyChangesLayout?.collapse()
+//                        expVoiceChangesLayout?.collapse()
+                    })
+
+                    erectionBtn.setOnClickListener(View.OnClickListener {
+//                        expPubicHairLayout?.collapse()
+//                        expEnlargementLayout?.collapse()
+//                        expPenisGrowthLayout?.collapse()
+//                        expErectionLayout?.toggle()
+//                        expEjaculationLayout?.collapse()
+//                        expWetDreamsLayout?.collapse()
+//                        expBodyChangesLayout?.collapse()
+//                        expVoiceChangesLayout?.collapse()
+                    })
+
+                    ejaculationBtn.setOnClickListener(View.OnClickListener {
+//                        expPubicHairLayout?.collapse()
+//                        expEnlargementLayout?.collapse()
+//                        expPenisGrowthLayout?.collapse()
+//                        expErectionLayout?.collapse()
+//                        expEjaculationLayout?.toggle()
+//                        expWetDreamsLayout?.collapse()
+//                        expBodyChangesLayout?.collapse()
+//                        expVoiceChangesLayout?.collapse()
+                    })
+
+                    wetDreamsBtn.setOnClickListener(View.OnClickListener {
+//                        expPubicHairLayout?.collapse()
+//                        expEnlargementLayout?.collapse()
+//                        expPenisGrowthLayout?.collapse()
+//                        expErectionLayout?.collapse()
+//                        expEjaculationLayout?.collapse()
+//                        expWetDreamsLayout?.toggle()
+//                        expBodyChangesLayout?.collapse()
+//                        expVoiceChangesLayout?.collapse()
+                    })
+
+                    changesBodyBtn.setOnClickListener(View.OnClickListener {
+//                        expPubicHairLayout?.collapse()
+//                        expEnlargementLayout?.collapse()
+//                        expPenisGrowthLayout?.collapse()
+//                        expErectionLayout?.collapse()
+//                        expEjaculationLayout?.collapse()
+//                        expWetDreamsLayout?.collapse()
+//                        expBodyChangesLayout?.toggle()
+//                        expVoiceChangesLayout?.collapse()
+                    })
+
+                    changesVoiceBtn.setOnClickListener(View.OnClickListener {
+//                        expPubicHairLayout?.collapse()
+//                        expEnlargementLayout?.collapse()
+//                        expPenisGrowthLayout?.collapse()
+//                        expErectionLayout?.collapse()
+//                        expEjaculationLayout?.collapse()
+//                        expWetDreamsLayout?.collapse()
+//                        expBodyChangesLayout?.toggle()
+//                        expVoiceChangesLayout?.collapse()
+                    })
 
                 }
 

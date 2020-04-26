@@ -2,12 +2,47 @@
     <string name="app_name">Kitaa Konekt</string>
     <string name="prompt">Karibu Kitaa Konekt! Nikusaidie nini?</string>
     <string name="initial_phrase">Habari! Nikusaidie vipi?</string>
+
+    //Balehe/Pubert strings
     <string name="puberty">I want to mention something for people like me reaching this page because of Android Studio.\n In AS when you extract a string using the IDEs tool, it automatically strips newline characters. You can just manually add them back in and it will work fine. \nNot sure why it does this.</string>
     <string name="pubertySwahili">Kubalehe ni kipindi cha maisha kinachotokeza mabadiliko ya kimwili na kihisia ili kuwa mtu mzima. Katika kipindi hiki, mwili na homoni zinabadilika kwa kasi ili kukuandaa uwe na uwezo wa kuzaa.\nJambo hilo halimaanishi kwamba unastahili kuwa mzazi. Badala yake, kubalehe ni ishara ya kuachana na utoto na kuwa mtu mzima—jambo linaloweza kufurahisha na wakati uleule kuhuzunisha.
     \n\nKila mtu atapitia kipindi hiki kigumu cha mabadiliko ya kimwili na akili.
         Usijali hii ni hali ya kawaida tu ambao sisi sote tunapitia  ili kuwa watu wazima.
         \n\nBalehe huanza katika umri tofauti tofauti kwa kila mmoja. Wengine huanza mapema, baadhi huchelewa kupata mabadiliko haya. Wastani wa umri wa miaka 13 kwa kijana ndo huanza kupitia mabadiliko haya ya balehe.
     </string>
+    <string name="pubicHair">
+        Ni nywele ambazo huota katika sehemu za siri. Nywele chache kwanza huanza kuonekana/kugundulika kando kando mwa uume katika eneo la chini karibu na korodani.
+        Kidogo kidogo nywele hizo zinaanza kuwa nyeusi, kujikunja. Baada ya miaka michache nywele huanza kusambaa kwuelekea sehemu za siri. Na ukuaji wake huanza nywele chache mwanzoni katikati huwa nyingi (eneo la upana) kisha mwishoni huwa chache tena.
+        \n\nNywele zinaendelea kukua katika eneo la mapaja kuelekea chini, na pia kwa juu kuelekea kwenye kitovu kwa kutengeneza mstari wa uwima mwembamba wa nywele.
+        \n\nKaribu miaka miwili baada ya nywele za siri kuanza kukua, nywele za usoni zinaanza kukua pia. Kisha ukuaji wa haraka wa nywele kufanyika katika miguu, mikono na baadaye katikati mwa kifua.
+    </string>
+    <string name="ukuajiUume">
+        Uume unaweza kukua na kuwa saizi ya mtu mzima ukiwa na umri wa miaka 13 au hata hadi umri wa miaka 18. Uume unakua kwanza kwa urefu na kisha kwa upana.
+        \n\nWengine wanaweza kuwa na maumbile makubwa na wengine madogo ya uume. Lakini haiathiri kabisa tendo la kujamiiana.
+        Wavulana wengi huwa na wasiwasi juu ya saizi ya uume wao lakini ni homoni zinazodhibiti utendaji wa kujamiiana kuliko saizi ya uume wenyewe.
+    </string>
+    <string name="uumeKusimama">
+        Ni kitendo cha uume kuwa mgumu and kuinuka/ kuwa wima.
+        \n\nUume kusimama/kusimika huanza baada ya kubalehe. Wakati wa kubalehe, pamoja na mabadiliko ya homoni, wakati mwingine uume unaweza kusimama wenyewe bila hata ya wewe mwenyewe kukusudia, pengine hata usipokua na mawazo ya kufanya mapenzi. Huku ni kusimama kwa kutokuwa na hiari nako.
+        Hakuna haja ya kuwa na aibu juu yake ni mambo ya kawaida wakati wa kubalehe. Mara tu kijana anapoingia kuwa mtu mzima, atakuwa na udhibiti zaidi juu ya mwili wake na kusimama kwa uume pasipo na hiari nako kutapungua mara kwa mara.
+        \n\nKwa watu wazima, kusimika kwa uume husababishwa na vichochezi vya kimwili au kisaikolojia (ishara/alama).
+        \n\nVishawishi vya kimwili ambavyo vinaweza kusababisha kusimika kwa uume, inaweza ikawa ni kupiga punyeto (tendo la kutomasa sehemu zako mwenyewe za siri ili kujisisimua kimapenzi).
+        \n\nShawishi ya kisaikolojia inaweza kuwa ni mawazo tu juu ya ngono au hata ndoto. Ni kawaida kwa wavulana wakati wa kubalehe kuwa na ndoto na kisha kusimama kwa uume, nje ya uwezo wao.
+        \n\nKusimika kwa uume ni mithili ya puto lililo sinyaa lililokosa hewa ndani yake lakini ukiaza upepo lina tanuka na kuwa kubwa. Vivyo hivyo uume nao kwa kawaida huwa ni laini na umesinyaa, kwakua una nafasi ndogo ndogo ndani zilizoko wazi.
+        \nLakini muda mwingine damu hutiririka katika nafasi hizi na kuzijaza kwa haraka, kama kujaza puto kwa maji. Mwishowe baada ya damu kutiririka na kujaza nafasi hizi katika uume, uume huanza kuvimba, kuwa mgumu, na kuinuka/kusimama.
+    </string>
+    <string name="ejaculationText" >
+        Kumwaga/kutokwa na manii ni hali ya kutokwa ghafla kwa shahawa nje ya uume kupitia urethra.
+        \n\nUume una mrija uitwao mrija wa urethral. Mrija huu kazi yake ni kupitisha mkojo na shahawa.
+        \nUzalishaji na kutokwa kwa shahawa ni sehemu ya tendo la ngono/kujamiiana.
+        \n\nKatika ujana/balehe, ni ishara ya ukomavu na kukua kijinsia na hapa kijana ameanza uzalishaji wa mbegu za uzazi (manii).\n
+        \n<li>Wakati wa uchochezi na kuwa na hisia za kingono, kufuatia tendo lenyewe la ngono (hata wakati wa kupiga punyeto), mishipa inayozunguka uume hutuma ishara kwa viungo vilivyo uzunguka uume huo.</li>
+        \n<li>Hali hii husaidia kutoa maji maji ya shahawa katika urethra. Maji maji haya hukusanywa ndani ya urethra na ghafla kupata hisia ya maji kujaa katika urethra.</li>
+        \n<li>Kisha ugiligili/maji maji hutolewa ghafla kutoka kwenye uume na ndipo mchakato huu mzima huitwa kumwaga</li>
+        \n<li>Kondomu ya kiume inakusanya ugiligili huu wa shahawa baada ya kumwaga</li>
+    </string>
+
+
     <string name="desc">This is where you\'ll know everything about\n  you as a male or female so as to make\n\tbetter life decisions</string>
     <string name="qn_sample">Why most African tribes don\'t consider family planning and see it as a bad practise?</string>
     <string name="ans_sample">It is because most of the African societies believe in their own customs and traditions. Others believe that it is against God\'s will and others don\'t even want to talk about it, which is absurd.</string>
