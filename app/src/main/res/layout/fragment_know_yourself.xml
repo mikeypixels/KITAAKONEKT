@@ -190,6 +190,117 @@
                                 android:text="This is puberty text"
                                 android:fontFamily="@font/pt_serif_regular"/>
 
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Baadhi ya mabadiliko wavulana hupitia"
+                                android:layout_marginTop="8dp"
+                                android:gravity="center"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/source_serif_pro_regular"/>
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:background="@color/lightBlue"
+                                android:textColor="@color/graytext2"
+                                android:inputType="textCapSentences"
+                                android:fontFamily="@font/source_sans_pro_regular"
+                                android:text="Kutanuka kwa korodani na kende"
+                                android:id="@+id/enlargmentBtn"/>
+
+                                <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                                    app:ael_duration = "100"
+                                    app:ael_expanded = "false"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:paddingTop="2dp"
+                                    android:paddingStart="8dp"
+                                    android:paddingEnd="8dp"
+                                    android:paddingBottom="2dp"
+                                    android:id="@+id/enlargmentLayout">
+
+                                    <TextView
+                                        android:id="@+id/enlargmentTxt"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/enlargmentText"
+                                        android:fontFamily="@font/pt_serif_regular"/>
+                                </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:background="@color/lightBlue"
+                                android:textColor="@color/graytext2"
+                                android:inputType="textCapSentences"
+                                android:fontFamily="@font/source_sans_pro_regular"
+                                android:text="Ndoto nyevu"/>
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:background="@color/lightBlue"
+                                android:textColor="@color/graytext2"
+                                android:inputType="textCapSentences"
+                                android:fontFamily="@font/source_sans_pro_regular"
+                                android:text="Kuota nywele sehemu mbali mbali"/>
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:background="@color/lightBlue"
+                                android:textColor="@color/graytext2"
+                                android:inputType="textCapSentences"
+                                android:fontFamily="@font/source_sans_pro_regular"
+                                android:text="Ukuaji wa Uume"/>
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:background="@color/lightBlue"
+                                android:textColor="@color/graytext2"
+                                android:inputType="textCapSentences"
+                                android:fontFamily="@font/source_sans_pro_regular"
+                                android:text="Uume kuwa wima"/>
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:background="@color/lightBlue"
+                                android:textColor="@color/graytext2"
+                                android:inputType="textCapSentences"
+                                android:fontFamily="@font/source_sans_pro_regular"
+                                android:text="Kutokwa ute/manii"/>
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:background="@color/lightBlue"
+                                android:textColor="@color/graytext2"
+                                android:inputType="textCapSentences"
+                                android:fontFamily="@font/source_sans_pro_regular"
+                                android:text="Mabadiliko ya mwili"/>
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:background="@color/lightBlue"
+                                android:textColor="@color/graytext2"
+                                android:inputType="textCapSentences"
+                                android:fontFamily="@font/source_sans_pro_regular"
+                                android:text="Mabadiliko ya sauti"/>
+
                         </com.github.aakira.expandablelayout.ExpandableLinearLayout>
 
                         <Button

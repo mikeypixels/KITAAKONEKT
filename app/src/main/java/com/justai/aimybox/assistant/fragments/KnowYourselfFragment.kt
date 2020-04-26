@@ -28,6 +28,8 @@ class KnowYourselfFragment : Fragment(), ExitWithAnimation {
     internal var expSpermLayout: ExpandableLinearLayout? = null
     internal var expHormonesLayout: ExpandableLinearLayout? = null
 
+    internal var expEnlargementLayout: ExpandableLinearLayout? = null
+
     override var posX: Int? = null
     override var posY: Int? = null
 
@@ -71,11 +73,17 @@ class KnowYourselfFragment : Fragment(), ExitWithAnimation {
         val spermText: TextView = view.findViewById(R.id.spermText)
         val hormonesText: TextView = view.findViewById(R.id.hormonesText)
 
+        //male puberty
+        val enlargementText: TextView = view.findViewById(R.id.enlargmentTxt)
+
         val btnPuberty: Button = view.findViewById(R.id.btnPuberty)
         val btnReproductiveOrgans: Button = view.findViewById(R.id.btnReproductiveOrgans)
         val btnSemen: Button = view.findViewById(R.id.btnSemen)
         val btnSperm: Button = view.findViewById(R.id.btnSperm)
         val btnHormones: Button = view.findViewById(R.id.btnHormones)
+
+        //male Puberty
+        val btnEnlargement: Button = view.findViewById(R.id.enlargmentBtn)
 
         // Expendable buttons and Layouts
         expPubertyLayout = view.findViewById(R.id.pubertyLayout)
@@ -101,6 +109,12 @@ class KnowYourselfFragment : Fragment(), ExitWithAnimation {
         expHormonesLayout = view.findViewById(R.id.hormonesLayout)
         btnHormones.setOnClickListener{
             onClick(btnHormones)
+        }
+
+        //male Puberty
+        expEnlargementLayout = view.findViewById(R.id.enlargmentLayout)
+        btnEnlargement.setOnClickListener{
+            onClick(btnEnlargement)
         }
 
         pubertyText.text = resources.getString(R.string.pubertySwahili)
@@ -135,6 +149,12 @@ class KnowYourselfFragment : Fragment(), ExitWithAnimation {
                     expSemenLayout?.collapse()
                     expSpermLayout?.collapse()
                     expHormonesLayout?.collapse()
+
+                    enlargmentBtn.setOnClickListener(View.OnClickListener {
+                        expEnlargementLayout?.toggle()
+                    })
+
+
                 }
 
                 R.id.btnReproductiveOrgans -> {
