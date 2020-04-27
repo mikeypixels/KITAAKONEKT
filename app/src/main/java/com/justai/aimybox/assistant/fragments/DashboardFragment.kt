@@ -22,12 +22,15 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.coordinatorlayout.widget.CoordinatorLayout
+import androidx.core.content.ContextCompat
+import androidx.core.graphics.alpha
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.card.MaterialCardView
 import com.hanks.htextview.rainbow.RainbowTextView
 import com.justai.aimybox.assistant.DispatchTouchEvent
+import com.justai.aimybox.assistant.MainActivity
 import com.justai.aimybox.assistant.R
 import com.justai.aimybox.assistant.activities.ForumActivity
 import com.justai.aimybox.assistant.adapters.SliderAdapter
@@ -509,7 +512,9 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
                 swipe_txt.colorSpeed = 2.5F
 
                 rDimLayout.visibility = View.VISIBLE
+                MainActivity.top_layout.visibility = View.VISIBLE
                 rDimLayout.alpha = slideOffset
+                MainActivity.top_layout.alpha = slideOffset
             }
 
             override fun onStateChanged(bottomSheet: View, newState: Int) {
@@ -543,6 +548,9 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
                         }
 
                         rDimLayout.visibility = View.GONE
+
+//                        (context as Activity).getWindow().setStatusBarColor(ContextCompat.getColor(
+//                            context as Activity, R.color.white))
                     }
                     BottomSheetBehavior.STATE_EXPANDED -> {
 
@@ -550,6 +558,9 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
                         swipe_txt.colorSpeed = 2.5F
 
                         rDimLayout.visibility = View.VISIBLE
+
+//                        (context as Activity).getWindow().setStatusBarColor(ContextCompat.getColor(
+//                            context as Activity, R.color.dim_light)) // set status background white
 
                         txt_swipeup_checker = 1
 
@@ -640,6 +651,9 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
                                 R.anim.fadeout
                             )
                         rDimLayout.startAnimation(animationOut)
+
+//                        (context as Activity).getWindow().setStatusBarColor(ContextCompat.getColor(
+//                            context as Activity, R.color.white))
 
 //                        quiz_card.visibility = View.GONE
                         fact_card.visibility = View.GONE

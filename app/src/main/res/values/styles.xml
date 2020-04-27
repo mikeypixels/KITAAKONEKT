@@ -2,10 +2,6 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-<!--        <item name="android:colorPrimary">@color/primary</item>-->
-<!--        <item name="android:colorPrimaryDark">@color/primaryDark</item>-->
-<!--        <item name="android:colorAccent">@color/accent</item>-->
-<!--        <item name="android:colorPrimary">#214872</item>-->
         <item name="android:colorPrimary">@color/primary</item>
         <item name="android:colorPrimaryDark">@color/primaryDark</item>
         <item name="android:colorAccent">@color/accent</item>
