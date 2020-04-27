@@ -50,7 +50,249 @@
     <string name="reg_heading_below">yako</string>
     <string name="login_txt">Je huna akaunti? </string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+<!--    For Relationship relationship Fragment-->
+
+    <string name="relationships">Ujana na ujana ni hatua ya maisha unapoanza kuchunguza zaidi juu ya uhusiano wako. Urafiki mpya unaanzishwa. Una dhamana zaidi kuliko hapo awali na marafiki zako. Unaweza kukuza hisia za kimapenzi kwa mtu. Uhusiano na wazazi wako na wazee pia hubadilika; inakuwa tofauti na ilivyokuwa wakati uko mdogo tu.\n\nMahusiano katika hatua hii ya maisha yako husaidia kufafanua utambulisho wako na kukuongoza kuwa aina ya mtu unayetaka kuwa.
+    </string>
+    <string name="key_to_healthy_relationships">Hatua ya kwanza kuelekea uhusiano mzuri inaanza kutoka kwako. Sio lazima kila wakati kwa mtu mwingine kurudisha kwa njia ile ile unayofanya. Lakini hakuna uharibifu kujaribu na kuwa wa kwanza kutumia funguo za uhusiano mzuri wa afya.
+    </string>
+
+    <string name="relationships_with_parents_and_elders">Mahusiano na wazazi wako na wazee yanaweza kuonekana kuwa magumu zaidi wakati huu wa awamu hii. Labda usipende kila kitu wanachokuambia. Lakini wewe ni mkubwa wa kutosha kuelewa mambo mengi na kugundua mbaya na sahihi.\n\nUnapaswa kuelewa kuwa wapendwa wako wanajaribu tu kukulinda. Unapotumia ufunguo wa uhusiano mzuri wa afya na kujaribu kuelewa, kwa kweli unaweza kuona uzuri wa upendo uliofichwa nyuma.\n\nMara tu utakapokuwa mkubwa na kuwa huru, mahusiano yenu yatabadilika. Wazee ambao wanaonekana kukufundisha wakati wote watakuwa zaidi kama marafiki. Kwa hivyo ichukulie tu rahisi kwa sasa
+    </string>
+
+    <string name="relationships_with_friends">
+        Ufunguo wa urafiki uliofanikiwa ni kuwa na marafiki wanaofaa. Kwa hivyo jifunze kuchagua rafiki anayefaa. Wakati wa ujana, tunapoanza kuchunguza utambulisho wetu, tunakuwa tunajua picha yetu, sifa yetu katika shule na jamii. Kwenye mchakato huo tunajaribu sana kuendana mara nyingi huwa tunaishia kuwa na marafiki wasiofaa.
+    </string>
+
+    <string name="relationship_with_special_someone">
+        Tunavyozidi kukua, ni kawaida kwetu kutamani tuwe wa pekee kwa mtu huyo mmoja.\n\nsisi pia tunajenga hisia za kijinsia, urafiki maalum na uhusiano na mtu huyo mmoja.\n\nLakini ufunguo wa kukufanya ufurahi ni kuwa na uhusiano mzuri.\n\nMahusiano yoyote ambayo hufanya usifurahi, hasira, kuumiza au kutokuwa na utulivu sio uhusiano mzuri.\n\nUhusiano wa afya uko wapi?\nunaweza kuwa katika uhalisia wako\nunaweza kumpenda na kumuheshimu huyo mwenzako\nhuyo mwenzako anarudisha upendo na anakuheshimu bila masharti yoyote\n\nuhusiano bora na wenye afya na mtu husaidia kukua. Haikuzuii kufanya vitu vingine muhimu maishani mwako kama masomo, michezo, sanaa, muziki au vitu vyovyote vya ubunifu ambavyo unafurahia kufanya.\n\nuhusiano bora na wenye afya huwa mzuri kila wakati na sio ngumu.
+    </string>
+
+    <string name="signs_of_healthy_and_unhealthy_relationships">
+        Uhusiano bora na wenye afya na mtu maalum, aidha na mpenzi wako wa kike au mpenzi wako kiume lazima uwe wa pande zote ambapo:\n\nWote wanaheshimiana\n\nWote hawadanganyi na ni waaminifu kwa kila mmoja\n\nWote hawamlazimishi mwingine kufanya vitu ambavyo hawataki kufanya\n\nWote wanaweza kuwasiliana wazi na kujielezea\n\nWote wanaweza kushikamana vizuri na kujisikia huru kuwa pamoja\n\nWote wanangojea kila mmoja kuwa tayari kwa shughuli za ngono ikiwa ni pamoja na kumbusu na kumgusa mwenzie\n\nWote huchukua ridhaa ya kuheshimiana kwa shughuli za ngono wanapokuwa na umri wa kutosha na tayari\n\nIkiwa unahisi mwenza wako au wewe haukufuata yoyote haya, basi unapaswa kuelewa kuwa HAUKO katika bora na wenye afya.\n\n
+    </string>
+
+<!--    For Relationship violence Fragment-->
+
+    <string name="what_is_violence">
+        Ukatili unaweza kufafanuliwa kama kitendo chochote kinachosababisha au kinachoweza kusababisha\n\n
+
+        madhara ya kimwili\n\n
+
+        madhara ya kijinsia\n\n
+
+        kuumizwa kisaikolojia kwa mtu mwingine, inahusisha na vitisho vya vitendo kama hivyo\n\n
+
+        kulazimisha (shinikizo, nguvu, dhuluma) au\n\n
+
+        kuwanyima uhuru (uhuru,\n\n
+
+        iwe inatokea kwa umma au kwa mtu binafsi ambayo inaingilia haki ya mtu kuishi katika maisha yenye hadhi.\n\n
+
+        Ujana kuwa wakati wa kutatanisha na nyeti, huweka mtu katika hatari kubwa ya vurugu au ukatili.
+    </string>
+
+    <string name="sexual_assaults">
+        Ni wewe tu unayo haki ya kufanya maamuzi juu ya nini cha kufanya na mwili wako. Hakuna mtu mwingine ana haki ya kukulazimisha kufanya shughuli za ngono. Aina yoyote ya shughuli za kingono bila matakwa, ruhusa au idhini ya mtu huyo mwingine au kitendo chochote kinachomfanya mtu mwingine kukosa raha au kuhisi vibaya ikiwa ni pamoja na.\n\n
+
+        Jinsia\n\n
+
+        Kumbusu\n\n
+
+        Kubwa\n\n
+
+        Kugusa\n\n
+
+        Kuonyesha sehemu zako za kibinafsi kwa mtu huyo mwingine\n\n
+
+        piga punyeto mbele ya mtu mwingine\n\n
+
+        Kumdhulumu kila mtu kwa sauti ya ngono
+    </string>
+
+    <string name="facts">
+        karibu asilimia 85 ya wakati, kijana hubakwa na mtu anayemjua.\n\n
+
+        Inaweza kuwa mchumba, rafiki, mzee, jamaa au mtu wa familia yako mwenyewe.\n\n
+
+        Inaweza kutokea mahali popote penye usiri kama ndani ya gari, kwenye nyumba ya mtu, nyumbani kwako au hata katika nafasi za umma kama shule, usafirishaji wa umma, masoko, sehemu za sinema, vyama au mahali pengine popote.\n\n
+
+        Sio sawa kukaa kimya hata kama mtu huyo ni mtu unayemjua.\n\n
+
+        Sio sawa hata kama mtu huyo ni mkubwa zaidi yako na ana mamlaka kwako kama mwalimu, mwajiri, wazazi marafiki, mjomba/shangazi, kaka/dada mkubwa, binamu au mtu uliyekuwa unamtazamia.\n\n
+
+        Sio sawa hata ikiwa ni mtu ambaye uko kwenye uhusiano wa kimapenzi nae.
+    </string>
+
+    <string name="rape">
+        Kulingana na sheria, kitendo chochote cha kupenya au jaribio la kupenya uume, au vitu vingine ndani ya mwili wa watu wengine (uke, ufunguzi wa anal au mdomo) bila hamu, ruhusa au idhini ya mtu mwingine hufafanuliwa kama ubakaji.\n\n
+        Kitendo cha kujamiiana hata kwa ruhusa, hamu au idhini ya msichana chini ya miaka 18 huchukuliwa kama ubakaji! Kwa mfano, hata ikiwa ni kitendo cha kufanya ngono kati ya msichana wa miaka 18 na 18 anasikia mvulana mzee, kijana wa miaka 18 bado atashtakiwa kwa ubakaji.\n\n
+        Kujua zaidi kuhusu sheria za ubakaji nchini ingia kwenye tovuti ifuatayo\n
+        <u>https://www.ilo.org/dyn/natlex/docs/ELECTRONIC/67094/63635/F532037758/TZA67094.pdf</u>
+    </string>
+
+    <string name="how_to_protect_yourself_from_sexual_assaults">
+        Linapokuja suala la unyanyasaji wa kijinsia.\n\n
+
+        HAPANA ni HAPANA wakati wote.\n\n
+
+        Ukimya ni HAPANA wakati wote.\n\n
+
+        Amini hisia zako, ikiwa hauko hauna amani na hauko tayari sema HAPANA na ACHA wazi wazi na kwa sauti kubwa!\n\n
+
+        Jifunze kumsikiliza mtu huyo mwingine. Ikiwa hawako tayari, au wanaposema HAPANA, Jifunze KUACHA na kuheshimu uamuzi wao.\n\n
+
+        Kaa macho na usilewe. Kaa mbali na pombe na dawa za kulevya. Hata ikiwa lazima, usiingie kwenye maeneo ambayo hauna imani au amani nayo, ambayo mtu mwingine anaeza kuchukua fursa mbaya katika hali yako ya kulewa au kutokuwa na fahamu.\n\n
+
+        Amini hisia zako, ikiwa unahisi kutishiwa au kukosa imani na mahali, toka nje ya mahali hapo haraka. Sio lazima ukae katika eneo ambalo hauna amani au imani nalo.\n\n
+
+        Piga kelele na uombe msaada. Jitetee kila wakati ikiwa mtu anajaribu kukulazimisha.
+    </string>
+
+    <string name="how_to_cope_with_sexual_assaults">
+        Wakati mwingine hata ukijaribu, unaweza kushindwa kutoroka huo unyanyasaji wa kijinsia\n\n
+
+        Katika hali kama hizo\n\n
+
+        Tafadhali kumbuka kuwa hutakiwi kamwe kujilaumu mwenyewe!!\n\n
+
+        Sio kosa lako!!\n\n
+
+        Usifiche ukweli kwa wazazi wako, wakubwa wako, wazee au mtu aliyekuzidi umri, anayekujali.\n\n
+
+        Waambie tu nini unapitia.\n\n
+
+        Ikiwa mtu anajaribu kukushambulia mara kwa mara, ripoti shughuli zao kwa mamlaka au polisi.\n\n
+
+        Kuna msaada na anwani nyingi siku hizi zinazopatikana ambazo zinaweza kuchukua hatua kwa haraka na pia zitakusaidia kukabiliana na hali uliyo nayo.\n\n
+
+        Ikiwa umepitia unyanyasaji wa kijinsia usisite kuomba msaada.
+    </string>
+
+    <string name="cyber_sexual_crimes">
+        Vijana wengi wanaamini kuwa ili mradi haihusishi miili kukutana, shughuli za ngono unazofanya kwenye mtandao au kwenye simu za mkononi ni sawa. Lakini sivyo ilivyo. Kuna hatari zaidi zinahusika. Wakati wako wa faragha unaweza kuwekwa wazi kwa watu wengine wengi.
+    </string>
+
+
+
+<!--    For HIV and STIs HIV Fragment-->
+
+    <string name="what_is_hiv">
+        VVU ni kifupi cha Virusi Vya Ukimwi. Ukimwi ni ukosefu wa kinga mwilini. Hivi ni virusi ambavyo vinaweza kushambulia kinga yetu (uwezo wa kupambana na magonjwa).\n\n
+
+        Matokeo yake mtu huwa dhaifu na anaweza kuugua kila wakati, mara nyingi kwa maambukizo mazito.
+    </string>
+
+    <string name="how_is_hiv_transmitted">
+        VVU huambukizwa kwa kubadilishana majimaji ya mwili kama damu, shahawa, majimaji kabla ya kuzaa, majimaji ya uke na maziwa ya matiti.\n\n
+
+        haiambukizwi kwa njia ya mate, jasho na mkojo.
+    </string>
+
+    <string name="what_puts_you_at_risk">
+        Maambukizi ya VVU yanaweza kuepukwa. Lakini lazima tukumbuke kuwa sote tuko katika hatari sawa ikiwa hatuna umakini wa kutosha.\n\n
+
+        Ngono ya uke, ya mdomo au ya anal isiyo salama(bila kutumia kondomu) na mwenza wako bila kujua hali yao ya VVU inakuweka hatarini. Hata muda mmoja wa ngono isiyo salama inaweza kusababisha maambukizi ya VVU. Ndio maana ni muhimu kutumia kondomu kwa usahihi na mfululizo.\n\n
+
+        Kubadilishana sindano zilizotumika, kama vile kugawana sindano ya kudunga dawa za kulevya hukuweka hatarini.\n\n
+
+        fimbo kutoka kwa sindano iliyotumiwa kama na wafanyikazi wa afya inakuweka hatarini.\n\n
+
+        Mtoto ndani ya tumbo la mama au aliyezaliwa hivi karibuni na mama ambaye tayari ameambukizwa VVU humweka mtoto hatarini.\n\n
+    </string>
+
+    <string name="what_are_the_symptomps_of_hiv_infection">
+        Dalili za VVU zinaweza kutofautiana kati ya mtu mmoja na mwingine mtu.\n\n
+
+        Dalili za kawaida za VVU ni kama za homa ya mafua zaidi. Mtu anaweza kuwa na homa, maumivu ya kichwa, uchovu na nodi kubwa za limfu.\n\n
+
+        Wengine wanaweza kuwa na dalili kali zaidi kama kuhara na kutapika.\n\n
+
+        Wengine wanaweza wasione zozote kwa muda mrefu kama miaka 10-15.\n\n
+
+        Njia pekee ya kugundua VVU ni kupitia kipimo maalum cha damu.
+    </string>
+
+    <string name="how_hiv_attacks_the_immune_system">
+        Virusi vya UKIMWI huua aina fulani ya seli za kinga zinazoitwa seli za CD4+ mwilini mwetu.\n\n
+
+        Wakati seli hizi zinaharibiwa, mwili wetu unapoteza uwezo wake wa kupambana na hata aina ndogo zaidi ya maambukizo.\n\n
+
+        Viumbe vingi ambavyo kawaida havimshambuli mtu mwenye afya huanza kupata nafasi ya kuambukiza mtu ambaye seli zake za CD4+ ni chache sana. Aina hizi za maambukizo huitwa maambukizo ya fursa.
+    </string>
+
+    <string name="how_can_hiv_be_prevented">
+        Matumizi ya kondomu sahihi na thabiti: Kwa ngono, njia pekee ya kuzuia VVU ni kwa kutumia kondomu sahihi na thabiti.\n\n
+
+        Hata sehemu muda mmoja wa ngono isiyo salama inaweza kusababisha maambukizi ya VVU.\n\n
+
+        Dawa za utangulizi: Kuna kundi la dawa linalopendekezwa kwa watu ambao wako kwenye hatari kubwa ya kupata maambukizo ya VVU mara kwa mara. Hizi hupunguza tu nafasi za kuambukizwa na hazizuii kabisa maambukizi ya VVU.\n\n
+
+        Kuzuia maambukizi ya mama kwa mtoto: Mama mjamzito anaweza kusambaza maambukizo ya VVU kwa mtoto wake. Njia bora ya kuzuia maambukizi ya VVU ni kuonana na madaktari mara kwa mara wakati wa uja uzito na matumizi ya mara kwa mara ya dawa za kuongeza kinga kwa wale ambao wameambukizwa.
+    </string>
+
+    <string name="is_hiv_treatable">
+        Maambukizi ya VVU hayawezi kutibika. Lakini kuna dawa ambazo husaidia kupunguza kasi ya kuzidisha virusi vya VVU ndani ya mwili wa mtu.\n\n
+
+        Dawa hizi huitwa dawa za kupunguza makali ya virusi vya ukimwi (ARVs) na mchakato wa matibabu huitwa tiba ya kupunguza makali ya virusi vya ukimwi (ART).\n\n
+
+        Mtu aliyeambukizwa na VVU lazima achukue ARV kila siku wakati wote wa maisha.\n\n
+
+        Mama mjamzito aliyeambukizwa na VVU anaweza kuzuia maambukizi kwa mtoto wake, ikiwa atachukua ARV kila wakati katika kipindi cha ujauzito wake na usimamizi mzuri wa matibabu.\n\n
+
+        ARV hutolewa bure kwa Tanzania katika vituo vya afya vilivyoainishwa.
+    </string>
+
+    <string name="living_with_hiv">
+        Shukrani kwa dawa za kuongeza kinga, watu wanaoishi na VVU sasa wanaweza kuishi maisha ya kawaida na yenye afya, kumaliza masomo na kuwa na kazi nzuri. Lakini ni muhimu kuchukua ARV kila mara.\n\n
+
+        Mtu yeyote anayeishi na VVU ana haki sawa na mtu yeyote. Haifanyi mtu kuwa na uwezo mdogo kwa njia yoyote. Kwa hivyo ikiwa unaishi na VVU lazima ushinde hofu yako mwenyewe na ujue haki zako za kuishi maisha ya kawaida na yenye hadhi.
+    </string>
+
+    <string name="myth_about_HIV">
+        <b>Mara tu mtu atakapoambukizwa VVU, ni mwisho wa maisha yake</b>\n\n
+Hapana, mtu aliyeambukizwa virusi vya UKIMWI anaweza kuishi maisha ya kawaida na yenye afya, kwa muda mrefu kama wanachukua dawa za kuongeza kinga mara kwa mara na kwa uangalifu.\n\n
+
+<b>Mtu anayepata VVU kila wakati ni mtu aliye na tabia mbaya</b>\n\n
+Hapana, sote tuna hatari sawa ya kupata maambukizi ya VVU ikiwa hatutakuwa waangalifu wa kutosha. Kuambukizwa VVU haifanyi mtu kuwa mzuri au mbaya. Ni maambukizi sio mwamuzi wa tabia.\n\n
+
+<b>Unapaswa kukaa mbali na watu wanaoishi na virusi vya UKIMWI na kamwe usifuraike nao</b>\n\n
+Hapana, hali ya VVU haipaswi kuwa sababu ya kukaa mbali na mtu yeyote. VVU huambukizwa kupitia mawasiliano ya ngono bila kinga na damu. Kuwa na urafiki na mtu, kushikana mikono, kumbusu au kukumbatiana, kushiriki vyoo au viti vya choo haienezi maambukizi ya VVU.\n\n
+
+<b>Watu wanaoishi na VVU hawapaswi kuoa au kuoana tena</b>\n\n
+Hapana, mtu anayeishi na VVU ana haki sawa ya kuoa na kuwa na uhusiano wa kawaida wa afya, maadamu mtu huyo huchukua dawa za kuongeza kinga mara kwa mara, hatengenezi hatari ya maambukizi ya VVU kwa mwenza wake na huyo mwenza anajua kuhusu hali yake ya VVU. Inashauriwa kila wakati kuzingatia matumizi thabiti na sahihi ya kondomu kwa ajili ya ngono. Pia mwenza anaweza kulazimika kuchukua dawa za kuongeza kinga kwa ajili kuzuia. Ulaji wa dawa za kuongeza kinga hupunguza hatari ya kuambukizwa kwa kiwango fulani vile vile.
+    </string>
+
+<!--    For HIV and STIs STIs Fragment-->
+
+    <string name="what_is_sti">
+        Magonjwa ya zinaa ni  magonjwa yanayosambazwa kwa njia ya vitendo vya kijinsia, mengine ya zamani (kisonono, kaswende n.k.), na mengine mapya (ukimwi n.k.).\n\n
+
+        Maradhi hayo yanaweza yakaambukizwa kwa njia nyingine pia, au kwa vitendo vya kijinsia vilivyo halali kwa wahusika, lakini yanaitwa “ya zinaa” kwa sababu yanaenezwa kwa wingi hasa kwa vitendo hivyo vinavyofanyika nje ya ndoa kwa kujamiiana na watu mbalimbali.
+    </string>
+
+    <string name="what_are_its_types">
+
+    </string>
+
+    <string name="myths_about_stis">
+        <b>Mtu anayepata magonjwa ya zinaa huwa ni mtu mwenye tabia mbaya</b>\n\n
+
+        Hapana, sote tuna hatari sawa ya kupata magonjwa ya zinaa ikiwa hatuna umakini wa kutosha. Kuambukizwa magonjwa ya zinaa haifanyi mtu kuwa mzuri au mbaya. Ni maambukizo sio mwamuzi wa tabia.\n\n
+
+        <b>Viti vya vyoo au vyoo vya kugawana vinaweza kueneza magonjwa ya zinaa</b>\n\n
+
+        Hapana, STI ni kundi la maambukizo ambayo hupitishwa kupitia ngono ya mdomo, uke au anal.\n\n
+
+        <b>Ngono ya mdomo haisambazi STI</b>\n\n
+
+        Hapana, ngono ya mdomo inaweza kusambaza magonjwa ya zinaa. Haiwezi kupitisha kila aina ya magonjwa ya zinaa, lakini kwa hakika hupitisha wengi wao kama kisonono, chlamydia, kaswende, ugonjwa wa manawa ya sehemu ya siri. Ndio sababu inashauriwa kila wakati kutumia kondomu hata kwa ngono ya mdomo.\n\n
+
+        <b>Naweza kusema kwa urahisi wakati mwenzi wako au una STI</b>\n\n
+
+        Hapana, magonjwa ya zinaa ni ngumu kugundua kwa sababu sio dalili kila wakati. Unaweza kuishi na maambukizi bila matibabu kwa muda mrefu.
+    </string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="swipe_up">Swipe up…</string>
     <string name="enlargmentText">Makende huanza kukua kwa haraka kwa kipindi hiki pamoja na mfuko wake (korodani)

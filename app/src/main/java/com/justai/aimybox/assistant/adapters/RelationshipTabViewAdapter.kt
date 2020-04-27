@@ -24,7 +24,7 @@ class RelationshipTabViewAdapter(fm: FragmentManager): FragmentStatePagerAdapter
     override fun getPageTitle(position: Int): CharSequence? {
         return when (position) {
             0 -> "MAHUSIANO"
-            1 -> "VURUGU"
+            1 -> "UKATILI"
             else -> null
         }
     }

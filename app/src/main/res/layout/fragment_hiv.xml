@@ -1,14 +1,494 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lightGray"
     tools:context=".fragments.HivFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#94e4f7">
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/stds" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnWIH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="VVU ni nini?"
+                    android:textColor="@color/deeppink"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="10dp"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/whatIsHIVLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical"
+                app:ael_duration="200"
+                app:ael_expanded="false">
+
+                <TextView
+                    android:id="@+id/whatIsHIVText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/pt_serif_regular"
+                    android:text="@string/relationships" />
+
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnVHV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="VVU huambukizwa vipi?"
+                    android:textColor="@color/deeppink"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="10dp"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/VVUHuambukizwavipiLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical"
+                app:ael_duration="200"
+                app:ael_expanded="false">
+
+                <TextView
+                    android:id="@+id/VVUHuambukizwavipiText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/pt_serif_regular" />
+
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnNNKH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Ni nini kinakuweka hatarini?"
+                    android:textColor="@color/deeppink"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="10dp"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/NiNiniKinakuwekaHatariniLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical"
+                app:ael_duration="200"
+                app:ael_expanded="false">
+
+                <TextView
+                    android:id="@+id/NiNiniKinakuwekaHatariniText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/pt_serif_regular" />
+
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnNNDZMYV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Ni nini dalili za maambukizo ya VVU?"
+                    android:textColor="@color/deeppink"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="10dp"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/NINiniDaliliZaMaambukiziLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical"
+                app:ael_duration="200"
+                app:ael_expanded="false">
+
+                <TextView
+                    android:id="@+id/NINiniDaliliZaMaambukiziText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/pt_serif_regular" />
+
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnJGVHK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Jinsi gani VVU hushambulia kinga?"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/deeppink"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="10dp"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/JinsiGaniVVUHushambuliaLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical"
+                app:ael_duration="200"
+                app:ael_expanded="false">
+
+                <TextView
+                    android:id="@+id/JinsiGaniVVUHushambuliaText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/pt_serif_regular" />
+
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnVIZ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="VVU inawezaje kuzuiwa?"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:textColor="@color/deeppink"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="10dp"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/VVUInawezajeKuzuiwaLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical"
+                app:ael_duration="200"
+                app:ael_expanded="false">
+
+                <TextView
+                    android:id="@+id/VVUInawezajeKuzuiwaText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/pt_serif_regular" />
+
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnVIK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="VVU inaweza kutibiwa?"
+                    android:textColor="@color/deeppink"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="10dp"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/VVUInawezaKutibiwaLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical"
+                app:ael_duration="200"
+                app:ael_expanded="false">
+
+                <TextView
+                    android:id="@+id/VVUInawezaKutibiwaText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/pt_serif_regular" />
+
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnKNV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Kuishi na VVU"
+                    android:textColor="@color/deeppink"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="10dp"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/KuishiNaVVULayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical"
+                app:ael_duration="200"
+                app:ael_expanded="false">
+
+                <TextView
+                    android:id="@+id/KuishiNaVVUText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/pt_serif_regular" />
+
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnMPKV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Mawazo potofu kuhusu VVU"
+                    android:textColor="@color/deeppink"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="10dp"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/MawazoPotofuLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:ael_duration="200"
+                app:ael_expanded="false">
+
+                <TextView
+                    android:id="@+id/MawazoPotofuText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/pt_serif_regular" />
+
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
 </FrameLayout>

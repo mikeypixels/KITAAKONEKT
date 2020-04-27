@@ -33,9 +33,11 @@ class SliderAdapter(val context: Context) : PagerAdapter() {
         lateinit var v_btn: CardView
     }
 
+    lateinit var sharedImageView: ImageView
+
     var slide_images = arrayOf(
         R.drawable.manwoman1,
-        R.drawable.relationship4,
+        R.drawable.relationship3,
         R.drawable.family3,
         R.drawable.stds
     )
@@ -168,6 +170,14 @@ class SliderAdapter(val context: Context) : PagerAdapter() {
                     add(R.id.container_layout, KnowYourselfFragment.newInstance(positions)).addToBackStack(null)
                 }
             }else if(position == 1){
+
+//                sharedImageView = slideImageView
+//                (context as AppCompatActivity).supportFragmentManager.beginTransaction()
+//                    .add(R.id.container_layout, RelationshipsFragment.newInstance(positions)).addToBackStack(null)
+//                    .addSharedElement(sharedImageView, sharedImageView.transitionName)
+//                    .commitAllowingStateLoss()
+//
+//                sharedImageView = ImageView(context)
                 (context as AppCompatActivity).supportFragmentManager.open {
                     add(R.id.container_layout, RelationshipsFragment.newInstance(positions)).addToBackStack(null)
                 }

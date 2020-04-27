@@ -53,8 +53,8 @@
             app:layout_constraintTop_toTopOf="parent"
             android:minHeight="35dp"
             app:tabTextAppearance="@style/TabLayoutTextStyle"
-            app:tabSelectedTextColor="@color/orange"
-            app:tabIndicatorColor="@color/orange"
+            app:tabSelectedTextColor="@color/black"
+            app:tabIndicatorColor="@color/deeperpink"
             android:background="@color/lightGray"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 

@@ -1,14 +1,189 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lightGray"
     tools:context=".fragments.StiFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#94e4f7">
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/stds" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnMYZ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Maambukizi ya zinaa ni nini?"
+                    android:textColor="@color/deeppink"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="10dp"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/maambukiziYaZinaaLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical"
+                app:ael_duration="200"
+                app:ael_expanded="false">
+
+                <TextView
+                    android:id="@+id/maambukiziYaZinaaText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/pt_serif_regular"
+                    android:text="@string/relationships" />
+
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnAZNZ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Aina zake ni zipi?"
+                    android:textColor="@color/deeppink"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="10dp"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/ainaZakeNiZipiLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical"
+                app:ael_duration="200"
+                app:ael_expanded="false">
+
+                <TextView
+                    android:id="@+id/ainaZakeNiZipiText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/pt_serif_regular" />
+
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnMPKMYZ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="12dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Mawazo potofu kuhusu maambukizi ya zinaa"
+                    android:textColor="@color/deeppink"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_marginEnd="10dp"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                android:id="@+id/mawazoPotofuLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="12dp"
+                android:orientation="vertical"
+                app:ael_duration="200"
+                app:ael_expanded="false">
+
+                <TextView
+                    android:id="@+id/MawazoPotofuText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/pt_serif_regular" />
+
+            </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
 
 </FrameLayout>
