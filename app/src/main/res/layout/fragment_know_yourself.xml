@@ -162,10 +162,10 @@
 
                         <Button
                             android:drawableRight="@android:drawable/arrow_down_float"
-                            android:text="Puberty"
+                            android:text="Balehe"
                             android:background="@color/lightBlue"
-                            android:backgroundTint="@color/lightblue"
-                            android:textColor="@color/white"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/gray"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/btnPuberty"/>
@@ -451,11 +451,11 @@
 
                         <Button
                             android:drawableRight="@android:drawable/arrow_down_float"
-                            android:text="Reproductive organs"
+                            android:text="Viungo vya uzazi"
                             android:layout_below="@id/pubertyLayout"
                             android:background="@color/lightBlue"
-                            android:backgroundTint="@color/lightBlue2"
-                            android:textColor="@color/white"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/gray"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/btnReproductiveOrgans"/>
@@ -473,17 +473,18 @@
                                 android:id="@+id/reproductiveOrganText"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:text="@string/maleReproductiveOrgansText"
                                 android:fontFamily="@font/pt_serif_regular"/>
 
                         </com.github.aakira.expandablelayout.ExpandableLinearLayout>
 
                         <Button
                             android:drawableRight="@android:drawable/arrow_down_float"
-                            android:text="Semen"
+                            android:text="Shahawa"
                             android:layout_below="@id/reproductiveOrgansLayout"
                             android:background="@color/lightBlue"
-                            android:backgroundTint="@color/lightBlue"
-                            android:textColor="@color/white"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/gray"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/btnSemen"/>
@@ -507,11 +508,11 @@
 
                         <Button
                             android:drawableRight="@android:drawable/arrow_down_float"
-                            android:text="Sperm"
+                            android:text="Manii"
                             android:layout_below="@id/semenLayout"
                             android:background="@color/lightBlue"
-                            android:backgroundTint="@color/lightBlue2"
-                            android:textColor="@color/white"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/gray"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/btnSperm"/>
@@ -535,11 +536,11 @@
 
                         <Button
                             android:drawableRight="@android:drawable/arrow_down_float"
-                            android:text="Hormones"
+                            android:text="Homoni"
                             android:layout_below="@id/spermLayout"
                             android:background="@color/lightBlue"
-                            android:backgroundTint="@color/lightBlue"
-                            android:textColor="@color/white"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/gray"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/btnHormones"/>

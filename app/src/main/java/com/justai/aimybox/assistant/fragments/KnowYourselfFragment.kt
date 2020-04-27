@@ -140,10 +140,10 @@ class KnowYourselfFragment : Fragment(), ExitWithAnimation {
 //        }
 
         pubertyText.text = resources.getString(R.string.pubertySwahili)
-        reproductiveOrganText.text = resources.getString(R.string.puberty)
-        semenText.text = resources.getString(R.string.puberty)
-        spermText.text = resources.getString(R.string.puberty)
-        hormonesText.text = resources.getString(R.string.puberty)
+        reproductiveOrganText.text = resources.getString(R.string.maleReproductiveOrgansText)
+        semenText.text = resources.getString(R.string.semensText)
+        spermText.text = resources.getString(R.string.spermText)
+        hormonesText.text = resources.getString(R.string.maleHormonesText)
 
         return view
     }
