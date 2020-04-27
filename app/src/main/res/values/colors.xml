@@ -39,6 +39,7 @@
     <color name="deeppink">#757575</color>
     <color name="deeperpink">#FF1493</color>
     <color name="mediumviolet">#C71585</color>
+    <color name="dim_light">#99000000</color>
 
     <color name="user_input_color">#000</color>
     <color name="unfocused_color">#778899</color>

@@ -1,10 +1,16 @@
 package com.justai.aimybox.assistant
 
 import android.graphics.*
+import android.os.Build
 import android.os.Bundle
 import android.util.DisplayMetrics
-import android.view.*
-import android.widget.*
+import android.view.Menu
+import android.view.View
+import android.view.Window
+import android.view.WindowManager
+import android.widget.EditText
+import android.widget.RelativeLayout
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.card.MaterialCardView
 import com.justai.aimybox.assistant.fragments.DashboardFragment
@@ -18,13 +24,31 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         var screenData: Double = 0.0
+        lateinit var top_layout: RelativeLayout
     }
 
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_activity_main)
 
         screenData = getScreenDimension()
+
+        val w = window
+        w.setFlags(
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+        )
+
+        top_layout = findViewById(R.id.top_layout)
+
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+//            val window: Window = getWindow()
+//            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+//            window.statusBarColor = Color.WHITE
+//        }
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);//  set status text dark
+//        getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.white)) // set status background white
 
 //                back_arrow.setOnClickListener {
 //

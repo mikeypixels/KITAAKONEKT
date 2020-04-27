@@ -5,15 +5,12 @@ import android.app.Activity
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Rect
+import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.text.Html
 import android.util.DisplayMetrics
-import android.view.LayoutInflater
-import android.view.MotionEvent
-import android.view.View
-import android.view.ViewGroup
-import android.view.animation.AccelerateDecelerateInterpolator
+import android.view.*
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.view.animation.BounceInterpolator
@@ -21,18 +18,24 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.coordinatorlayout.widget.CoordinatorLayout
+import androidx.core.content.ContextCompat
+import androidx.core.graphics.alpha
 import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.card.MaterialCardView
 import com.hanks.htextview.rainbow.RainbowTextView
 import com.justai.aimybox.assistant.DispatchTouchEvent
+import com.justai.aimybox.assistant.MainActivity
 import com.justai.aimybox.assistant.R
 import com.justai.aimybox.assistant.activities.ForumActivity
 import com.justai.aimybox.assistant.adapters.SliderAdapter
+import com.justai.aimybox.assistant.utils.findLocationOfCenterOnTheScreen
+import com.justai.aimybox.assistant.utils.open
 
 /**
  * A simple [Fragment] subclass.
@@ -53,9 +56,9 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
     lateinit var password: EditText
     lateinit var conf_password: EditText
 
-    lateinit var animation_quiz: Animation
+//    lateinit var animation_quiz: Animation
     lateinit var animation_fact: Animation
-    lateinit var animation_stories: Animation
+//    lateinit var animation_stories: Animation
     lateinit var animation_help: Animation
     lateinit var animation_topq: Animation
     lateinit var animation_forum: Animation
@@ -72,6 +75,7 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
         //        var screenData: Double = 0.0
         lateinit var bsb: BottomSheetBehavior<View>
         lateinit var bs: View
+        var statusbarHeight = 0
 
         @JvmStatic
         fun newInstance(): DashboardFragment = DashboardFragment()
@@ -84,21 +88,29 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
         // Inflate the layout for this fragment
         val view: View = inflater.inflate(R.layout.fragment_dashboard, container, false)
 
-        animation_quiz =
-            AnimationUtils.loadAnimation(
-                context,
-                R.anim.quiz_card_anim
-            )
+        statusbarHeight = getStatusBarHeight()
+//        val rectangle = Rect()
+//        val window: Window = (context as Activity).getWindow()
+//        window.getDecorView().getWindowVisibleDisplayFrame(rectangle)
+//        val statusBarHeight: Int = rectangle.top
+//        val contentViewTop: Int = window.findViewById(Window.ID_ANDROID_CONTENT).getTop()
+//        val titleBarHeight = contentViewTop - statusBarHeight
+
+//        animation_quiz =
+//            AnimationUtils.loadAnimation(
+//                context,
+//                R.anim.quiz_card_anim
+//            )
         animation_fact =
             AnimationUtils.loadAnimation(
                 context,
                 R.anim.fact_card_anim
             )
-        animation_stories =
-            AnimationUtils.loadAnimation(
-                context,
-                R.anim.stories_card_anim
-            )
+//        animation_stories =
+//            AnimationUtils.loadAnimation(
+//                context,
+//                R.anim.stories_card_anim
+//            )
         animation_help =
             AnimationUtils.loadAnimation(
                 context,
@@ -164,9 +176,9 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
 
         linearContainer = view.findViewById(R.id.linear_container)
         val swipe_txt = view.findViewById<RainbowTextView>(R.id.swipe_txt)
-        val quiz_card = view.findViewById<CardView>(R.id.quiz_card)
+//        val quiz_card = view.findViewById<CardView>(R.id.quiz_card)
         val fact_card = view.findViewById<CardView>(R.id.fact_card)
-        val stories_card = view.findViewById<CardView>(R.id.stories_card)
+//        val stories_card = view.findViewById<CardView>(R.id.stories_card)
         val help_card = view.findViewById<CardView>(R.id.help_card)
         val topQ_card = view.findViewById<CardView>(R.id.topQ_card)
         val forum_card = view.findViewById<CardView>(R.id.forum_card)
@@ -175,9 +187,9 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
             bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
 
             if(txt_swipeup_checker == 0){
-                quiz_card.startAnimation(animation_quiz)
+//                quiz_card.startAnimation(animation_quiz)
                 fact_card.startAnimation(animation_fact)
-                stories_card.startAnimation(animation_stories)
+//                stories_card.startAnimation(animation_stories)
                 help_card.startAnimation(animation_help)
                 topQ_card.startAnimation(animation_topq)
                 forum_card.startAnimation(animation_forum)
@@ -185,9 +197,9 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
                 txt_swipeup_checker = 1
             }
 
-            quiz_card.visibility = View.VISIBLE
+//            quiz_card.visibility = View.VISIBLE
             fact_card.visibility = View.VISIBLE
-            stories_card.visibility = View.VISIBLE
+//            stories_card.visibility = View.VISIBLE
             help_card.visibility = View.VISIBLE
             topQ_card.visibility = View.VISIBLE
             forum_card.visibility = View.VISIBLE
@@ -211,8 +223,9 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
         bottomSheet = view.findViewById(R.id.bottom_sheet)
 
         bottomSheetBehavior = BottomSheetBehavior.from(bottomSheet)
-        bottomSheet.layoutParams.height = (0.75 * height).toInt()
-        constraint_layout.layoutParams.height = bottomSheet.layoutParams.height - 90
+        bottomSheet.layoutParams.height = (0.53 * height).toInt()
+//        bottomSheet.layoutParams.height = (0.5 * height).toInt()
+//        constraint_layout.layoutParams.height = LinearLayout.LayoutParams.MATCH_PARENT
 
         bsb = bottomSheetBehavior
         bs = bottomSheet
@@ -225,16 +238,16 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
             override fun onClick(v: View?) {
                 bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
 
-                quiz_card.startAnimation(animation_quiz)
+//                quiz_card.startAnimation(animation_quiz)
                 fact_card.startAnimation(animation_fact)
-                stories_card.startAnimation(animation_stories)
+//                stories_card.startAnimation(animation_stories)
                 help_card.startAnimation(animation_help)
                 topQ_card.startAnimation(animation_topq)
                 forum_card.startAnimation(animation_forum)
 
-                quiz_card.visibility = View.VISIBLE
+//                quiz_card.visibility = View.VISIBLE
                 fact_card.visibility = View.VISIBLE
-                stories_card.visibility = View.VISIBLE
+//                stories_card.visibility = View.VISIBLE
                 help_card.visibility = View.VISIBLE
                 topQ_card.visibility = View.VISIBLE
                 forum_card.visibility = View.VISIBLE
@@ -246,6 +259,15 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
         var arrow_check = 0
 
         var forumChecker = 0
+
+        help_card.setOnClickListener {
+
+            val positions: IntArray = it.findLocationOfCenterOnTheScreen()
+
+            (context as AppCompatActivity).supportFragmentManager.open {
+                add(R.id.container_layout, HelpCentersFragment.newInstance(positions)).addToBackStack(null)
+            }
+        }
 
         forum_card.setOnClickListener {
 
@@ -298,16 +320,16 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
                         R.anim.forum_right_to_left
                     )
 
-                quiz_card.startAnimation(quiz_exit_anim)
+//                quiz_card.startAnimation(quiz_exit_anim)
                 fact_card.startAnimation(fact_exit_anim)
-                stories_card.startAnimation(stories_exit_anim)
+//                stories_card.startAnimation(stories_exit_anim)
                 help_card.startAnimation(help_exit_anim)
                 topQ_card.startAnimation(topq_exit_anim)
                 forum_card.startAnimation(forum_exit_anim)
 
-                quiz_card.visibility = View.INVISIBLE
+//                quiz_card.visibility = View.INVISIBLE
                 fact_card.visibility = View.INVISIBLE
-                stories_card.visibility = View.INVISIBLE
+//                stories_card.visibility = View.INVISIBLE
                 help_card.visibility = View.INVISIBLE
                 topQ_card.visibility = View.INVISIBLE
                 forum_card.visibility = View.INVISIBLE
@@ -367,11 +389,6 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
                         R.anim.right_to_left_conf_pass
                     )
 
-                val animation_btn: Animation =
-                    AnimationUtils.loadAnimation(
-                        context,
-                        R.anim.right_to_left_btn
-                    )
 //            val objectAnimator: ObjectAnimator =
 //                AnimatorInflator.loadAnimator(this, R.animator.objectanimator) as ObjectAnimator
 //            objectAnimator.setTarget(card_btn)
@@ -458,9 +475,9 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
                     linearContainer.removeView(reg_cLayout)
                     linearContainer.addView(constraint_layout)
 
-                    quiz_card.visibility = View.VISIBLE
+//                    quiz_card.visibility = View.VISIBLE
                     fact_card.visibility = View.VISIBLE
-                    stories_card.visibility = View.VISIBLE
+//                    stories_card.visibility = View.VISIBLE
                     help_card.visibility = View.VISIBLE
                     topQ_card.visibility = View.VISIBLE
                     forum_card.visibility = View.VISIBLE
@@ -488,7 +505,6 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
 
             forumChecker = 1
         }
-
         bottomSheetBehavior.addBottomSheetCallback(object :
             BottomSheetBehavior.BottomSheetCallback() {
             override fun onSlide(bottomSheet: View, slideOffset: Float) {
@@ -496,7 +512,9 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
                 swipe_txt.colorSpeed = 2.5F
 
                 rDimLayout.visibility = View.VISIBLE
+                MainActivity.top_layout.visibility = View.VISIBLE
                 rDimLayout.alpha = slideOffset
+                MainActivity.top_layout.alpha = slideOffset
             }
 
             override fun onStateChanged(bottomSheet: View, newState: Int) {
@@ -509,16 +527,16 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
                         swipe_txt.text = "Vuta juu..."
                         swipe_txt.colorSpeed = 2.5F
 
-                        val animationOut: Animation =
-                            AnimationUtils.loadAnimation(
-                                context,
-                                R.anim.fadeout
-                            )
-                        rDimLayout.startAnimation(animationOut)
+//                        val animationOut: Animation =
+//                            AnimationUtils.loadAnimation(
+//                                context,
+//                                R.anim.fadeout
+//                            )
+//                        rDimLayout.startAnimation(animationOut)
 
-                        quiz_card.visibility = View.GONE
+//                        quiz_card.visibility = View.GONE
                         fact_card.visibility = View.GONE
-                        stories_card.visibility = View.GONE
+//                        stories_card.visibility = View.GONE
                         help_card.visibility = View.GONE
                         topQ_card.visibility = View.GONE
                         forum_card.visibility = View.GONE
@@ -530,6 +548,9 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
                         }
 
                         rDimLayout.visibility = View.GONE
+
+//                        (context as Activity).getWindow().setStatusBarColor(ContextCompat.getColor(
+//                            context as Activity, R.color.white))
                     }
                     BottomSheetBehavior.STATE_EXPANDED -> {
 
@@ -537,6 +558,9 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
                         swipe_txt.colorSpeed = 2.5F
 
                         rDimLayout.visibility = View.VISIBLE
+
+//                        (context as Activity).getWindow().setStatusBarColor(ContextCompat.getColor(
+//                            context as Activity, R.color.dim_light)) // set status background white
 
                         txt_swipeup_checker = 1
 
@@ -587,24 +611,24 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
                                 back_arrow.visibility = View.VISIBLE
                             }
 
-                            quiz_card.startAnimation(animation_quiz)
+//                            quiz_card.startAnimation(animation_quiz)
                             fact_card.startAnimation(animation_fact)
-                            stories_card.startAnimation(animation_stories)
+//                            stories_card.startAnimation(animation_stories)
                             help_card.startAnimation(animation_help)
                             topQ_card.startAnimation(animation_topq)
                             forum_card.startAnimation(animation_forum)
 
-                            quiz_card.visibility = View.VISIBLE
+//                            quiz_card.visibility = View.VISIBLE
                             fact_card.visibility = View.VISIBLE
-                            stories_card.visibility = View.VISIBLE
+//                            stories_card.visibility = View.VISIBLE
                             help_card.visibility = View.VISIBLE
                             topQ_card.visibility = View.VISIBLE
                             forum_card.visibility = View.VISIBLE
                         }
 
-                        animation_quiz.cancel()
+//                        animation_quiz.cancel()
                         animation_fact.cancel()
-                        animation_stories.cancel()
+//                        animation_stories.cancel()
                         animation_help.cancel()
                         animation_topq.cancel()
                         animation_forum.cancel()
@@ -628,10 +652,12 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
                             )
                         rDimLayout.startAnimation(animationOut)
 
-                        quiz_card.visibility = View.GONE
-                        quiz_card.visibility = View.GONE
+//                        (context as Activity).getWindow().setStatusBarColor(ContextCompat.getColor(
+//                            context as Activity, R.color.white))
+
+//                        quiz_card.visibility = View.GONE
                         fact_card.visibility = View.GONE
-                        stories_card.visibility = View.GONE
+//                        stories_card.visibility = View.GONE
                         help_card.visibility = View.GONE
                         topQ_card.visibility = View.GONE
                         forum_card.visibility = View.GONE
@@ -654,6 +680,15 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
         })
 
         return view
+    }
+
+    fun getStatusBarHeight(): Int {
+        var result = 0
+        val resourceId = resources.getIdentifier("status_bar_height", "dimen", "android")
+        if (resourceId > 0) {
+            result = resources.getDimensionPixelSize(resourceId)
+        }
+        return result
     }
 
 //    override fun dispatchTouchEvent(event: MotionEvent): Boolean {
@@ -695,7 +730,7 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
         }
     }
 
-    public fun addDotsIndicator(pos: Int) {
+    fun addDotsIndicator(pos: Int) {
         dots = arrayOfNulls<TextView>(4) as Array<TextView>
         dotsLayout.removeAllViews()
 

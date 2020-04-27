@@ -2,9 +2,12 @@ package com.justai.aimybox.assistant.utils
 
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
+import android.graphics.Rect
 import android.view.View
 import android.view.ViewAnimationUtils
+import android.view.Window
 import android.view.animation.DecelerateInterpolator
+import com.justai.aimybox.assistant.fragments.DashboardFragment
 
 /**
  * Starts circular reveal animation
@@ -61,7 +64,7 @@ fun View.findLocationOfCenterOnTheScreen(): IntArray {
     System.out.println("The positions are: " + positions[0] + "and " + positions[1])
     // Get the center of the view
     positions[0] = positions[0] + width / 2
-    positions[1] = positions[1] + height / 2
+    positions[1] = positions[1] + height / 2 - DashboardFragment.statusbarHeight
     return positions
 }
 
