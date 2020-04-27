@@ -1,12 +1,14 @@
 package com.justai.aimybox.assistant.fragments
 
 import android.app.Activity
+import android.os.Build
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.transition.TransitionInflater
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
 
@@ -51,6 +53,16 @@ class RelationshipsFragment : Fragment(), ExitWithAnimation {
         tabLayout.setupWithViewPager(viewPager)
 
         return view
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            sharedElementEnterTransition = TransitionInflater
+                .from(context).inflateTransition(
+                    android.R.transition.move // you can change this
+                )
+        }
+        super.onCreate(savedInstanceState)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

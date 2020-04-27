@@ -33,24 +33,22 @@ class SliderAdapter(val context: Context) : PagerAdapter() {
         lateinit var v_btn: CardView
     }
 
+    lateinit var sharedImageView: ImageView
+
     var slide_images = arrayOf(
         R.drawable.manwoman1,
-        R.drawable.relationship4,
+        R.drawable.relationship3,
         R.drawable.family3,
         R.drawable.stds
     )
 
-    var slide_headings = arrayOf("Know Yourself", "Relationship", "Family planning", "HIV and STIs")
+    var slide_headings = arrayOf("Jifahamu Mwenyewe", "Mahusiano", "Uzazi wa Mpango", "VVU na Maambukizi ya Zinaa")
 
     var slide_desc = arrayOf(
-        "Know more about yourself as a man, woman or trans-gender. Being able to know more " +
-                "about yourself will enable you make better life decision and live a happy life.",
-        "Love and relationships, Love is a significant aspect in " +
-                "people’s lives that requires commitment and attention. Learn more about relationship and love.",
-        "Family planning is the planning of when to have children, " +
-                "and the use of birth control and other techniques to implement such plans. Learn more about family planing,",
-        "This is where you'll know everything about you as a male or female so as to make" +
-                "make better life decisions."
+        context.getString(R.string.know_yourself),
+        context.getString(R.string.relationship),
+        context.getString(R.string.family_planning),
+        context.getString(R.string.hiv_and_stis)
     )
 
     override fun isViewFromObject(view: View, `object`: Any): Boolean {
@@ -168,6 +166,14 @@ class SliderAdapter(val context: Context) : PagerAdapter() {
                     add(R.id.container_layout, KnowYourselfFragment.newInstance(positions)).addToBackStack(null)
                 }
             }else if(position == 1){
+
+//                sharedImageView = slideImageView
+//                (context as AppCompatActivity).supportFragmentManager.beginTransaction()
+//                    .add(R.id.container_layout, RelationshipsFragment.newInstance(positions)).addToBackStack(null)
+//                    .addSharedElement(sharedImageView, sharedImageView.transitionName)
+//                    .commitAllowingStateLoss()
+//
+//                sharedImageView = ImageView(context)
                 (context as AppCompatActivity).supportFragmentManager.open {
                     add(R.id.container_layout, RelationshipsFragment.newInstance(positions)).addToBackStack(null)
                 }

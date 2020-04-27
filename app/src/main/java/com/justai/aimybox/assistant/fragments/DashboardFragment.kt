@@ -506,7 +506,7 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
                 when (newState) {
                     BottomSheetBehavior.STATE_COLLAPSED -> {
 
-                        swipe_txt.text = "Swipe up..."
+                        swipe_txt.text = "Vuta juu..."
                         swipe_txt.colorSpeed = 2.5F
 
                         val animationOut: Animation =
@@ -533,7 +533,7 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
                     }
                     BottomSheetBehavior.STATE_EXPANDED -> {
 
-                        swipe_txt.text = "Swipe down..."
+                        swipe_txt.text = "Vuta chini..."
                         swipe_txt.colorSpeed = 2.5F
 
                         rDimLayout.visibility = View.VISIBLE
@@ -570,7 +570,7 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
                     }
                     BottomSheetBehavior.STATE_DRAGGING -> {
 
-                        swipe_txt.text = "Sliding..."
+                        swipe_txt.text = "Inavutwa..."
                         swipe_txt.colorSpeed = 2.5F
 
                         if (bsChecker == 0) {
@@ -613,7 +613,7 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
                     }
                     BottomSheetBehavior.STATE_HIDDEN -> {
 
-                        swipe_txt.text = "Swipe brr..."
+                        swipe_txt.text = "Vuta juu..."
                         swipe_txt.colorSpeed = 2.5F
 
                         rDimLayout.visibility = View.GONE
@@ -642,7 +642,7 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
                     }
                     BottomSheetBehavior.STATE_SETTLING -> {
 
-                        swipe_txt.text = "Settling..."
+                        swipe_txt.text = "Inatulia..."
                         swipe_txt.colorSpeed = 2.5F
                     }
                     BottomSheetBehavior.STATE_HALF_EXPANDED -> {

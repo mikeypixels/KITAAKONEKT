@@ -23,8 +23,8 @@ class HivAndStiTabViewAdapter(fm: FragmentManager): FragmentStatePagerAdapter(fm
     //To make only images tabs this method should return null
     override fun getPageTitle(position: Int): CharSequence? {
         return when (position) {
-            0 -> "HIV"
-            1 -> "STIs"
+            0 -> "VVU"
+            1 -> "MAAMBUKIZI YA ZINAA"
             else -> null
         }
     }
