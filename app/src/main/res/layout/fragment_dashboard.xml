@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/bottom_sheet_bg"
         app:behavior_hideable="true"
-        app:behavior_peekHeight="55dp"
+        app:behavior_peekHeight="60dp"
         app:layout_behavior="@string/bottom_sheet_behavior">
 
         <!--        <TextView-->
@@ -139,7 +139,7 @@
                     app:cardElevation="8dp"
                     app:layout_constraintEnd_toStartOf="@+id/help_card"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/quiz_card">
+                    app:layout_constraintTop_toTopOf="parent">
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -159,7 +159,7 @@
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="90dp"
-                            android:text="Did you know?"
+                            android:text="Je wajua?"
                             android:textColor="@color/white" />
 
                     </RelativeLayout>
@@ -216,7 +216,7 @@
                     app:cardElevation="8dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/fact_card"
-                    app:layout_constraintTop_toBottomOf="@+id/quiz_card">
+                    app:layout_constraintTop_toTopOf="parent">
 
                     <RelativeLayout
                         android:layout_width="wrap_content"
@@ -236,7 +236,7 @@
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="90dp"
-                            android:text="Help centers"
+                            android:text="Vituo vya afya"
                             android:textColor="@color/white" />
 
                     </RelativeLayout>
@@ -276,7 +276,7 @@
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="90dp"
-                            android:text="Top questions"
+                            android:text="Maswali ya juu"
                             android:textColor="@color/white" />
 
                     </RelativeLayout>
@@ -317,7 +317,7 @@
                             android:layout_height="wrap_content"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="90dp"
-                            android:text="Forum"
+                            android:text="Mjadala"
                             android:textColor="@color/white" />
 
                     </RelativeLayout>

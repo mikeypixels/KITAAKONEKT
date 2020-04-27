@@ -5,19 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
-import androidx.viewpager.widget.ViewPager
-import com.google.android.material.tabs.TabLayout
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 import com.justai.aimybox.assistant.R
-import com.justai.aimybox.assistant.adapters.HivAndStiTabViewAdapter
+import com.justai.aimybox.assistant.adapters.HelpCentersAdapter
 import com.justai.aimybox.assistant.utils.ExitWithAnimation
 import com.justai.aimybox.assistant.utils.startCircularReveal
 
-/**
- * A simple [Fragment] subclass.
- */
-class HivAndStiFragment : Fragment(), ExitWithAnimation {
+class HelpCentersFragment : Fragment(), ExitWithAnimation {
 
     override var posX: Int? = null
     override var posY: Int? = null
@@ -26,10 +22,11 @@ class HivAndStiFragment : Fragment(), ExitWithAnimation {
 
     companion object {
         @JvmStatic
-        fun newInstance(exit: IntArray? = null): HivAndStiFragment = HivAndStiFragment().apply {
+        fun newInstance(exit: IntArray? = null): HelpCentersFragment = HelpCentersFragment().apply {
             if (exit != null && exit.size == 2) {
                 posX = exit[0]
                 posY = exit[1]
+
             }
         }
     }
@@ -39,14 +36,14 @@ class HivAndStiFragment : Fragment(), ExitWithAnimation {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view: View = inflater.inflate(R.layout.fragment_hiv_and_sti, container, false)
+        val view: View = inflater.inflate(R.layout.fragment_help_centers, container, false)
 
-        val viewPager: ViewPager = view.findViewById(R.id.viewPager)
-        val myTabViewAdapter = HivAndStiTabViewAdapter((context as AppCompatActivity).supportFragmentManager)
-        viewPager.adapter = myTabViewAdapter
+        val recyclerView: RecyclerView = view.findViewById(R.id.help_centers_recyclerView)
+        val linearLayoutManager = LinearLayoutManager(context)
+        recyclerView.layoutManager = linearLayoutManager
 
-        val tabLayout: TabLayout = view.findViewById(R.id.tabLayout)
-        tabLayout.setupWithViewPager(viewPager)
+        val helpCentersAdapter = context?.let { HelpCentersAdapter(it) }
+        recyclerView.adapter = helpCentersAdapter
 
         return view
     }

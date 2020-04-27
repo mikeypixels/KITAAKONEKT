@@ -5,14 +5,12 @@ import android.app.Activity
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Rect
+import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.text.Html
 import android.util.DisplayMetrics
-import android.view.LayoutInflater
-import android.view.MotionEvent
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.view.animation.BounceInterpolator
@@ -20,6 +18,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -32,6 +31,8 @@ import com.justai.aimybox.assistant.DispatchTouchEvent
 import com.justai.aimybox.assistant.R
 import com.justai.aimybox.assistant.activities.ForumActivity
 import com.justai.aimybox.assistant.adapters.SliderAdapter
+import com.justai.aimybox.assistant.utils.findLocationOfCenterOnTheScreen
+import com.justai.aimybox.assistant.utils.open
 
 /**
  * A simple [Fragment] subclass.
@@ -71,6 +72,7 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
         //        var screenData: Double = 0.0
         lateinit var bsb: BottomSheetBehavior<View>
         lateinit var bs: View
+        var statusbarHeight = 0
 
         @JvmStatic
         fun newInstance(): DashboardFragment = DashboardFragment()
@@ -82,6 +84,14 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
     ): View? {
         // Inflate the layout for this fragment
         val view: View = inflater.inflate(R.layout.fragment_dashboard, container, false)
+
+        statusbarHeight = getStatusBarHeight()
+//        val rectangle = Rect()
+//        val window: Window = (context as Activity).getWindow()
+//        window.getDecorView().getWindowVisibleDisplayFrame(rectangle)
+//        val statusBarHeight: Int = rectangle.top
+//        val contentViewTop: Int = window.findViewById(Window.ID_ANDROID_CONTENT).getTop()
+//        val titleBarHeight = contentViewTop - statusBarHeight
 
 //        animation_quiz =
 //            AnimationUtils.loadAnimation(
@@ -246,6 +256,15 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
         var arrow_check = 0
 
         var forumChecker = 0
+
+        help_card.setOnClickListener {
+
+            val positions: IntArray = it.findLocationOfCenterOnTheScreen()
+
+            (context as AppCompatActivity).supportFragmentManager.open {
+                add(R.id.container_layout, HelpCentersFragment.newInstance(positions)).addToBackStack(null)
+            }
+        }
 
         forum_card.setOnClickListener {
 
@@ -647,6 +666,15 @@ class DashboardFragment : Fragment(), DispatchTouchEvent.onDispatchEvent {
         })
 
         return view
+    }
+
+    fun getStatusBarHeight(): Int {
+        var result = 0
+        val resourceId = resources.getIdentifier("status_bar_height", "dimen", "android")
+        if (resourceId > 0) {
+            result = resources.getDimensionPixelSize(resourceId)
+        }
+        return result
     }
 
 //    override fun dispatchTouchEvent(event: MotionEvent): Boolean {

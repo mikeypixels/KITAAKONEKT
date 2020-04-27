@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!--        <item name="android:colorPrimary">@color/primary</item>-->
+        <!--        <item name="android:colorPrimaryDark">@color/primaryDark</item>-->
+        <!--        <item name="android:colorAccent">@color/accent</item>-->
+        <!--        <item name="android:colorPrimary">#214872</item>-->
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primaryDark</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+
+        <!-- Customize Assistant components here -->
+
+        <item name="aimybox_assistantButtonTheme">@style/CustomAssistantButtonTheme</item>
+        <item name="aimybox_recognitionTheme">@style/CustomRecognitionWidgetTheme</item>
+        <item name="aimybox_responseTheme">@style/CustomResponseWidgetTheme</item>
+        <item name="aimybox_imageReplyTheme">@style/CustomImageReplyWidgetTheme</item>
+        <item name="aimybox_buttonReplyTheme">@style/CustomButtonReplyWidgetTheme</item>
+    </style>
+</resources>

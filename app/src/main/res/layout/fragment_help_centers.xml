@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HelpCentersFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efefef">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Je unahitaji msaada?"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"/>
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/search_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_image"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="25dp"
+            android:elevation="5dp"
+            app:strokeWidth="0.5dp"
+            app:strokeColor="@color/gray">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_bg"
+                android:hint="Find"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"/>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/help_centers_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search_card">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</FrameLayout>

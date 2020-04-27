@@ -1,11 +1,14 @@
 package com.justai.aimybox.assistant
 
+import android.app.Activity
 import android.graphics.*
+import android.os.Build
 import android.os.Bundle
 import android.util.DisplayMetrics
 import android.view.*
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.google.android.material.card.MaterialCardView
 import com.justai.aimybox.assistant.fragments.DashboardFragment
 import com.justai.aimybox.assistant.utils.ExitWithAnimation
@@ -25,6 +28,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.layout_activity_main)
 
         screenData = getScreenDimension()
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            val window: Window = getWindow()
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            window.statusBarColor = Color.WHITE
+        }
+//        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);//  set status text dark
+//        getWindow().setStatusBarColor(ContextCompat.getColor(this, R.color.white)) // set status background white
 
 //                back_arrow.setOnClickListener {
 //
