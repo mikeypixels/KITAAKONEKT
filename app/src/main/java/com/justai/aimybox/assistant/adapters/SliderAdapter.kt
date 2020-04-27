@@ -42,7 +42,7 @@ class SliderAdapter(val context: Context) : PagerAdapter() {
         R.drawable.stds
     )
 
-    var slide_headings = arrayOf("Jifahamu Mwenyewe", "Mahusiano", "Uzazi wa Mpango", "VVU na Maambukizi ya Zinaa")
+    var slide_headings = arrayOf("Jitambue", "Mahusiano", "Uzazi wa Mpango", "VVU na Maambukizi ya Zinaa")
 
     var slide_desc = arrayOf(
         context.getString(R.string.know_yourself),
