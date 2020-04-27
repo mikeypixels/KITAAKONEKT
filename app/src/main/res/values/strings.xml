@@ -39,7 +39,19 @@
         \n<li>Wakati wa uchochezi na kuwa na hisia za kingono, kufuatia tendo lenyewe la ngono (hata wakati wa kupiga punyeto), mishipa inayozunguka uume hutuma ishara kwa viungo vilivyo uzunguka uume huo.</li>
         \n<li>Hali hii husaidia kutoa maji maji ya shahawa katika urethra. Maji maji haya hukusanywa ndani ya urethra na ghafla kupata hisia ya maji kujaa katika urethra.</li>
         \n<li>Kisha ugiligili/maji maji hutolewa ghafla kutoka kwenye uume na ndipo mchakato huu mzima huitwa kumwaga</li>
-        \n<li>Kondomu ya kiume inakusanya ugiligili huu wa shahawa baada ya kumwaga</li>
+        \n<li>Kondomu ya kiume inatumika kukusanya ugiligili huu wa shahawa baada ya kumwaga</li>
+    </string>
+    <string name="bodyChangesText">
+        Ukuaji wa mwili kwa wavulana na wasichana huwa ni sawa mpaka kufikia nusu ujana. Mara nyingi, wasichana huwa warefu kuliko wavulana kwa kipindi hiki.
+        \n\nLakini ukuaji wa haraka hufanyika kwa kiwango cha haraka kwa wavulana. Wavulana wengi huwa na mikono na miguu mirefu kuliko mwili (kiwiliwili) kabla ya kuanza ukuaji huu wa haraka. Kisha viwiliwili vyao huanza kukua/kuongezeka kwa urefu.
+        \n\nMaumbo ya miili yao hubadilika kwa kuwa na mabega mapana kuliko nyonga.
+        \n\nMisuli yao pia huanza kukua kwa haraka zaidi ikilinganishwa na ya wasichana.
+        \n\nWavulana wengi watakuwa na mafuta kidogo mwilini ikilinganishwa na wasichana katika kipindi hiki.
+    </string>
+    <string name="voiceChangesText">
+        Katika kipindi hiki cha ukuaji wa haraka, zoloto (larynx) na koo la sauti pia huanza kukua na kuongezeka kwa wavulana. Kabla ya koo la sauti kufifikia ukubwa wa saizi ya mtu mzima, wavulana huanza kutoa sauti iliyokauka.
+        Lakini mara tu baada ya koo la sauti kufikia saizi ya ukubwa wa koo la mtu mzima, wavulana huanza kutoa sauti zao za kiume za uhasilia.
+        \n\nWavulana wengi hujisikia aibu kutokana na mabadiliko ya sauti zao na sauti ya kukatika kukatika ambayo hutoa. Ni jambo ama mchakato wa kawaida tu wala huauhitaji kuwa na wasiwasi. Mara tu unapokuwa mtu mzima na kitendo cha ukuaji hukamilika, na utapata sauti yako ya ki utu uzima.
     </string>
 
 
@@ -56,5 +68,11 @@
     <string name="enlargmentText">Makende huanza kukua kwa haraka kwa kipindi hiki pamoja na mfuko wake (korodani)
         \n\nNgozi ya korodani kuanza kuwa nyeusi, nyembamba, vidotidoti na kuning\'inia chini kuliko awali.
         \n\nWavulana wengi mara nyingi kende (pumbu) moja huwa chini kidogo kuliko jingine. Mara nyingi kende la kushoto huning\'inia chini kidogo kuliko lile la kulia
+    </string>
+    <string name="wetDreamsText">
+        Ndoto nyevu ni jambo la kawaida kwa vijana. Wavulana wengi huamka asubuhi na kujikuta nguo zao za ndani au mashuka kitandani yamelowa kwa umaji maji.
+        Wengi wanaweza hata kufadhaika ama kuchanganyikiwa kwa kudhani wamejikojolea kitandani pindi walipo kuwa usingizini. Bali ki uhalilisia hiki ni kitendo cha kutokwa ama kumwaga manii kutoka kwenye uume pindi mtu anapokua amelala usingizi.
+        \n\nKitendo hiki kwa jina la kisayansi huitwa emesisi ya usiku au "ndoto nyevu" kwa lugha ya kawaida. Sio lazima kwa kijana kuota ndoto za ngono ndio kupata ndoto nyevu. Inaweza kutokea hata bila mvulana kuwa na uelewa, wazo au ndoto juu ya ngono.
+        \n\nKwa wavulana wengi, kumwaga kwao (manii) kwa mara ya kwanza hufanyika kwa njia hii. Hii ni ishara ya ukomavu wao wa kijinsia. Inaonyesha pia kwamba kijana amesha anza kuzalisha na kutoa manii.
     </string>
 </resources>

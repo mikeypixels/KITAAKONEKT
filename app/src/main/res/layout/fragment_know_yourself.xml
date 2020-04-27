@@ -382,7 +382,7 @@
                                         android:id="@+id/wetDreamsTxt"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/enlargmentText"
+                                        android:text="@string/wetDreamsText"
                                         android:fontFamily="@font/pt_serif_regular"/>
                                 </LinearLayout>
 
@@ -412,7 +412,7 @@
                                         android:id="@+id/changesBodyTxt"
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:text="@string/enlargmentText"
+                                        android:text="@string/bodyChangesText"
                                         android:fontFamily="@font/pt_serif_regular"/>
                                 </LinearLayout>
 
