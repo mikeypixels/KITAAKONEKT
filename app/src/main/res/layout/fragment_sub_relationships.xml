@@ -49,8 +49,9 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="15dp"
                     android:text="Mahusiano"
-                    android:textColor="@color/deeppink"
-                    android:textSize="20sp" />
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:fontFamily="@font/pt_serif_regular"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -100,8 +101,9 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="15dp"
                     android:text="Njia bora za mahusiano"
-                    android:textColor="@color/deeppink"
-                    android:textSize="20sp" />
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:fontFamily="@font/pt_serif_regular"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -150,8 +152,9 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="15dp"
                     android:text="Mahusiano na wazazi na wazee"
-                    android:textColor="@color/deeppink"
-                    android:textSize="20sp" />
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:fontFamily="@font/pt_serif_regular"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -200,8 +203,9 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="15dp"
                     android:text="Mahusiano na marafiki"
-                    android:textColor="@color/deeppink"
-                    android:textSize="20sp" />
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:fontFamily="@font/pt_serif_regular"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -250,8 +254,9 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="15dp"
                     android:text="Mahusiano ya kimapenzi"
-                    android:textColor="@color/deeppink"
-                    android:textSize="20sp" />
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:fontFamily="@font/pt_serif_regular"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -300,8 +305,9 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="15dp"
                     android:text="ishara za uhusiano wa afya na mbaya"
-                    android:textColor="@color/deeppink"
-                    android:textSize="20sp" />
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:fontFamily="@font/pt_serif_regular"/>
 
                 <ImageView
                     android:layout_width="wrap_content"

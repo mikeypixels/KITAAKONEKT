@@ -16,14 +16,14 @@ import com.justai.aimybox.assistant.R
  */
 class StiFragment : Fragment() {
 
-    internal var whatIsHIVLayout: ExpandableLinearLayout? = null
-    internal var VVUHuambukizwavipiLayout: ExpandableLinearLayout? = null
-    internal var NiNiniKinakuwekaHatariniLayout: ExpandableLinearLayout? = null
+    internal var maambukiziYaZinaaLayout: ExpandableLinearLayout? = null
+    internal var ainaZakeNiZipiLayout: ExpandableLinearLayout? = null
+    internal var mawazoPotofuLayout: ExpandableLinearLayout? = null
 
     private fun initmyLayout() {
-        whatIsHIVLayout?.initLayout()
-        VVUHuambukizwavipiLayout?.initLayout()
-        NiNiniKinakuwekaHatariniLayout?.initLayout()
+        maambukiziYaZinaaLayout?.initLayout()
+        ainaZakeNiZipiLayout?.initLayout()
+        mawazoPotofuLayout?.initLayout()
     }
 
     override fun onCreateView(
@@ -33,30 +33,30 @@ class StiFragment : Fragment() {
         // Inflate the layout for this fragment
         val view: View = inflater.inflate(R.layout.fragment_sti, container, false)
 
-        val whatIsHIVText = view.findViewById<TextView>(R.id.whatIsHIVText)
-        val VVUHuambukizwavipiText = view.findViewById<TextView>(R.id.VVUHuambukizwavipiText)
-        val NiNiniKinakuwekaHatariniText = view.findViewById<TextView>(R.id.NiNiniKinakuwekaHatariniText)
+        val maambukiziYaZinaaText = view.findViewById<TextView>(R.id.maambukiziYaZinaaText)
+        val ainaZakeNiZipiText = view.findViewById<TextView>(R.id.ainaZakeNiZipiText)
+        val mawazoPotofuText = view.findViewById<TextView>(R.id.mawazoPotofuText)
 
-        val btnWIH = view.findViewById<MaterialCardView>(R.id.btnWIH)
-        val btnVHV = view.findViewById<MaterialCardView>(R.id.btnVHV)
-        val btnNNKH = view.findViewById<MaterialCardView>(R.id.btnNNKH)
+        val btnMYZ = view.findViewById<MaterialCardView>(R.id.btnMYZ)
+        val btnAZNZ = view.findViewById<MaterialCardView>(R.id.btnAZNZ)
+        val btnMPKMYZ = view.findViewById<MaterialCardView>(R.id.btnMPKMYZ)
 
-        whatIsHIVLayout = view.findViewById(R.id.whatIsHIVLayout)
-        btnWIH.setOnClickListener {
-            onClick(btnWIH)
+        maambukiziYaZinaaLayout = view.findViewById(R.id.maambukiziYaZinaaLayout)
+        btnMYZ.setOnClickListener {
+            onClick(btnMYZ)
         }
-        VVUHuambukizwavipiLayout = view.findViewById(R.id.VVUHuambukizwavipiLayout)
-        btnVHV.setOnClickListener {
-            onClick(btnVHV)
+        ainaZakeNiZipiLayout = view.findViewById(R.id.ainaZakeNiZipiLayout)
+        btnAZNZ.setOnClickListener {
+            onClick(btnAZNZ)
         }
-        NiNiniKinakuwekaHatariniLayout = view.findViewById(R.id.NiNiniKinakuwekaHatariniLayout)
-        btnNNKH.setOnClickListener {
-            onClick(btnNNKH)
+        mawazoPotofuLayout = view.findViewById(R.id.mawazoPotofuLayout)
+        btnMPKMYZ.setOnClickListener {
+            onClick(btnMPKMYZ)
         }
 
-        whatIsHIVText.text = resources.getString(R.string.what_is_hiv)
-        VVUHuambukizwavipiText.text = resources.getString(R.string.how_is_hiv_transmitted)
-        NiNiniKinakuwekaHatariniText.text = resources.getString(R.string.what_puts_you_at_risk)
+        maambukiziYaZinaaText.text = resources.getString(R.string.what_is_sti)
+        ainaZakeNiZipiText.text = resources.getString(R.string.what_are_its_types)
+        mawazoPotofuText.text = resources.getString(R.string.myths_about_stis)
 
         return view
     }
@@ -65,22 +65,22 @@ class StiFragment : Fragment() {
 
         if (v != null) {
             when (v.id) {
-                R.id.btnWIH -> {
-                    whatIsHIVLayout?.toggle()
-                    VVUHuambukizwavipiLayout?.collapse()
-                    NiNiniKinakuwekaHatariniLayout?.collapse()
+                R.id.btnMYZ -> {
+                    maambukiziYaZinaaLayout?.toggle()
+                    ainaZakeNiZipiLayout?.collapse()
+                    mawazoPotofuLayout?.collapse()
                 }
 
-                R.id.btnVHV -> {
-                    VVUHuambukizwavipiLayout?.toggle()
-                    whatIsHIVLayout?.collapse()
-                    NiNiniKinakuwekaHatariniLayout?.collapse()
+                R.id.btnAZNZ -> {
+                    ainaZakeNiZipiLayout?.toggle()
+                    maambukiziYaZinaaLayout?.collapse()
+                    mawazoPotofuLayout?.collapse()
                 }
 
-                R.id.btnNNKH -> {
-                    NiNiniKinakuwekaHatariniLayout?.toggle()
-                    whatIsHIVLayout?.collapse()
-                    VVUHuambukizwavipiLayout?.collapse()
+                R.id.btnMPKMYZ -> {
+                    mawazoPotofuLayout?.toggle()
+                    maambukiziYaZinaaLayout?.collapse()
+                    ainaZakeNiZipiLayout?.collapse()
                 }
 
                 else -> {

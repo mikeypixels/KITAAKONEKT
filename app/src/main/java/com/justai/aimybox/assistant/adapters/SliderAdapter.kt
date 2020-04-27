@@ -42,17 +42,13 @@ class SliderAdapter(val context: Context) : PagerAdapter() {
         R.drawable.stds
     )
 
-    var slide_headings = arrayOf("Know Yourself", "Relationship", "Family planning", "HIV and STIs")
+    var slide_headings = arrayOf("Jifahamu Mwenyewe", "Mahusiano", "Uzazi wa Mpango", "VVU na Maambukizi ya Zinaa")
 
     var slide_desc = arrayOf(
-        "Know more about yourself as a man, woman or trans-gender. Being able to know more " +
-                "about yourself will enable you make better life decision and live a happy life.",
-        "Love and relationships, Love is a significant aspect in " +
-                "people’s lives that requires commitment and attention. Learn more about relationship and love.",
-        "Family planning is the planning of when to have children, " +
-                "and the use of birth control and other techniques to implement such plans. Learn more about family planing,",
-        "This is where you'll know everything about you as a male or female so as to make" +
-                "make better life decisions."
+        context.getString(R.string.know_yourself),
+        context.getString(R.string.relationship),
+        context.getString(R.string.family_planning),
+        context.getString(R.string.hiv_and_stis)
     )
 
     override fun isViewFromObject(view: View, `object`: Any): Boolean {
