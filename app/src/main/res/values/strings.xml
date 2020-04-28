@@ -73,14 +73,14 @@
         \n\nWavulana wengi hujisikia aibu kutokana na mabadiliko ya sauti zao na sauti ya kukatika kukatika ambayo hutoa. Ni jambo ama mchakato wa kawaida tu wala huauhitaji kuwa na wasiwasi. Mara tu unapokuwa mtu mzima na kitendo cha ukuaji hukamilika, na utapata sauti yako ya ki utu uzima.
     </string>
 
-    //********** Male reproductive Organs Shahawa kawaida ni mchanganyiko wa maji maji (ute) unaotengenezwa na tezi dume na mbegu za kiume (manii).
+    //********** Male reproductive Organs *********************
     <string name="maleReproductiveOrgansText">
         Viungo vya uzazi ni viungo ambavyo vipo katika miili yetu na husaidia katika mchakato mzima wa uzazi. Kwa vile viungo hivi hutumika katika utendaji wa ngono kwa jina jingine huitwa pia viungo vya ngono.
         \n\nKwa wavulana, viungo hivi hujumuisha vya ndani na nje ya mwili.
         \n\nViungo hivi vinajumuisha:-
     </string>
 
-    //********** Semens
+    //********** Semens ************
     <string name="semensText">
         Shahawa kwa kawaida ni mchanganyiko wa maji maji (ute) unaotengenezwa na tezi dume na mbegu za kiume (manii).
         \n\nRangi yake huwa ni nyeupe na huonekana katika hali ya ukamasi yaani utelezi.
@@ -88,7 +88,7 @@
         Kwahiyo kukosa uwezo wa kuzalisha kabisa.
     </string>
 
-    //********** Sperm
+    //********** Sperm  ************
     <string name="spermText">
         Manii ni ute mweupe unaotoka kwenye uume wa mvulana wenye mbegu za uzazi.
         \nWavulana huanza kutengeneza/kuzalisha manii baada ya kuingia kubalehe.
@@ -101,7 +101,7 @@
         \n\nManii/mbegu moja tu kwa kawaida ndo huweza kuingia katika yai la kike.
     </string>
 
-    //********** Semens
+    //********** Hormones ***********
     <string name="maleHormonesText">
        Homoni ni kemikali zinazotolewa na tezi za mwili na kusafiri kupitia mfumo wa mzunguko wa damu hadi ogani za mwili na hudhibitiwa na ubongo.
         \n\nHomoni ndizo zinazo shawishi tabia, hali, na mabadiliko ya mwili.
@@ -109,6 +109,40 @@
         \nBaadhi yake ni maalum katika uwajibikaji wa sifa za kiume na utengenezaji wa manii.
     </string>
 
+
+    //########################################### Female Puberty ################################################
+
+    <string name="pubertyFemale">
+        Kubalehe ni kipindi cha mpito kutoka utoto kuelekea kuwa mtu mzima.
+        \nSisi sote hupitia katika kipindi hiki kigumu. Ila usijali, hii ni hali ya kawaida kabisa ambayo wote hupitia kuelekea katika hali ya utu uzima.
+        \nBalehe huanza katika umri tofauti tofauti. Kwa wasichana balehe huanza mapema kati ya miaka 8 mpaka 13 ama huchelewa kidogo kwa baadhi ya wasichana.
+        \n\nMabadiliko ambayo wasichana hupitia katika kipindi hiki cha balehe ni:-
+    </string>
+    <string name="reproOrgansFemale">
+        Viungo vya uzazi ni viungo ambavyo viko ndani ya miili yetu ambavyo husaidia mchakato mzima wa uzalishaji. Kwa vile viungo hivi hu usika katika tendo
+        la kufanya mapenzi/ngono pia huitwa viungo vya mapenzi/ngono.
+        \n\nKwa wasichana, baadhi ya viungo vya uzazi vipo ndani na baadhi nje ya mwili.
+        \n\nViungo hivi ni pamoja na:
+    </string>
+    <string name="femaleHormonesText">
+       Homoni ni kemikali zinazotolewa na tezi za mwili na kusafiri kupitia mfumo wa mzunguko wa damu hadi ogani za mwili na kazi zake hudhibitiwa na ubongo.
+        \n\nHomoni ndizo zinazo shawishi tabia, hali, na mabadiliko ya mwili.
+        \n\nKuna homoni nyingi katika mwili wetu. Baadhi yake ni maalum katika uwajibikaji wa sifa za kike, matendo ya kubalehe, hedhi, ushikaji wa mimba, kujifungua na kadhalika.
+    </string>
+    <string name="ovulationText">
+        Kupevuka kwa yai ni kipindi hasa wakati yai/mayai ya kike yanaachiwa kutoka kwenye mfuko wa mayai kwa msaada wa homoni tofauti tofauti za kike.
+        \n\nYai huachiwa kwenye ovari kisha kusafiri katika mirija ya falopia.
+        \n\nUrutubishaji hutokea iwapo ova (kijiyai) itakutana na manii (mbegu ya kiume) wakati huo huo ama mda mchache tu baada ya ova kupevuka.
+    </string>
+    <string name="menstruationText">
+       Hedhi ni kitendo cha kutokwa na damu ukeni kila mwezi ambayo hutokea mwishoni mwa mzunguko wa hedhi.
+        \nBaada ya kitendo cha upevushai wa mayai ya kike, kama yai halita kutana na manii basi yai hilo halitaweza kurutubishwa. Katika hali hii, homoni
+        za LH na FSH huwa chini na kuipa ishara homoni ya Ostrojeni na Projesteroni kushusha kiwango chake pia. Pindi viasi vya homoni vikishuka, ukuta wa ndani
+        wa mfuko wa uzazi ambao ulikua ukisubiria kutungwa kwa mimba huanza kumwagika/kubomoka.
+        \nWakati ukuta wa ndani wa mfuko wa uzazi unabomoka, husababisha damu kutoka. Damu husafiri chini kupitia kwenye seviksi kisha ukeni na mwisho kutoka nje
+        ya mwili kupitia uwazi wa uke.
+        \n\nSiku za kutokwa damu (hedhi) na kiasi cha kutokwa damu huwa inatofautiana baina ya mtu na mtu.
+    </string>
 
     <string name="desc">This is where you\'ll know everything about\n  you as a male or female so as to make\n\tbetter life decisions</string>
     <string name="qn_sample">Why most African tribes don\'t consider family planning and see it as a bad practise?</string>
