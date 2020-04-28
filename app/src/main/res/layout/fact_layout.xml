@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="340dp"
+        android:layout_height="350dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="150dp"
+        app:cardElevation="12dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="@color/twitterColor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/fact_txt"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/pt_serif_regular"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:justificationMode="inter_word"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

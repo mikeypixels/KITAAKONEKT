@@ -1,6 +1,10 @@
 package com.justai.aimybox.assistant.activities
 
+import android.os.Build
 import android.os.Bundle
+import android.view.View
+import android.view.WindowManager
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
@@ -16,9 +20,18 @@ class ForumActivity : AppCompatActivity() {
 //        R.drawable.ic_tab_contacts
 //    )
 
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forum)
+
+        val w = window
+        w.setFlags(
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
+            WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
+        )
+
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);//  set status text dark
 
         val viewPager: ViewPager = findViewById(R.id.viewPager)
         val myTabViewAdapter =

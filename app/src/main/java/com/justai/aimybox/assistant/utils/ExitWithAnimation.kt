@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewAnimationUtils
 import android.view.Window
 import android.view.animation.DecelerateInterpolator
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.justai.aimybox.assistant.fragments.DashboardFragment
 
 /**
@@ -64,7 +65,12 @@ fun View.findLocationOfCenterOnTheScreen(): IntArray {
     System.out.println("The positions are: " + positions[0] + "and " + positions[1])
     // Get the center of the view
     positions[0] = positions[0] + width / 2
-    positions[1] = positions[1] + height / 2 - DashboardFragment.statusbarHeight
+
+    if(DashboardFragment.bsb.state == BottomSheetBehavior.STATE_EXPANDED){
+        positions[1] = positions[1] + height / 2
+    }else{
+        positions[1] = positions[1] + height / 2 - DashboardFragment.statusbarHeight
+    }
     return positions
 }
 
