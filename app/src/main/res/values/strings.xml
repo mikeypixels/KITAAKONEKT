@@ -425,6 +425,46 @@ Hapana, mtu anayeishi na VVU ana haki sawa ya kuoa na kuwa na uhusiano wa kawaid
         Hapana, magonjwa ya zinaa ni ngumu kugundua kwa sababu hazioneshi dalili kila wakati. Unaweza kuishi na maambukizi bila matibabu kwa muda mrefu.
     </string>
 
+    <string name="relationship_q1">
+        Mimi ni msichana wa miaka 18 na nina wasiwasi na rafiki yangu ambaye ana mchumba. Aliniambia kwamba mpenzi wake amemshinikiza kufanya naye ngono mara tu wakikutana tena. Alisema kuwa hayuko tayari lakini anaogopa kwamba ikiwa atasema hapana, mpenzi wake hatampenda tena na anaogopa kumpoteza. Ninawezaje kumsaidia?
+    </string>
+
+    <string name="relationship_ans1">
+        Wewe ni rafiki mzuri kwa kujaribu kumsaidia rafiki yako bora.
+
+        \n\nFafanua kwa rafiki yako kwamba yeye pekee ndiye ana haki ya kuchukua uamuzi juu ya kile anachotaka kufanya na mwili wake. Hapaswi kumruhusu mtu yeyote kumshinikiza.
+
+        \n\nAnapaswa kufanya mapenzi tu wakati yuko tayari na anaelewa hatari zinazohusika. Yeye na mpenzi wake wanapaswa kungojea hadi wawe tayari kuchukua majukumu sawasawa ikiwa mambo hayaendi kama vile mimba zisizohitajika na hatari ya kuwa na VVU na magonjwa mengine ya zinaa.
+
+        \n\nMpendekezee azungumze na mpenzi wake waziwazi kuwa hayuko tayari.
+
+        \n\nKatika uhusiano wenye afya, mtu huyo mwingine hatakushinikiza na atafanya bidii kukuelewa.
+
+        \n\nIkiwa mpenzi wake huyo hatompenda kwa sababu tu alikataa kufanya ngono, basi ni wazi kwamba tayari yuko kwenye uhusiano mabaya. Lakini ikiwa anameelewa na atakuwa tayari kungojea, basi hiyo ni ishara kwamba anamjali.
+    </string>
+
+<!--    For fact fragment-->
+
+    <string name="fact1">
+        Takriban wasichana milioni 12 wenye umri wa miaka 15-19 na wasichana wasiopungua 777,000 chini ya miaka 15 huzaa kila mwaka katika nchi zinazoendelea.
+    </string>
+
+    <string name="fact2">
+        Sio chini ya mimba milioni 10 zisizotarajiwa hutokea kila mwaka kati ya wasichana wa umri wa miaka 15-19 katika nchi zinazoendelea.
+    </string>
+
+    <string name="fact3">
+        Shida wakati wa uja uzito na wakati wa kuzaa ni sababu inayoongoza kwa vifo vya wasichana wa miaka 15-19 ulimwenguni.
+    </string>
+
+    <string name="fact4">
+        Kati ya mimba milioni 5.6 zinazotolewa kila mwaka kati ya wasichana wa umri wa miaka 15-19, milioni 3.9 sio salama, inachangia vifo vya akina mama, hali mbaya ya mwili na shida za kiafya za kudumu.
+    </string>
+
+    <string name="fact5">
+        Akina mama wenye umri wa miaka (umri wa miaka 10 hadi 19) wanakabiliwa na hatari kubwa ya eclampsia, ugonjwa wa endometritis, na maambukizo ya kimfumo kuliko wanawake walio na miaka 20 hadi 24, na watoto wa mama za ujana wanakabiliwa na hatari kubwa ya uzani wa chini, kuzaa kabla ya ujauzito na hali mbaya ya kuzaliwa.
+    </string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="swipe_up">Vuta juu…</string>
     <string name="enlargmentText">Makende huanza kukua kwa haraka kwa kipindi hiki pamoja na mfuko wake (korodani)

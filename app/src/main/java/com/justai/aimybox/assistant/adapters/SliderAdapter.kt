@@ -120,8 +120,8 @@ class SliderAdapter(val context: Context) : PagerAdapter() {
             BottomSheetBehavior.BottomSheetCallback() {
             override fun onSlide(bottomSheet: View, slideOffset: Float) {
                 if(slideOffset >= 0.0){
-                    slideImageView.scaleX = 1F - 0.25F*slideOffset
-                    slideImageView.scaleY = 1F - 0.25F*slideOffset
+                    slideImageView.scaleX = 1F - 0.2F*slideOffset
+                    slideImageView.scaleY = 1F - 0.2F*slideOffset
                     slideHeading.scaleX = 1F - 0.2F*slideOffset
                     slideHeading.scaleY = 1F - 0.2F*slideOffset
                     slideDescription.scaleX = 1F - 0.2F*slideOffset

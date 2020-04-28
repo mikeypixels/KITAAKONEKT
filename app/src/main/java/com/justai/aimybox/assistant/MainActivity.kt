@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         var screenData: Double = 0.0
-        lateinit var top_layout: RelativeLayout
     }
 
     @RequiresApi(Build.VERSION_CODES.M)
@@ -39,8 +38,6 @@ class MainActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
         )
-
-        top_layout = findViewById(R.id.top_layout)
 
 //        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
 //            val window: Window = getWindow()
