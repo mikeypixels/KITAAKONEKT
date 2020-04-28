@@ -145,6 +145,7 @@ class KnowYourselfFragment : Fragment(), ExitWithAnimation {
         spermText.text = resources.getString(R.string.spermText)
         hormonesText.text = resources.getString(R.string.maleHormonesText)
 
+
         return view
     }
 

@@ -618,6 +618,7 @@
                                 android:id="@+id/pubertyFemaleText"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:text="@string/pubertyFemale"
                                 android:fontFamily="@font/pt_serif_regular"/>
 
                         </com.github.aakira.expandablelayout.ExpandableLinearLayout>
@@ -627,8 +628,8 @@
                             android:text="Reproductive organs"
                             android:layout_below="@id/pubertyFemaleLayout"
                             android:background="@color/lightBlue"
-                            android:backgroundTint="@color/lightBlue2"
-                            android:textColor="@color/white"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/gray"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/btnFemaleReprOrgans"/>
@@ -646,6 +647,7 @@
                                 android:id="@+id/femaleReprOrganText"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:text="@string/reproOrgansFemale"
                                 android:fontFamily="@font/pt_serif_regular"/>
 
                         </com.github.aakira.expandablelayout.ExpandableLinearLayout>
@@ -655,8 +657,8 @@
                             android:text="Hormones"
                             android:layout_below="@id/femaleReprOrgansLayout"
                             android:background="@color/lightBlue"
-                            android:backgroundTint="@color/lightBlue"
-                            android:textColor="@color/white"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/gray"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/btnFemaleHormones"/>
@@ -674,6 +676,7 @@
                                 android:id="@+id/femaleHormonesText"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:text="@string/femaleHormonesText"
                                 android:fontFamily="@font/pt_serif_regular"/>
 
                         </com.github.aakira.expandablelayout.ExpandableLinearLayout>
@@ -683,8 +686,8 @@
                             android:text="Ovulation"
                             android:layout_below="@id/femaleHormonesLayout"
                             android:background="@color/lightBlue"
-                            android:backgroundTint="@color/lightBlue2"
-                            android:textColor="@color/white"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/gray"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/btnOvulation"/>
@@ -702,6 +705,7 @@
                                 android:id="@+id/ovulationText"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:text="@string/ovulationText"
                                 android:fontFamily="@font/pt_serif_regular"/>
 
                         </com.github.aakira.expandablelayout.ExpandableLinearLayout>
@@ -711,8 +715,8 @@
                             android:text="Menstruation hygiene"
                             android:layout_below="@id/ovulationLayout"
                             android:background="@color/lightBlue"
-                            android:backgroundTint="@color/lightBlue"
-                            android:textColor="@color/white"
+                            android:backgroundTint="@color/white"
+                            android:textColor="@color/gray"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:id="@+id/btnMenstruation"/>
@@ -730,6 +734,7 @@
                                 android:id="@+id/menstruationText"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:text="@string/menstruationText"
                                 android:fontFamily="@font/pt_serif_regular"/>
 
                         </com.github.aakira.expandablelayout.ExpandableLinearLayout>
