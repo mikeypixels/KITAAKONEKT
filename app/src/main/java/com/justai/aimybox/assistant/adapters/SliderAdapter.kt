@@ -16,7 +16,10 @@ import androidx.viewpager.widget.PagerAdapter
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.justai.aimybox.assistant.MainActivity
 import com.justai.aimybox.assistant.R
-import com.justai.aimybox.assistant.fragments.*
+import com.justai.aimybox.assistant.fragments.DashboardFragment
+import com.justai.aimybox.assistant.fragments.HivAndStiFragment
+import com.justai.aimybox.assistant.fragments.KnowYourselfFragment
+import com.justai.aimybox.assistant.fragments.RelationshipsFragment
 import com.justai.aimybox.assistant.utils.AppUtils
 import com.justai.aimybox.assistant.utils.findLocationOfCenterOnTheScreen
 import com.justai.aimybox.assistant.utils.open
@@ -176,7 +179,7 @@ class SliderAdapter(val context: Context) : PagerAdapter() {
                 }
             }else if(position == 2){
                 (context as AppCompatActivity).supportFragmentManager.open {
-                    add(R.id.container_layout, FamilyPlanFragment.newInstance(positions)).addToBackStack(null)
+                    add(R.id.container_layout, KnowYourselfFragment.newInstance(positions)).addToBackStack(null)
                 }
             }else{
                 (context as AppCompatActivity).supportFragmentManager.open {

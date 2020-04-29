@@ -75,8 +75,8 @@ class TopQFragment : Fragment(), ExitWithAnimation {
             family_plan_card.background = resources.getDrawable(R.drawable.white_material_card_bg)
             hiv_sti_card.background = resources.getDrawable(R.drawable.white_material_card_bg)
             mahusiano_txt.setTextColor(resources.getColor(R.color.white))
-            family_plan_txt.setTextColor(resources.getColor(R.color.black))
-            hiv_sti_txt.setTextColor(resources.getColor(R.color.black))
+            family_plan_txt.setTextColor(resources.getColor(R.color.deeppink))
+            hiv_sti_txt.setTextColor(resources.getColor(R.color.deeppink))
 
             val adapterRelationship = context?.let { topQAdapter(it, relationship_questions, relationship_answers) }
             recyclerView.adapter = adapterRelationship
@@ -86,9 +86,9 @@ class TopQFragment : Fragment(), ExitWithAnimation {
             mahusiano_card.background = resources.getDrawable(R.drawable.white_material_card_bg)
             family_plan_card.background = resources.getDrawable(R.drawable.top_q_choice_bg)
             hiv_sti_card.background = resources.getDrawable(R.drawable.white_material_card_bg)
-            mahusiano_txt.setTextColor(resources.getColor(R.color.black))
+            mahusiano_txt.setTextColor(resources.getColor(R.color.deeppink))
             family_plan_txt.setTextColor(resources.getColor(R.color.white))
-            hiv_sti_txt.setTextColor(resources.getColor(R.color.black))
+            hiv_sti_txt.setTextColor(resources.getColor(R.color.deeppink))
 
             val adapterFamilyPlan = context?.let { topQAdapter(it, family_plan_questions, family_plan_answers) }
             recyclerView.adapter = adapterFamilyPlan
@@ -98,8 +98,8 @@ class TopQFragment : Fragment(), ExitWithAnimation {
             mahusiano_card.background = resources.getDrawable(R.drawable.white_material_card_bg)
             family_plan_card.background = resources.getDrawable(R.drawable.white_material_card_bg)
             hiv_sti_card.background = resources.getDrawable(R.drawable.top_q_choice_bg)
-            mahusiano_txt.setTextColor(resources.getColor(R.color.black))
-            family_plan_txt.setTextColor(resources.getColor(R.color.black))
+            mahusiano_txt.setTextColor(resources.getColor(R.color.deeppink))
+            family_plan_txt.setTextColor(resources.getColor(R.color.deeppink))
             hiv_sti_txt.setTextColor(resources.getColor(R.color.white))
 
             val adapterHivSti = context?.let { topQAdapter(it, hiv_sti_questions, hiv_sti_answers) }

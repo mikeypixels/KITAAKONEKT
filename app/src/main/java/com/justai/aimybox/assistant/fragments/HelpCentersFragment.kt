@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.justai.aimybox.assistant.HelpCenter
 
 import com.justai.aimybox.assistant.R
 import com.justai.aimybox.assistant.adapters.HelpCentersAdapter
@@ -17,6 +18,8 @@ class HelpCentersFragment : Fragment(), ExitWithAnimation {
 
     override var posX: Int? = null
     override var posY: Int? = null
+
+    var helpCentersArray: ArrayList<HelpCenter> = ArrayList()
 
     override fun isToBeExitedWithAnimation(): Boolean = true
 
@@ -42,7 +45,18 @@ class HelpCentersFragment : Fragment(), ExitWithAnimation {
         val linearLayoutManager = LinearLayoutManager(context)
         recyclerView.layoutManager = linearLayoutManager
 
-        val helpCentersAdapter = context?.let { HelpCentersAdapter(it) }
+        helpCentersArray.add(HelpCenter("Benjamin Mkapa Hospital", "Dodoma", "026 296 3710"))
+        helpCentersArray.add(HelpCenter("Aga Khan Hospital", "Dodoma", "026 232 1789"))
+        helpCentersArray.add(HelpCenter("Regional Hospital", "Dodoma", "026 232 3045"))
+        helpCentersArray.add(HelpCenter("Aga Khan Medical Centre", "Dodoma", "026 232 1789"))
+        helpCentersArray.add(HelpCenter("Makole Hospital", "Dodoma", "026 232 3704"))
+        helpCentersArray.add(HelpCenter("Amani Hospital", "Dodoma", "0620 770 606"))
+        helpCentersArray.add(HelpCenter("Mackay Hospital", "Dodoma", "Unk"))
+        helpCentersArray.add(HelpCenter("Avenues Medical Clinic", "Dodoma", "0713 400 128"))
+        helpCentersArray.add(HelpCenter("Nkuhungu Community Hospital", "Dodoma", "Unk"))
+        helpCentersArray.add(HelpCenter("Nesuda Medical Centre", "Dodoma", "0684 770 606"))
+
+        val helpCentersAdapter = context?.let { HelpCentersAdapter(it, helpCentersArray) }
         recyclerView.adapter = helpCentersAdapter
 
         return view

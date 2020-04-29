@@ -62,6 +62,7 @@ dependencies {
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
 
 //    TODO: Remove this placeholder
+    implementation ("com.google.android.gms:play-services-maps:17.0.0")
     debugImplementation("com.squareup.leakcanary:leakcanary-android:2.0-beta-3")
 
     implementation("androidx.appcompat:appcompat:1.1.0")
