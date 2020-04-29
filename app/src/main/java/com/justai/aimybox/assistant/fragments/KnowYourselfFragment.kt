@@ -29,6 +29,12 @@ class KnowYourselfFragment : Fragment(), ExitWithAnimation {
     internal var expSpermLayout: ExpandableLinearLayout? = null
     internal var expHormonesLayout: ExpandableLinearLayout? = null
 
+    internal var expFemaleHormonesLayout: ExpandableLinearLayout? = null
+    internal var expFemalePubertyLayout: ExpandableLinearLayout? = null
+    internal var expReproOrgansLayout: ExpandableLinearLayout? = null
+    internal var expOvulationLayout: ExpandableLinearLayout? = null
+    internal var expMenstruationLayout: ExpandableLinearLayout? = null
+
 //    internal var expEnlargementLayout: ExpandableLinearLayout? = null
 //    internal var expPubicHairLayout: ExpandableLinearLayout? = null
 //    internal var expPenisGrowthLayout: ExpandableLinearLayout? = null
@@ -97,6 +103,12 @@ class KnowYourselfFragment : Fragment(), ExitWithAnimation {
         val btnSperm: Button = view.findViewById(R.id.btnSperm)
         val btnHormones: Button = view.findViewById(R.id.btnHormones)
 
+        val btnFPuberty: Button = view.findViewById(R.id.btnFemalePuberty)
+        val btnFReproOrgans: Button = view.findViewById(R.id.btnFemaleReprOrgans)
+        val btnOvulation: Button = view.findViewById(R.id.btnOvulation)
+        val btnFHormons: Button = view.findViewById(R.id.btnFemaleHormones)
+        val btnMenstruation: Button = view.findViewById(R.id.btnMenstruation)
+
         //male Puberty
         val btnEnlargement: Button = view.findViewById(R.id.enlargmentBtn)
 
@@ -124,6 +136,32 @@ class KnowYourselfFragment : Fragment(), ExitWithAnimation {
         expHormonesLayout = view.findViewById(R.id.hormonesLayout)
         btnHormones.setOnClickListener{
             onClick(btnHormones)
+        }
+
+        //Female expandables
+        expFemalePubertyLayout = view.findViewById(R.id.pubertyFemaleLayout)
+        btnFPuberty.setOnClickListener{
+            onClick(btnFPuberty)
+        }
+
+        expReproOrgansLayout = view.findViewById(R.id.femaleReprOrgansLayout)
+        btnFReproOrgans.setOnClickListener{
+            onClick(btnFReproOrgans)
+        }
+
+        expFemaleHormonesLayout = view.findViewById(R.id.femaleHormonesLayout)
+        btnFHormons.setOnClickListener{
+            onClick(btnFHormons)
+        }
+
+        expOvulationLayout = view.findViewById(R.id.ovulationLayout)
+        btnOvulation.setOnClickListener{
+            onClick(btnOvulation)
+        }
+
+        expMenstruationLayout = view.findViewById(R.id.menstruationLayout)
+        btnMenstruation.setOnClickListener{
+            onClick(btnMenstruation)
         }
 
         //male Puberty
@@ -295,6 +333,46 @@ class KnowYourselfFragment : Fragment(), ExitWithAnimation {
                     expSemenLayout?.collapse()
                     expPubertyLayout?.collapse()
                     expReproductiveOrgaLayout?.collapse()
+                }
+                    //Female click listeners
+                R.id.btnFemalePuberty -> {
+                    expFemalePubertyLayout?.toggle()
+                    expReproOrgansLayout?.collapse()
+                    expFemaleHormonesLayout?.collapse()
+                    expOvulationLayout?.collapse()
+                    expMenstruationLayout?.collapse()
+                }
+
+                R.id.btnFemaleReprOrgans -> {
+                    expFemalePubertyLayout?.collapse()
+                    expReproOrgansLayout?.toggle()
+                    expFemaleHormonesLayout?.collapse()
+                    expOvulationLayout?.collapse()
+                    expMenstruationLayout?.collapse()
+                }
+
+                R.id.btnFemaleHormones -> {
+                    expFemalePubertyLayout?.collapse()
+                    expReproOrgansLayout?.collapse()
+                    expFemaleHormonesLayout?.toggle()
+                    expOvulationLayout?.collapse()
+                    expMenstruationLayout?.collapse()
+                }
+
+                R.id.btnOvulation -> {
+                    expFemalePubertyLayout?.collapse()
+                    expReproOrgansLayout?.collapse()
+                    expFemaleHormonesLayout?.collapse()
+                    expOvulationLayout?.toggle()
+                    expMenstruationLayout?.collapse()
+                }
+
+                R.id.btnMenstruation -> {
+                    expFemalePubertyLayout?.collapse()
+                    expReproOrgansLayout?.collapse()
+                    expFemaleHormonesLayout?.collapse()
+                    expOvulationLayout?.collapse()
+                    expMenstruationLayout?.toggle()
                 }
 
                 else -> {

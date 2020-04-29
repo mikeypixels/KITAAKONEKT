@@ -21,6 +21,25 @@
         Virusi vya ukimwi na Maradhi ya zinaa ni magonjwa ya maambukizi zaidi ya 25 ambayo kimsingi husambazwa kutoka mtu mmoja hadi mwingine kwa kujamiiana. Bofya kitufe kujua zaidi…
     </string>
 
+    //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$    Familiy Planning     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+    <string name="family_plan">
+        Family planning allows people to attain their desired number of children and determine the spacing of pregnancies. \nIt is achieved through use of contraceptive methods and the treatment of infertility.
+    </string>
+
+    <string name="benefit1"><li>Preventing pregnancy-related health risks in women.</li></string>
+    <string name="benefit1Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit2"><li>Reducing infant mortality.</li></string>
+    <string name="benefit2Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit3"><li>Helping to prevent HIV/AIDS.</li></string>
+    <string name="benefit3Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit4"><li>Empowering people and enhancing education.</li></string>
+    <string name="benefit4Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit5"><li>Reducing adolescent pregnancies.</li></string>
+    <string name="benefit5Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit6"><li>Slowing population growth.</li></string>
+    <string name="benefit6Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+
     //******************************************  Balehe/Pubert strings  *********************************************
 
     <string name="puberty">I want to mention something for people like me reaching this page because of Android Studio.\n In AS when you extract a string using the IDEs tool, it automatically strips newline characters. You can just manually add them back in and it will work fine. \nNot sure why it does this.</string>
@@ -136,10 +155,10 @@
     </string>
     <string name="menstruationText">
        Hedhi ni kitendo cha kutokwa na damu ukeni kila mwezi ambayo hutokea mwishoni mwa mzunguko wa hedhi.
-        \nBaada ya kitendo cha upevushai wa mayai ya kike, kama yai halita kutana na manii basi yai hilo halitaweza kurutubishwa. Katika hali hii, homoni
+        \n\nBaada ya kitendo cha upevushai wa mayai ya kike, kama yai halita kutana na manii basi yai hilo halitaweza kurutubishwa. Katika hali hii, homoni
         za LH na FSH huwa chini na kuipa ishara homoni ya Ostrojeni na Projesteroni kushusha kiwango chake pia. Pindi viasi vya homoni vikishuka, ukuta wa ndani
         wa mfuko wa uzazi ambao ulikua ukisubiria kutungwa kwa mimba huanza kumwagika/kubomoka.
-        \nWakati ukuta wa ndani wa mfuko wa uzazi unabomoka, husababisha damu kutoka. Damu husafiri chini kupitia kwenye seviksi kisha ukeni na mwisho kutoka nje
+        \n\nWakati ukuta wa ndani wa mfuko wa uzazi unabomoka, husababisha damu kutoka. Damu husafiri chini kupitia kwenye seviksi kisha ukeni na mwisho kutoka nje
         ya mwili kupitia uwazi wa uke.
         \n\nSiku za kutokwa damu (hedhi) na kiasi cha kutokwa damu huwa inatofautiana baina ya mtu na mtu.
     </string>
