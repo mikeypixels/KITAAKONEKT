@@ -21,8 +21,26 @@
         Virusi vya ukimwi na Maradhi ya zinaa ni magonjwa ya maambukizi zaidi ya 25 ambayo kimsingi husambazwa kutoka mtu mmoja hadi mwingine kwa kujamiiana. Bofya kitufe kujua zaidi…
     </string>
 
-    //****************************************** Balehe/Pubert strings
-    *********************************************
+    //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$    Familiy Planning     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+    <string name="family_plan">
+        Family planning allows people to attain their desired number of children and determine the spacing of pregnancies. \nIt is achieved through use of contraceptive methods and the treatment of infertility.
+    </string>
+
+    <string name="benefit1"><li>Preventing pregnancy-related health risks in women.</li></string>
+    <string name="benefit1Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit2"><li>Reducing infant mortality.</li></string>
+    <string name="benefit2Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit3"><li>Helping to prevent HIV/AIDS.</li></string>
+    <string name="benefit3Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit4"><li>Empowering people and enhancing education.</li></string>
+    <string name="benefit4Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit5"><li>Reducing adolescent pregnancies.</li></string>
+    <string name="benefit5Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit6"><li>Slowing population growth.</li></string>
+    <string name="benefit6Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+
+    //******************************************  Balehe/Pubert strings  *********************************************
 
     <string name="puberty">I want to mention something for people like me reaching this page because of Android Studio.\n In AS when you extract a string using the IDEs tool, it automatically strips newline characters. You can just manually add them back in and it will work fine. \nNot sure why it does this.</string>
     <string name="pubertySwahili">Kubalehe ni kipindi cha maisha kinachotokeza mabadiliko ya kimwili na kihisia ili kuwa mtu mzima. Katika kipindi hiki, mwili na homoni zinabadilika kwa kasi ili kukuandaa uwe na uwezo wa kuzaa.\nJambo hilo halimaanishi kwamba unastahili kuwa mzazi. Badala yake, kubalehe ni ishara ya kuachana na utoto na kuwa mtu mzima—jambo linaloweza kufurahisha na wakati uleule kuhuzunisha.
@@ -74,15 +92,14 @@
         \n\nWavulana wengi hujisikia aibu kutokana na mabadiliko ya sauti zao na sauti ya kukatika kukatika ambayo hutoa. Ni jambo ama mchakato wa kawaida tu wala huauhitaji kuwa na wasiwasi. Mara tu unapokuwa mtu mzima na kitendo cha ukuaji hukamilika, na utapata sauti yako ya ki utu uzima.
     </string>
 
-    //********** Male reproductive Organs Shahawa kawaida ni mchanganyiko wa maji maji (ute)
-    unaotengenezwa na tezi dume na mbegu za kiume (manii).
+    //********** Male reproductive Organs *********************
     <string name="maleReproductiveOrgansText">
         Viungo vya uzazi ni viungo ambavyo vipo katika miili yetu na husaidia katika mchakato mzima wa uzazi. Kwa vile viungo hivi hutumika katika utendaji wa ngono kwa jina jingine huitwa pia viungo vya ngono.
         \n\nKwa wavulana, viungo hivi hujumuisha vya ndani na nje ya mwili.
         \n\nViungo hivi vinajumuisha:-
     </string>
 
-    //********** Semens
+    //********** Semens ************
     <string name="semensText">
         Shahawa kwa kawaida ni mchanganyiko wa maji maji (ute) unaotengenezwa na tezi dume na mbegu za kiume (manii).
         \n\nRangi yake huwa ni nyeupe na huonekana katika hali ya ukamasi yaani utelezi.
@@ -90,7 +107,7 @@
         Kwahiyo kukosa uwezo wa kuzalisha kabisa.
     </string>
 
-    //********** Sperm
+    //********** Sperm  ************
     <string name="spermText">
         Manii ni ute mweupe unaotoka kwenye uume wa mvulana wenye mbegu za uzazi.
         \nWavulana huanza kutengeneza/kuzalisha manii baada ya kuingia kubalehe.
@@ -103,7 +120,7 @@
         \n\nManii/mbegu moja tu kwa kawaida ndo huweza kuingia katika yai la kike.
     </string>
 
-    //********** Semens
+    //********** Hormones ***********
     <string name="maleHormonesText">
        Homoni ni kemikali zinazotolewa na tezi za mwili na kusafiri kupitia mfumo wa mzunguko wa damu hadi ogani za mwili na hudhibitiwa na ubongo.
         \n\nHomoni ndizo zinazo shawishi tabia, hali, na mabadiliko ya mwili.
@@ -111,8 +128,7 @@
         \nBaadhi yake ni maalum katika uwajibikaji wa sifa za kiume na utengenezaji wa manii.
     </string>
 
-    //########################################### Female Puberty
-    ################################################
+    //###########################################   Female Puberty   ################################################
 
     <string name="pubertyFemale">
         Kubalehe ni kipindi cha mpito kutoka utoto kuelekea kuwa mtu mzima.
