@@ -4,12 +4,14 @@ import android.graphics.*
 import android.os.Build
 import android.os.Bundle
 import android.util.DisplayMetrics
-import android.view.*
+import android.view.Menu
+import android.view.View
+import android.view.Window
+import android.view.WindowManager
 import android.widget.EditText
 import android.widget.RelativeLayout
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.card.MaterialCardView
 import com.justai.aimybox.assistant.fragments.DashboardFragment
 import com.justai.aimybox.assistant.utils.ExitWithAnimation
@@ -262,6 +264,7 @@ class MainActivity : AppCompatActivity() {
                         super.onBackPressed()
                     } else {
                         this.view?.exitCircularReveal(this.posX!!, this.posY!!) {
+                            System.out.print("The positions after backpressed is: " + this.posX + " and " + this.posY)
                             super.onBackPressed()
                         } ?: super.onBackPressed()
                     }

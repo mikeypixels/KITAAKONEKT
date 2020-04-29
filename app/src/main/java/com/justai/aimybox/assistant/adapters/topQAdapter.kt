@@ -8,19 +8,13 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.justai.aimybox.assistant.R
 
-class topQAdapter(context: Context, questions_array: Array<String?>, answers_array: Array<String?>) : RecyclerView.Adapter<topQAdapter.ViewHolder>() {
+class topQAdapter(context: Context) : RecyclerView.Adapter<topQAdapter.ViewHolder>() {
 
     var context: Context
 
-    var qn_array: Array<String?>
-    var ans_array: Array<String?>
-
     init {
         this.context = context
-        qn_array = questions_array
-        ans_array = answers_array
     }
-
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
@@ -39,12 +33,12 @@ class topQAdapter(context: Context, questions_array: Array<String?>, answers_arr
     }
 
     override fun getItemCount(): Int {
-        return qn_array.size
+        return 7
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.qn.text = qn_array[position]
-        holder.ans.text = ans_array[position]
+        holder.qn.text = context.getString(R.string.relationship_q1)
+        holder.ans.text = context.getString(R.string.relationship_ans1)
     }
 
 }
