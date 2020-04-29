@@ -1,4 +1,4 @@
-package com.justai.aimybox.assistant.fragments
+package com.justai.aimybox.assistant
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,13 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-
-import com.justai.aimybox.assistant.R
-import com.justai.aimybox.assistant.adapters.HelpCentersAdapter
+import com.justai.aimybox.assistant.adapters.topQAdapter
+import com.justai.aimybox.assistant.fragments.HelpCentersFragment
 import com.justai.aimybox.assistant.utils.ExitWithAnimation
 import com.justai.aimybox.assistant.utils.startCircularReveal
 
-class HelpCentersFragment : Fragment(), ExitWithAnimation {
+/**
+ * A simple [Fragment] subclass.
+ */
+class TopQFragment : Fragment(), ExitWithAnimation {
 
     override var posX: Int? = null
     override var posY: Int? = null
@@ -22,7 +24,7 @@ class HelpCentersFragment : Fragment(), ExitWithAnimation {
 
     companion object {
         @JvmStatic
-        fun newInstance(exit: IntArray? = null): HelpCentersFragment = HelpCentersFragment().apply {
+        fun newInstance(exit: IntArray? = null): TopQFragment = TopQFragment().apply {
             if (exit != null && exit.size == 2) {
                 posX = exit[0]
                 posY = exit[1]
@@ -36,14 +38,14 @@ class HelpCentersFragment : Fragment(), ExitWithAnimation {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view: View = inflater.inflate(R.layout.fragment_help_centers, container, false)
+        val view: View = inflater.inflate(R.layout.fragment_top_q, container, false)
 
-        val recyclerView: RecyclerView = view.findViewById(R.id.help_centers_recyclerView)
-        val linearLayoutManager = LinearLayoutManager(context)
+        val recyclerView: RecyclerView = view.findViewById(R.id.questions_recyclerView)
+        val linearLayoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL ,false)
         recyclerView.layoutManager = linearLayoutManager
 
-        val helpCentersAdapter = context?.let { HelpCentersAdapter(it) }
-        recyclerView.adapter = helpCentersAdapter
+        val adapter = context?.let { topQAdapter(it) }
+        recyclerView.adapter = adapter
 
         return view
     }
@@ -52,4 +54,5 @@ class HelpCentersFragment : Fragment(), ExitWithAnimation {
         super.onViewCreated(view, savedInstanceState)
         view.startCircularReveal(false, posX as Int, posY as Int)
     }
+
 }

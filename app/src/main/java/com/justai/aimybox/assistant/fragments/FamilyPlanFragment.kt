@@ -9,7 +9,6 @@ import androidx.appcompat.widget.Toolbar
 import androidx.fragment.app.Fragment
 import com.justai.aimybox.assistant.R
 import com.justai.aimybox.assistant.utils.ExitWithAnimation
-import com.justai.aimybox.assistant.utils.startCircularReveal
 
 class FamilyPlanFragment : Fragment(), ExitWithAnimation {
 
@@ -50,10 +49,5 @@ class FamilyPlanFragment : Fragment(), ExitWithAnimation {
         actionBar?.setIcon(R.drawable.ic_chevron_left_gray_24dp)
 
         return view
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        view.startCircularReveal(false, posX as Int, posY as Int)
     }
 }

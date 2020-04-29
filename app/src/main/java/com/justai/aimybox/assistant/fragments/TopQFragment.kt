@@ -70,7 +70,6 @@ class TopQFragment : Fragment(), ExitWithAnimation {
         hiv_sti_card.background = resources.getDrawable(R.drawable.white_material_card_bg)
         mahusiano_txt.setTextColor(resources.getColor(R.color.white))
 
-
         mahusiano_card.setOnClickListener {
             mahusiano_card.background = resources.getDrawable(R.drawable.top_q_choice_bg)
             family_plan_card.background = resources.getDrawable(R.drawable.white_material_card_bg)
