@@ -148,7 +148,7 @@
                             android:id="@+id/permanetMethod1Text"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="6dp"
+                            android:layout_marginTop="8dp"
                             android:layout_marginBottom="2dp"
                             android:text="@string/permanentMethod1"
                             android:fontFamily="@font/pt_serif_bold"
@@ -167,7 +167,8 @@
                             android:id="@+id/permanetMethod2Text"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="4dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="2dp"
                             android:text="@string/permanentMethod2"
                             android:fontFamily="@font/pt_serif_bold"
                             android:textSize="15sp" />
