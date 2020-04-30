@@ -27,6 +27,7 @@
     <string name="benefit7Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
 
     <!--    Methods za Uzazi wa Mpango    -->
+    //Permanent
     <string name="permantentText">Hizi ni njia ambazo huwezi kuzirudia na ukitumia huwezi kupata mtoto tena. Na hutumiwa
         na watu ambao hawataki kupata mtoto tena. Nazo ni: -
     </string>
@@ -41,6 +42,61 @@
         kizazi kuzuia yai kukutana na mbegu.Mwanaumke ataendelea kuwa na hamu ya kujamiiana na kuona siku zake za hedhi.
         \nNjia hii hufanywa kwa hiari na wale walioridhika na idadi ya watoto walionao.Kwa kawaida ufungaji huu hufanywa
         kwa muda mfupi tu, pia mtu hauhitaji kulazwa hospitalini.
+    </string>
+
+    //Temporary
+    <string name="temporaryText">Hizi ni njia za kisasa au asili za uzazi wa mpango ambazo unaweza kuzibadilisha. Unaweza kupata ujauzito pindi
+        utakapoacha kuzitumia. Njia hizi ni nzuri kwa mama anayetaka kupata ujauzito baada ya miaka miwili baada ya kujifungua. Nazo ni: –
+    </string>
+
+    <string name="temporaryMethod1">Vidonge vya uzazi wa mpango.</string>
+    <string name="temporaryMethod1Brief">Ni vidonge vyenye kiwango kidogo cha kichocheo(kimoja au viwili) ambavyo
+        vinafanana na vichocheo asili vya mwili wa mwanamke.
+        \nHivi ni vidonge ambavyo mwanamke anameza kidonge kimoja kila siku ili kuzuia ujauzito. Hupatikana katika pakiti yenye vidonge 28,na 35.
+        \nVidonge hivi pia husaidia kurekebisha matatizo wakati wa siku za hedhi.
+        \nPia hutumika kama njia ya dharura ya kuzuia ujauzito iwapo mwanamke umejamiiana bila kinga,kamavile kubakwa.
+        Vipo vidonge ambavyo vinaweza kutumiwa na mama unayenyonyeha kwa sababu havipunguzi kiasi na ubora wa maziwa yako.
+    </string>
+    <string name="temporaryMethod2">Sindano.</string>
+    <string name="temporaryMethod2Brief">
+        Hii ni njia ya uzazi wa mpango yenye kichocheo kimoja ambacho huitwa projestin ambayo
+        hufanana na kichocheo cha sili katika mwili wa mwanamke. Njia hii inatolewa kwa sindano kwenye msuli wa bega au tako la mwanamke
+        kila baada ya miezi mitatu na hutolewa na mtaalam wa afya.
+        \nMwanamke anayenyonyesha pia anaweza kutumia njia ya sindano kwani haipunguzi kiasi na ubora wa maziwa yako.
+    </string>
+    <string name="temporaryMethod3">Kondomu ya kiume.</string>
+    <string name="temporaryMethod3Brief">
+        Kondomu ya kiume ni mpira laini ulio kama mfuko, ambao huvishwa kwenye uume uliosimama kabla ya kujamiiana ili kuzuia ujauzito na
+        uambukizo utokanao na kujamiana ikiwemo VVU.
+        \nTumia kondomu mpya kwa kila mshindo mmoja na uitupe kwa usalama katika choo cha shimo au ichome moto. Kondomu hutumika
+        pamoja na njia nyingine za uzazi wa mpango. Itumie kondomu kwa usahihi na ukamilifu kila mara unapohitaji kujamiana.
+    </string>
+    <string name="temporaryMethod4">Kondomu ya kike.</string>
+    <string name="temporaryMethod4Brief">
+        Kondomu ya kike ni mpira laini unaoingizwa ukeni na kuushikisha kwenye shingo ya kizazi ili kuzuia ujauzito na uambukizo utokanao
+        na kujamiana ikiwemo VVU.
+        \nTumia kondomu mpya kwa kila tendo la kujamiana kisha itupe kwa usalama katika choo cha shimo
+        au ichome moto. Kondomu pia hutumika pamoja na njia nyingine za uzazi wa mpango. Tumia kondomu kwa usahihi na ukamilifu
+        kila mara moja unapohitaji kujamiana.
+    </string>
+    <string name="tempoMethod5Asili">Kutopata hedhi wakati wa kunyonyesha.</string>
+    <string name="tempoMethod5BriefAsili">
+        Mwanamke unaweza kuzuia usipate ujauzito iwapo utamnyonyesha mtoto wako maziwa yako pekee kikamilifu,muda wa kunyonyesha
+        usipite masaa manne mchana na usiku masaa sita.
+        \nInatakiwa mama uwe hujapata hedhi tangu kujifungua. Mtoto awe chini ya miezi sita. Njia hii ni ya uhakika katika
+        kipindi cha miezi sita ya mwanzo baada ya kujifungua.
+    </string>
+    <string name="tempoMethod6Asili">Kuchunguza ute wa ukeni.</string>
+    <string name="tempoMethod6BriefAsili">
+        Ni njia mojawapo ya uzazi wa mpango ambayo mwanamke unachunguza mabadiliko ya ute ndani ya uke wako kwa kutumia vidole.
+        \nKipindi cha ute mzito unaoteleza ni wakati wa rutuba wa kupevuka yai, hivyo mume na mke/ mwenzi mnaweza kuzuia ujauzito kwa kuepuka
+        kujamiiana kwa siku mbili. Baada ya hapo mnaweza kuendelea kujamiana bila kinga katika siku za ukavu.
+    </string>
+    <string name="tempoMethod7Asili">Kuchunguza ute wa ukeni.</string>
+    <string name="tempoMethod7BriefAsili">
+        Ni njia mojawapo ya uzazi wa mpango ambayo mwanamke unachunguza mabadiliko ya ute ndani ya uke wako kwa kutumia vidole.
+        \nKipindi cha ute mzito unaoteleza ni wakati wa rutuba wa kupevuka yai, hivyo mume na mke/ mwenzi mnaweza kuzuia ujauzito kwa kuepuka
+        kujamiiana kwa siku mbili. Baada ya hapo mnaweza kuendelea kujamiana bila kinga katika siku za ukavu.
     </string>
 
     <!--    For Dashboard fragment-->
