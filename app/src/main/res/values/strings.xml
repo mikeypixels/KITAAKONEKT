@@ -92,11 +92,36 @@
         \nKipindi cha ute mzito unaoteleza ni wakati wa rutuba wa kupevuka yai, hivyo mume na mke/ mwenzi mnaweza kuzuia ujauzito kwa kuepuka
         kujamiiana kwa siku mbili. Baada ya hapo mnaweza kuendelea kujamiana bila kinga katika siku za ukavu.
     </string>
-    <string name="tempoMethod7Asili">Kuchunguza ute wa ukeni.</string>
+    <string name="tempoMethod7Asili">Kuacha/kuahirisha kujamiiana.</string>
     <string name="tempoMethod7BriefAsili">
-        Ni njia mojawapo ya uzazi wa mpango ambayo mwanamke unachunguza mabadiliko ya ute ndani ya uke wako kwa kutumia vidole.
-        \nKipindi cha ute mzito unaoteleza ni wakati wa rutuba wa kupevuka yai, hivyo mume na mke/ mwenzi mnaweza kuzuia ujauzito kwa kuepuka
-        kujamiiana kwa siku mbili. Baada ya hapo mnaweza kuendelea kujamiana bila kinga katika siku za ukavu.
+        Ni njia ya uzazi wa mpango ambayo kijana, mke na mume/mwenzi mnaamua kuacha kabisa au kuahirisha kujamiana.
+        Wenzi na hasa vijana mnaweza kuzuia mimba iwapo hamtajamiana kabisa. Kuahirisha kuanza kwa kiasi kikubwa huchangia kupunguza uambukizo utokanao
+        na kujamiiana, Virusi vya UKIMWI (VVU) na mimba katika umri mdogo.
+    </string>
+    <string name="tempoMethod8Asili">Kukojoa nje.</string>
+    <string name="tempoMethod8BriefAsili">
+        Hii inafanywa na mwanamume wakati wa tendo la ndoa ambapo humwaga shahawa zake nje ya uke.
+    </string>
+
+    <string name="tempoMethodLong">
+        Hizi ni njia ambazo pia zinaweza kurudiwa. Unaweza kupata ujauzito mara utakapoacha kuzitumia.
+        Hizi ni nzuri ikiwa unataka kusubiri zaidi ya miaka miwili kabla ya kupata mtoto mwingine.
+    </string>
+
+    <string name="tempoMethod9Long">Vipandikizi/ Kipandikizi.</string>
+    <string name="tempoMethod9BriefLong">
+        Vipandikizi ni vifaa vidogo vya plastiki mfano wa njiti za kiberiti, ambavyo vina kichocheo/ vichocheo ambavyo vinafanana na vichocheo
+        vya asili vya mwilli wa mwanamke.
+        \nNi njia mojawapo ya muda mrefu ya uzazi wa mpango unayoweza kutumia mwanamke ili usipate ujauzito. Hukuzuia usipate ujauzito kwa muda
+        kati ya miaka miwili hadi mitano.
+        \nKuna vipandikizi vya aina mbili (kipandikizi kimoja na vipandikizi sita) Vipandikizi huwekwa na kutolewa na mtaalamu wa afya.
+    </string>
+    <string name="tempoMethod10Long">Kitanzi (Copper T).</string>
+    <string name="tempoMethod10BriefLong">
+        Kitanzi ni kifaa kidogo cha plastiki chenye madini ya shaba.Huwekwa kwenye mji wa mimba ili kuzuia ujauzito. Hii ni mojawapo
+        ya njia za muda mrefu za uzazi wa mpango. Kitanzi huwekwa na kutolewa na mtaalamu wa afya.
+        \nHuzuia ujauzito kwa kipindi cha miaka 12 na kinaweza kutolewa wakati wowote mwanamke unapohitaji kupata ujauzito, unapotaka
+        kubadilisha njia nyingine ya uzazi wa mpango au ukiwa na matatizo.
     </string>
 
     <!--    For Dashboard fragment-->

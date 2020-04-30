@@ -212,10 +212,68 @@
                         app:ael_expanded="false">
 
                         <TextView
-                            android:id="@+id/tempoContraceptionTxt"
+                            android:id="@+id/temporaryContraText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="2dp"
+                            android:text="@string/temporaryText"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod1Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/temporaryMethod1"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod1BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/temporaryMethod1Brief"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod2Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/temporaryMethod2"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod2BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/temporaryMethod2Brief"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod3Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/temporaryMethod3"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod3BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/temporaryMethod3Brief"
                             android:fontFamily="@font/pt_serif_regular"
                             android:textSize="15sp" />
 
