@@ -6,21 +6,25 @@
     //---------------------------------------   Family Planing   -------------------------------------------------
 
     <string name="family_plan">
-        Family planning allows people to attain their desired number of children and determine the spacing of pregnancies. \nIt is achieved through use of contraceptive methods and the treatment of infertility.
+        Uzazi wa mpango ni uamuzi wa hiari unaofanywa na mtu binafsi, mke/mume/mwenzi/kijana katika kupanga ni lini wapate watoto,
+        idadi ya watoto, baada ya muda gani na njia ipi ya uzazi wa mpango wangependa kutumia.
+        \n\nUzazi wa mpango pia unajumuisha taarifa kuhusu namna ya kushika mimba inapohitajika na kutibu ugumba.
     </string>
 
-    <string name="benefit1"><li>Preventing pregnancy-related health risks in women.</li></string>
+    <string name="benefit1"><li>Inamsaidia mtu kurudisha afya yake kabla ya kubeba ujauzito mwingine</li></string>
     <string name="benefit1Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
-    <string name="benefit2"><li>Reducing infant mortality.</li></string>
+    <string name="benefit2"><li>Husaidia kupunguza vifo vya wanawake vinavyotokana na ujauzito na uzazi.</li></string>
     <string name="benefit2Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
-    <string name="benefit3"><li>Helping to prevent HIV/AIDS.</li></string>
+    <string name="benefit3"><li>Hupunguza vifo vya watoto walio chini ya umri wa miaka 5 iwapo mtoto mmoja na mwingine watapishana kwa miaka 3 au zaidi.</li></string>
     <string name="benefit3Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
-    <string name="benefit4"><li>Empowering people and enhancing education.</li></string>
+    <string name="benefit4"><li>Husaidia kudumisha mahusiano na mwezi wako</li></string>
     <string name="benefit4Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
-    <string name="benefit5"><li>Reducing adolescent pregnancies.</li></string>
+    <string name="benefit5"><li>Husaidia kupanga shughuli za maendeleo ya familia yako, jamii na taifa.</li></string>
     <string name="benefit5Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
-    <string name="benefit6"><li>Slowing population growth.</li></string>
+    <string name="benefit6"><li>Huwasaidia wazazi gharama/ majukumu ya kulea familia kubwa</li></string>
     <string name="benefit6Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit7"><li>Huwawezesha vijana,wanawake kufikia malengo yao ya maisha.</li></string>
+    <string name="benefit7Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
 
     <!--    For Dashboard fragment-->
 
