@@ -26,6 +26,23 @@
     <string name="benefit7"><li>Huwawezesha vijana,wanawake kufikia malengo yao ya maisha.</li></string>
     <string name="benefit7Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
 
+    <!--    Methods za Uzazi wa Mpango    -->
+    <string name="permantentText">Hizi ni njia ambazo huwezi kuzirudia na ukitumia huwezi kupata mtoto tena. Na hutumiwa
+        na watu ambao hawataki kupata mtoto tena. Nazo ni: -
+    </string>
+
+    <string name="permanentMethod1">Kufunga kizazi kwa mwanaume</string>
+    <string name="permanentMethod1Brief">Njia hii inahusisha upasuaji mdogo ambapo mirija ya uzazi ya mwanaume ukatwa au kufungwa hivyo
+        kuzuia yai kusafiri na kukutana na shahawa. Mwanaume anaendelea kuwa na hamu ya kujamiiana na kutoa mbegu lakini mbegu zake
+        hazitaweza kutunga mimba.
+    </string>
+    <string name="permanentMethod2">Kufunga kizazi kwa mwanamke</string>
+    <string name="permanentMethod2Brief">Njia hii inahusisha upasuaji mdogo inafanyika kwa kuziba au kukata mirija ya
+        kizazi kuzuia yai kukutana na mbegu.Mwanaumke ataendelea kuwa na hamu ya kujamiiana na kuona siku zake za hedhi.
+        \n\nNjia hii hufanywa kwa hiari na wale walioridhika na idadi ya watoto walionao.Kwa kawaida ufungaji huu hufanywa
+        kwa muda mfupi tu, pia mtu hauhitaji kulazwa hospitalini.
+    </string>
+
     <!--    For Dashboard fragment-->
 
     <string name="know_yourself">
