@@ -403,7 +403,7 @@
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="20dp"
                             android:layout_marginBottom="2dp"
                             android:id="@+id/longLabel">
 
@@ -426,6 +426,16 @@
                                 android:background="@color/lightBlue"
                                 android:fontFamily="@font/pt_serif_regular"
                                 android:textSize="15sp" />
+
+<!--                            <view-->
+<!--                                android:layout_width="match_parent"-->
+
+<!--                                android:layout_height="1dp"-->
+<!--                                android:background="@color/lightBlue"-->
+<!--                                app:layout_constraintStart_toStartOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintTop_toBottomOf="@id/temporaryLong"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"/>-->
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
                         <TextView
