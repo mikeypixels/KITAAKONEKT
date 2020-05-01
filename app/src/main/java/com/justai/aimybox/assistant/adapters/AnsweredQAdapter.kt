@@ -1,16 +1,21 @@
 package com.justai.aimybox.assistant.adapters
 
+import android.R.color
 import android.app.Dialog
 import android.content.Context
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
+import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.View.OnFocusChangeListener
 import android.view.ViewGroup
 import android.view.Window
 import android.view.inputmethod.InputMethodManager
-import android.widget.*
+import android.widget.EditText
+import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
@@ -19,7 +24,8 @@ import com.justai.aimybox.assistant.AnsweredQ
 import com.justai.aimybox.assistant.R
 
 
-class AnsweredQAdapter(context: Context, post_array: ArrayList<AnsweredQ>, checker: Int) : RecyclerView.Adapter<AnsweredQAdapter.ViewHolder>() {
+class AnsweredQAdapter(context: Context, post_array: ArrayList<AnsweredQ>, checker: Int) :
+    RecyclerView.Adapter<AnsweredQAdapter.ViewHolder>() {
 
     var context: Context
     var expandedPosition: Int
@@ -117,7 +123,7 @@ class AnsweredQAdapter(context: Context, post_array: ArrayList<AnsweredQ>, check
 
             holder.card_post.layoutParams = topMargin
 
-        }else{
+        } else {
             val topMargin: ViewGroup.MarginLayoutParams =
                 holder.card_post.layoutParams as ViewGroup.MarginLayoutParams
             topMargin.topMargin = 20
@@ -125,78 +131,81 @@ class AnsweredQAdapter(context: Context, post_array: ArrayList<AnsweredQ>, check
             holder.card_post.layoutParams = topMargin
         }
 
-        if((position == 1 || position == 2 || position == 5 || position == 7) && checker == 1){
+        if ((position == 1 || position == 2 || position == 5 || position == 7) && checker == 1) {
             holder.thumb_up.setColorFilter(ContextCompat.getColor(context, R.color.blue))
-        }else{
+        } else {
             holder.thumb_up.setColorFilter(ContextCompat.getColor(context, R.color.silver))
         }
 
-        if(checker == 2){
+        if (checker == 2) {
             holder.thumb_up.setColorFilter(ContextCompat.getColor(context, R.color.blue))
         }
 
-        changeThumbColor(
-            holder.thumb_up,
-            holder.thumb_up_txt,
-            holder.thumb_down,
-            holder.thumb_down_txt
-        )
-        changeThumbColor(
-            holder.thumb_down,
-            holder.thumb_down_txt,
-            holder.thumb_up,
-            holder.thumb_up_txt
-        )
+//        val wrappedDrawable: Drawable? = context.getDrawable(R.drawable.ic_thumb_up_black_24dp)
+//        DrawableCompat.setTint(wrappedDrawable, color)
+
+        holder.thumb_up.setOnClickListener {
+            if (holder.thumb_up.getColorFilter().equals(ContextCompat.getColor(context, R.color.blue))) {
+                holder.thumb_up.setColorFilter(ContextCompat.getColor(context, R.color.silver))
+                holder.thumb_up_txt.setText(holder.thumb_up_txt.text.toString().toInt() - 1)
+            } else {
+                if (holder.thumb_down.getColorFilter().equals(
+                        ContextCompat.getColor(
+                            context,
+                            R.color.red
+                        )
+                    )
+                ) {
+                    holder.thumb_down.setColorFilter(
+                        ContextCompat.getColor(
+                            context,
+                            R.color.silver
+                        )
+                    )
+                    holder.thumb_down_txt.setText(holder.thumb_down_txt.text.toString().toInt() - 1)
+                }else{
+                    holder.thumb_up.setColorFilter(ContextCompat.getColor(context, R.color.blue))
+                    holder.thumb_up_txt.setText(holder.thumb_up_txt.text.toString().toInt() + 1)
+                }
+            }
+        }
+
+        holder.thumb_down.setOnClickListener {
+            if (holder.thumb_down.colorFilter.equals(ContextCompat.getColor(context, R.color.red))) {
+                holder.thumb_down.setColorFilter(ContextCompat.getColor(context, R.color.silver))
+                holder.thumb_down_txt.setText(holder.thumb_down_txt.text.toString().toInt() - 1)
+            } else {
+                if (holder.thumb_up.colorFilter.equals(
+                        ContextCompat.getColor(
+                            context,
+                            R.color.red
+                        )
+                    )
+                ) {
+                    holder.thumb_up.setColorFilter(
+                        ContextCompat.getColor(
+                            context,
+                            R.color.silver
+                        )
+                    )
+                    holder.thumb_up_txt.setText(holder.thumb_up_txt.text.toString().toInt() - 1)
+                }else{
+                    holder.thumb_down.setColorFilter(ContextCompat.getColor(context, R.color.red))
+                    holder.thumb_down_txt.setText(holder.thumb_down_txt.text.toString().toInt() + 1)
+                }
+            }
+        }
 
         popUpCommentDialog(holder.comment_Llayout)
         popUpCommentDialog(holder.comment_img)
         popUpCommentDialog(holder.comment_txt)
 
-        holder.card_post.setOnClickListener {
-            popUpMoreDialog(holder.card_post, holder.question.text.toString(), holder.answer.text.toString())
-        }
-    }
-
-    fun changeThumbColor(
-        thumbClicked: ImageView,
-        thumbClicked_txt: TextView,
-        thumbUnClicked: ImageView,
-        thumbUnClicked_txt: TextView
-    ) {
-
-        thumbClicked.setOnClickListener {
-            if (isThumbClicked == true) {
-                    thumbClicked.setColorFilter(ContextCompat.getColor(context, R.color.silver))
-                    thumbClicked_txt.text = (thumbClicked_txt.text.toString().toInt() - 1).toString()
-                    thumb_txt_checker = 0
-                    isThumbUpClicked = false
-            } else {
-                thumbClicked.setColorFilter(ContextCompat.getColor(context, R.color.blue))
-                thumbClicked_txt.text = (thumbClicked_txt.text.toString().toInt() + 1).toString()
-                thumbUnClicked.setColorFilter(ContextCompat.getColor(context, R.color.silver))
-                if (thumb_txt_checker == 1) {
-                    thumbUnClicked_txt.text =
-                        (thumbUnClicked_txt.text.toString().toInt() - 1).toString()
-                }
-                thumb_txt_checker = 1
-                isThumbClicked = true
-            }
-//            else{
-//                if(isThumbDownClicked == true){
-//                    thumbClicked.setColorFilter(ContextCompat.getColor(context, R.color.silver))
-//                    thumbClicked_txt.text = (thumbClicked_txt.text.toString().toInt()-1).toString()
-//                    thumb_txt_checker = 2
-//                    isThumbDownClicked = false
-//                }else{
-//                    thumbClicked.setColorFilter(ContextCompat.getColor(context, R.color.red))
-//                    thumbClicked_txt.text = (thumbClicked_txt.text.toString().toInt()+1).toString()
-//                    thumbUnClicked.setColorFilter(ContextCompat.getColor(context, R.color.silver))
-//                    if(thumb_txt_checker == 1){
-//                        thumbUnClicked_txt.text = (thumbUnClicked_txt.text.toString().toInt()-1).toString()
-//                    }
-//                    isThumbDownClicked = true
-//                }
-//            }
+        holder.card_post.setOnClickListener{
+            popUpMoreDialog(
+                holder.card_post,
+                holder.question.text.toString(),
+                holder.answer.text.toString()
+            )
         }
     }
 
