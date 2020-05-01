@@ -211,6 +211,34 @@
                         app:ael_duration="100"
                         app:ael_expanded="false">
 
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="2dp"
+                            android:id="@+id/shortLabel">
+
+                        <TextView
+                            android:id="@+id/temporaryShort"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:gravity="center"
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent=".26"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:paddingStart="2dp"
+                            android:paddingEnd="2dp"
+                            android:paddingTop="1dp"
+                            android:paddingBottom="1dp"
+                            android:text="Muda mfupi"
+                            android:textColor="@color/white"
+                            android:background="@color/lightBlue"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
                         <TextView
                             android:id="@+id/temporaryContraText"
                             android:layout_width="match_parent"
@@ -372,11 +400,48 @@
                             android:fontFamily="@font/pt_serif_regular"
                             android:textSize="15sp" />
 
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="2dp"
+                            android:id="@+id/longLabel">
+
+                            <TextView
+                                android:id="@+id/temporaryLong"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                app:layout_constraintWidth_percent=".26"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:paddingStart="2dp"
+                                android:paddingEnd="2dp"
+                                android:paddingTop="1dp"
+                                android:paddingBottom="1dp"
+                                android:text="Muda mrefu"
+                                android:textColor="@color/white"
+                                android:background="@color/lightBlue"
+                                android:fontFamily="@font/pt_serif_regular"
+                                android:textSize="15sp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/tempLongText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethodLong"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
                         <TextView
                             android:id="@+id/tempMethod9Text"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="6dp"
+                            android:layout_marginTop="8dp"
                             android:layout_marginBottom="2dp"
                             android:text="@string/tempoMethod9Long"
                             android:fontFamily="@font/pt_serif_bold"
