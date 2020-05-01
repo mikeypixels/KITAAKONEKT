@@ -2,7 +2,7 @@
     <string name="app_name">Kitaa Konekt</string>
     <string name="prompt">Karibu Kitaa Konekt! Nikusaidie nini?</string>
     <string name="initial_phrase">Habari! Nikusaidie vipi?</string>
-    
+
     //---------------------------------------   Family Planing   -------------------------------------------------
 
     <string name="family_plan">
@@ -554,6 +554,8 @@ Hapana, mtu anayeishi na VVU ana haki sawa ya kuoa na kuwa na uhusiano wa kawaid
 
         Hapana, magonjwa ya zinaa ni ngumu kugundua kwa sababu hazioneshi dalili kila wakati. Unaweza kuishi na maambukizi bila matibabu kwa muda mrefu.
     </string>
+
+    <!--    For relationships questions-->
 
     <string name="relationship_q1">
         Mimi ni msichana wa miaka 18 na nina wasiwasi na rafiki yangu ambaye ana mchumba. Aliniambia kwamba mpenzi wake amemshinikiza kufanya naye ngono mara tu wakikutana tena. Alisema kuwa hayuko tayari lakini anaogopa kwamba ikiwa atasema hapana, mpenzi wake hatampenda tena na anaogopa kumpoteza. Ninawezaje kumsaidia?

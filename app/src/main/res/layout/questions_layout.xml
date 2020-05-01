@@ -59,17 +59,20 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
+                        android:layout_marginTop="7dp"
                         android:layout_marginStart="5dp">
 
                         <TextView
                             android:id="@+id/user_name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
                             android:text="You posted this"
                             android:textColor="@color/black"
                             android:textSize="14sp" />
 
                         <TextView
+                            android:id="@+id/duration"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="2 days ago"
@@ -132,6 +135,7 @@
                     android:layout_marginTop="13dp">
 
                     <TextView
+                        android:id="@+id/ans_no"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -161,6 +165,7 @@
                     </LinearLayout>
 
                     <TextView
+                        android:id="@+id/view_more"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Angalia zaidi..."
