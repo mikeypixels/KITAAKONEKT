@@ -56,7 +56,7 @@
             app:tabTextAppearance="@style/TabLayoutTextStyle"
             app:tabSelectedTextColor="@color/orange"
             app:tabIndicatorColor="@color/orange"
-            android:background="@color/lightGray"
+            android:background="@color/white"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
         </com.google.android.material.tabs.TabLayout>

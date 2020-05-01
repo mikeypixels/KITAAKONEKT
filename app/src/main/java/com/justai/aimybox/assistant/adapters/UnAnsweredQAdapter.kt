@@ -17,23 +17,30 @@ import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.justai.aimybox.assistant.R
+import com.justai.aimybox.assistant.UnansweredQ
+import org.w3c.dom.Text
 
-class UnAnsweredQAdapter(context: Context): RecyclerView.Adapter<UnAnsweredQAdapter.ViewHolder>() {
+class UnAnsweredQAdapter(context: Context, post_array: ArrayList<UnansweredQ>): RecyclerView.Adapter<UnAnsweredQAdapter.ViewHolder>() {
 
     var context: Context
     var expandedPosition: Int
     var previousExpandedPosition: Int
+    var post_array: ArrayList<UnansweredQ>
 
     init {
         this.context = context
         expandedPosition = -1
         previousExpandedPosition = -1
+        this.post_array = post_array
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
         var user_name: TextView
         var card_post: CardView
+        var question: TextView
+        var duration: TextView
+        var ans_no: TextView
         var comment_txt: TextView
         var comment_img: ImageView
         var comment_Llayout: LinearLayout
@@ -41,6 +48,9 @@ class UnAnsweredQAdapter(context: Context): RecyclerView.Adapter<UnAnsweredQAdap
         init {
             super.itemView
             user_name = itemView.findViewById(R.id.user_name)
+            question = itemView.findViewById(R.id.question)
+            duration = itemView.findViewById(R.id.duration)
+            ans_no = itemView.findViewById(R.id.ans_no)
             card_post = itemView.findViewById(R.id.card_post)
             comment_txt = itemView.findViewById(R.id.comment_txt)
             comment_img = itemView.findViewById(R.id.comment_img)
@@ -56,16 +66,22 @@ class UnAnsweredQAdapter(context: Context): RecyclerView.Adapter<UnAnsweredQAdap
     }
 
     override fun getItemCount(): Int {
-        return 10
+        return post_array.size
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        holder.user_name.setText("Michael Apina posted this")
+        holder.user_name.setText(post_array.get(position).post_user + " aliuliza")
+        holder.question.setText(post_array.get(position).question)
+        holder.duration.setText(post_array.get(position).duration)
+        holder.ans_no.setText(post_array.get(position).ans_no)
         holder.card_post.cardElevation = 8F
 
         if(position%1==0 || position%2==0 || position%3==0 || position%4==0 || position%5==0 || position%6==0 || position%7==0 || position%8==0 || position%9==0 || position%3==0){
-            holder.user_name.setText("Michael Apina posted this")
+            holder.user_name.setText(post_array.get(position).post_user + " aliuliza")
+            holder.question.setText(post_array.get(position).question)
+            holder.duration.setText(post_array.get(position).duration)
+            holder.ans_no.setText(post_array.get(position).ans_no)
             holder.card_post.cardElevation = 8F
         }
 
@@ -87,6 +103,12 @@ class UnAnsweredQAdapter(context: Context): RecyclerView.Adapter<UnAnsweredQAdap
             dialog.setContentView(R.layout.comment_layout)
 
             val comment_editText = dialog.findViewById<EditText>(R.id.comment_editText)
+            val cancel = dialog.findViewById<ImageView>(R.id.cancel)
+
+            cancel.setOnClickListener {
+                dialog.cancel()
+            }
+
             comment_editText.layoutParams.height = (0.25 * height).toInt()
 
             comment_editText.setOnFocusChangeListener(View.OnFocusChangeListener { v, hasFocus ->
