@@ -34,6 +34,7 @@ class ForumActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forum)
 
+        // TODO: implement search view
         val search_view = findViewById<SearchView>(R.id.search_view)
         val add_question = findViewById<RelativeLayout>(R.id.add_question)
         val add_img = findViewById<ImageView>(R.id.add_img)
