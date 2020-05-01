@@ -163,6 +163,12 @@
                             android:fontFamily="@font/pt_serif_regular"
                             android:textSize="15sp" />
 
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/kufunga_kizazi_mme"/>
+
                         <TextView
                             android:id="@+id/permanetMethod2Text"
                             android:layout_width="match_parent"
@@ -182,10 +188,15 @@
                             android:fontFamily="@font/pt_serif_regular"
                             android:textSize="15sp" />
 
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="130dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/funga_kizazi_mke"/>
+
                     </com.github.aakira.expandablelayout.ExpandableLinearLayout>
 
                     <Button
-
                         android:id="@+id/btnTemporaryContraception"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -262,16 +273,23 @@
                             android:id="@+id/tempMethod1BriefText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="2dp"
+                            android:layout_marginBottom="0dp"
                             android:text="@string/temporaryMethod1Brief"
                             android:fontFamily="@font/pt_serif_regular"
                             android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="160dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="#c8a8cf"
+                            android:src="@drawable/vidonge"/>
 
                         <TextView
                             android:id="@+id/tempMethod2Text"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="6dp"
+                            android:layout_marginTop="4dp"
                             android:layout_marginBottom="2dp"
                             android:text="@string/temporaryMethod2"
                             android:fontFamily="@font/pt_serif_bold"
@@ -286,11 +304,18 @@
                             android:fontFamily="@font/pt_serif_regular"
                             android:textSize="15sp" />
 
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="160dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="#c8a8cf"
+                            android:src="@drawable/sindano"/>
+
                         <TextView
                             android:id="@+id/tempMethod3Text"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="6dp"
+                            android:layout_marginTop="4dp"
                             android:layout_marginBottom="2dp"
                             android:text="@string/temporaryMethod3"
                             android:fontFamily="@font/pt_serif_bold"
@@ -305,11 +330,18 @@
                             android:fontFamily="@font/pt_serif_regular"
                             android:textSize="15sp" />
 
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="#c8a8cf"
+                            android:src="@drawable/condom_me"/>
+
                         <TextView
                             android:id="@+id/tempMethod4Text"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="6dp"
+                            android:layout_marginTop="4dp"
                             android:layout_marginBottom="2dp"
                             android:text="@string/temporaryMethod4"
                             android:fontFamily="@font/pt_serif_bold"
@@ -324,11 +356,18 @@
                             android:fontFamily="@font/pt_serif_regular"
                             android:textSize="15sp" />
 
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="130dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="#c8a8cf"
+                            android:src="@drawable/condom_ke"/>
+
                         <TextView
                             android:id="@+id/tempMethod5Text"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="6dp"
+                            android:layout_marginTop="4dp"
                             android:layout_marginBottom="2dp"
                             android:text="@string/tempoMethod5Asili"
                             android:fontFamily="@font/pt_serif_bold"
