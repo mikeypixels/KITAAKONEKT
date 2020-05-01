@@ -1,11 +1,9 @@
 package com.justai.aimybox.assistant.adapters
 
-import android.R.color
 import android.app.Dialog
 import android.content.Context
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
-import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.View.OnFocusChangeListener
@@ -31,7 +29,7 @@ class AnsweredQAdapter(context: Context, post_array: ArrayList<AnsweredQ>, check
     var expandedPosition: Int
     var previousExpandedPosition: Int
 
-    val post_array: ArrayList<AnsweredQ>
+    lateinit var post_array: ArrayList<AnsweredQ>
 
     var isThumbClicked: Boolean = false
     var isThumbUpClicked: Boolean = false

@@ -45,19 +45,6 @@ android {
         isWarningsAsErrors = false
         isAbortOnError = true
     }
-
-    packagingOptions {
-        exclude ("META-INF/DEPENDENCIES")
-        exclude ("META-INF/INDEX.LIST")
-        exclude ("META-INF/LICENSE")
-        exclude ("META-INF/LICENSE.txt")
-        exclude ("META-INF/license.txt")
-        exclude ("META-INF/NOTICE")
-        exclude ("META-INF/NOTICE.txt")
-        exclude ("META-INF/notice.txt")
-        exclude ("META-INF/ASL2.0")
-        exclude("META-INF/*.kotlin_module")
-    }
 }
 
 repositories {
@@ -75,11 +62,7 @@ dependencies {
     implementation("androidx.legacy:legacy-support-v4:1.0.0")
 
 //    TODO: Remove this placeholder
-    implementation ("com.google.android.gms:play-services-maps:17.0.0")
     debugImplementation("com.squareup.leakcanary:leakcanary-android:2.0-beta-3")
-
-    implementation("com.google.cloud:google-cloud-texttospeech:1.0.2")
-    implementation("com.google.protobuf:protobuf-java:3.11.0")
 
     implementation("androidx.appcompat:appcompat:1.1.0")
 //    implementation("com.android.support:design:28.0.0")
@@ -97,7 +80,6 @@ dependencies {
     implementation("com.justai.aimybox:components:$componentsVersion")
     implementation("com.justai.aimybox:core:$aimyboxVersion")
     implementation("com.justai.aimybox:google-platform-speechkit:$aimyboxVersion")
-    implementation("com.justai.aimybox:google-cloud-speechkit:$aimyboxVersion")
     implementation("com.justai.aimybox:rasa-api:$aimyboxVersion")
 
     implementation("com.shreyaspatil:MaterialNavigationView:1.2")
@@ -123,5 +105,7 @@ dependencies {
     implementation("com.hanks:htextview-evaporate:$htextview_version")   // optional
     implementation("com.hanks:htextview-fall:$htextview_version")       // optional
 
+
     implementation("com.github.aakira:expandable-layout:1.6.0@aar")
+    implementation("com.google.android.gms:play-services:12.0.1")
 }

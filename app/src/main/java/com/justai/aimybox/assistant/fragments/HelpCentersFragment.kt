@@ -17,7 +17,6 @@ import com.justai.aimybox.assistant.adapters.HelpCentersAdapter
 import com.justai.aimybox.assistant.utils.ExitWithAnimation
 import com.justai.aimybox.assistant.utils.startCircularReveal
 
-
 class HelpCentersFragment : Fragment(), ExitWithAnimation {
 
     override var posX: Int? = null

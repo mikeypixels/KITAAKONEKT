@@ -28,7 +28,7 @@ class HelpCentersAdapter(context: Context, helpCenters: ArrayList<HelpCenter>) :
 
     var context: Context
 
-    var helpCenters: ArrayList<HelpCenter>
+    lateinit var helpCenters: ArrayList<HelpCenter>
 
     private val REQUEST_PERMISSION_PHONE_STATE = 1
 
@@ -108,43 +108,5 @@ class HelpCentersAdapter(context: Context, helpCenters: ArrayList<HelpCenter>) :
         ) == PackageManager.PERMISSION_GRANTED
     }
 
-//    private fun callPhone(phone: String) {
-//        val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:" + phone))
-//        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-//        if (ActivityCompat.checkSelfPermission(
-//                context,
-//                Manifest.permission.CALL_PHONE
-//            ) != PackageManager.PERMISSION_GRANTED
-//        ) {
-//            // TODO: Consider calling
-//            //    ActivityCompat#requestPermissions
-//            // here to request the missing permissions, and then overriding
-//            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-//            //                                          int[] grantResults)
-//            // to handle the case where the user grants the permission. See the documentation
-//            // for ActivityCompat#requestPermissions for more details.
-//            ActivityCompat.requestPermissions(context as Activity, String[]{Manifest.permission.CALL_PHONE}, MAKE_CALL_PERMISSION_REQUEST_CODE);
-//            return
-//        }
-//        context.startActivity(intent)
-
-//    }
-
-
-//    override fun onRequestPermissionsResult(
-//        requestCode: Int,
-//        permissions: Array<String?>?,
-//        grantResults: IntArray
-//    ) {
-//        when (requestCode) {
-//            REQUEST_PERMISSION_PHONE_STATE -> if (grantResults.size > 0
-//                && grantResults[0] == PackageManager.PERMISSION_GRANTED
-//            ) {
-//                Toast.makeText(context, "Permission Granted!", Toast.LENGTH_SHORT).show()
-//            } else {
-//                Toast.makeText(context, "Permission Denied!", Toast.LENGTH_SHORT).show()
-//            }
-//        }
-//    }
 
 }

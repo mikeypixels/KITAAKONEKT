@@ -1,6 +1,5 @@
 package com.justai.aimybox.assistant
 
-import android.app.SearchManager
 import android.graphics.*
 import android.os.Build
 import android.os.Bundle
@@ -37,11 +36,6 @@ class MainActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
             WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS
         )
-
-//        var query: String? = ""
-//        if (intent.action != null && intent.action == "com.google.android.gms.actions.SEARCH_ACTION") {
-//            query = intent.getStringExtra(SearchManager.QUERY)
-//        }
 
 //        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
 //            val window: Window = getWindow()
