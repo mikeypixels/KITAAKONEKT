@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TopQFragment"
+    tools:context=".fragments.TopQFragment"
     android:background="#efefef">
 
     <RelativeLayout
@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Je wajua?"
-            android:textSize="28sp"
+            android:textSize="30sp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="170dp"
             android:textColor="@color/purple"

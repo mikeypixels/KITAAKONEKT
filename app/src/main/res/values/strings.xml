@@ -2,136 +2,6 @@
     <string name="app_name">Kitaa Konekt</string>
     <string name="prompt">Karibu Kitaa Konekt! Nikusaidie nini?</string>
     <string name="initial_phrase">Habari! Nikusaidie vipi?</string>
-    
-    //---------------------------------------   Family Planing   -------------------------------------------------
-
-    <string name="family_plan">
-        Uzazi wa mpango ni uamuzi wa hiari unaofanywa na mtu binafsi, mke/mume/mwenzi/kijana katika kupanga ni lini wapate watoto,
-        idadi ya watoto, baada ya muda gani na njia ipi ya uzazi wa mpango wangependa kutumia.
-        \n\nUzazi wa mpango pia unajumuisha taarifa kuhusu namna ya kushika mimba inapohitajika na kutibu ugumba.
-    </string>
-
-    <string name="benefit1"><li>Inamsaidia mtu kurudisha afya yake kabla ya kubeba ujauzito mwingine</li></string>
-    <string name="benefit1Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
-    <string name="benefit2"><li>Husaidia kupunguza vifo vya wanawake vinavyotokana na ujauzito na uzazi.</li></string>
-    <string name="benefit2Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
-    <string name="benefit3"><li>Hupunguza vifo vya watoto walio chini ya umri wa miaka 5 iwapo mtoto mmoja na mwingine watapishana kwa miaka 3 au zaidi.</li></string>
-    <string name="benefit3Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
-    <string name="benefit4"><li>Husaidia kudumisha mahusiano na mwezi wako</li></string>
-    <string name="benefit4Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
-    <string name="benefit5"><li>Husaidia kupanga shughuli za maendeleo ya familia yako, jamii na taifa.</li></string>
-    <string name="benefit5Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
-    <string name="benefit6"><li>Huwasaidia wazazi gharama/ majukumu ya kulea familia kubwa</li></string>
-    <string name="benefit6Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
-    <string name="benefit7"><li>Huwawezesha vijana,wanawake kufikia malengo yao ya maisha.</li></string>
-    <string name="benefit7Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
-
-    <!--    Methods za Uzazi wa Mpango    -->
-    //Permanent
-    <string name="permantentText">Hizi ni njia ambazo huwezi kuzirudia na ukitumia huwezi kupata mtoto tena. Na hutumiwa
-        na watu ambao hawataki kupata mtoto tena. Nazo ni: -
-    </string>
-
-    <string name="permanentMethod1">Kufunga kizazi kwa mwanaume</string>
-    <string name="permanentMethod1Brief">Njia hii inahusisha upasuaji mdogo ambapo mirija ya uzazi ya mwanaume ukatwa au kufungwa hivyo
-        kuzuia yai kusafiri na kukutana na shahawa. Mwanaume anaendelea kuwa na hamu ya kujamiiana na kutoa mbegu lakini mbegu zake
-        hazitaweza kutunga mimba.
-    </string>
-    <string name="permanentMethod2">Kufunga kizazi kwa mwanamke</string>
-    <string name="permanentMethod2Brief">Njia hii inahusisha upasuaji mdogo inafanyika kwa kuziba au kukata mirija ya
-        kizazi kuzuia yai kukutana na mbegu.Mwanaumke ataendelea kuwa na hamu ya kujamiiana na kuona siku zake za hedhi.
-        \nNjia hii hufanywa kwa hiari na wale walioridhika na idadi ya watoto walionao.Kwa kawaida ufungaji huu hufanywa
-        kwa muda mfupi tu, pia mtu hauhitaji kulazwa hospitalini.
-    </string>
-
-    //Temporary
-    <string name="temporaryText">Hizi ni njia za kisasa au asili za uzazi wa mpango ambazo unaweza kuzibadilisha. Unaweza kupata ujauzito pindi
-        utakapoacha kuzitumia. Njia hizi ni nzuri kwa mama anayetaka kupata ujauzito baada ya miaka miwili baada ya kujifungua. Nazo ni: –
-    </string>
-
-    <string name="temporaryMethod1">Vidonge vya uzazi wa mpango.</string>
-    <string name="temporaryMethod1Brief">Ni vidonge vyenye kiwango kidogo cha kichocheo(kimoja au viwili) ambavyo
-        vinafanana na vichocheo asili vya mwili wa mwanamke.
-        \nHivi ni vidonge ambavyo mwanamke anameza kidonge kimoja kila siku ili kuzuia ujauzito. Hupatikana katika pakiti yenye vidonge 28,na 35.
-        \nVidonge hivi pia husaidia kurekebisha matatizo wakati wa siku za hedhi.
-        \nPia hutumika kama njia ya dharura ya kuzuia ujauzito iwapo mwanamke umejamiiana bila kinga,kamavile kubakwa.
-        Vipo vidonge ambavyo vinaweza kutumiwa na mama unayenyonyeha kwa sababu havipunguzi kiasi na ubora wa maziwa yako.
-    </string>
-    <string name="temporaryMethod2">Sindano.</string>
-    <string name="temporaryMethod2Brief">
-        Hii ni njia ya uzazi wa mpango yenye kichocheo kimoja ambacho huitwa projestin ambayo
-        hufanana na kichocheo cha sili katika mwili wa mwanamke. Njia hii inatolewa kwa sindano kwenye msuli wa bega au tako la mwanamke
-        kila baada ya miezi mitatu na hutolewa na mtaalam wa afya.
-        \nMwanamke anayenyonyesha pia anaweza kutumia njia ya sindano kwani haipunguzi kiasi na ubora wa maziwa yako.
-    </string>
-    <string name="temporaryMethod3">Kondomu ya kiume.</string>
-    <string name="temporaryMethod3Brief">
-        Kondomu ya kiume ni mpira laini ulio kama mfuko, ambao huvishwa kwenye uume uliosimama kabla ya kujamiiana ili kuzuia ujauzito na
-        uambukizo utokanao na kujamiana ikiwemo VVU.
-        \nTumia kondomu mpya kwa kila mshindo mmoja na uitupe kwa usalama katika choo cha shimo au ichome moto. Kondomu hutumika
-        pamoja na njia nyingine za uzazi wa mpango. Itumie kondomu kwa usahihi na ukamilifu kila mara unapohitaji kujamiana.
-    </string>
-    <string name="temporaryMethod4">Kondomu ya kike.</string>
-    <string name="temporaryMethod4Brief">
-        Kondomu ya kike ni mpira laini unaoingizwa ukeni na kuushikisha kwenye shingo ya kizazi ili kuzuia ujauzito na uambukizo utokanao
-        na kujamiana ikiwemo VVU.
-        \nTumia kondomu mpya kwa kila tendo la kujamiana kisha itupe kwa usalama katika choo cha shimo
-        au ichome moto. Kondomu pia hutumika pamoja na njia nyingine za uzazi wa mpango. Tumia kondomu kwa usahihi na ukamilifu
-        kila mara moja unapohitaji kujamiana.
-    </string>
-    <string name="tempoMethod5Asili">Kutopata hedhi wakati wa kunyonyesha.</string>
-    <string name="tempoMethod5BriefAsili">
-        Mwanamke unaweza kuzuia usipate ujauzito iwapo utamnyonyesha mtoto wako maziwa yako pekee kikamilifu,muda wa kunyonyesha
-        usipite masaa manne mchana na usiku masaa sita.
-        \nInatakiwa mama uwe hujapata hedhi tangu kujifungua. Mtoto awe chini ya miezi sita. Njia hii ni ya uhakika katika
-        kipindi cha miezi sita ya mwanzo baada ya kujifungua.
-    </string>
-    <string name="tempoMethod6Asili">Kuchunguza ute wa ukeni.</string>
-    <string name="tempoMethod6BriefAsili">
-        Ni njia mojawapo ya uzazi wa mpango ambayo mwanamke unachunguza mabadiliko ya ute ndani ya uke wako kwa kutumia vidole.
-        \nKipindi cha ute mzito unaoteleza ni wakati wa rutuba wa kupevuka yai, hivyo mume na mke/ mwenzi mnaweza kuzuia ujauzito kwa kuepuka
-        kujamiiana kwa siku mbili. Baada ya hapo mnaweza kuendelea kujamiana bila kinga katika siku za ukavu.
-    </string>
-    <string name="tempoMethod7Asili">Kuacha/kuahirisha kujamiiana.</string>
-    <string name="tempoMethod7BriefAsili">
-        Ni njia ya uzazi wa mpango ambayo kijana, mke na mume/mwenzi mnaamua kuacha kabisa au kuahirisha kujamiana.
-        Wenzi na hasa vijana mnaweza kuzuia mimba iwapo hamtajamiana kabisa. Kuahirisha kuanza kwa kiasi kikubwa huchangia kupunguza uambukizo utokanao
-        na kujamiiana, Virusi vya UKIMWI (VVU) na mimba katika umri mdogo.
-    </string>
-    <string name="tempoMethod8Asili">Kukojoa nje.</string>
-    <string name="tempoMethod8BriefAsili">
-        Hii inafanywa na mwanamume wakati wa tendo la ndoa ambapo humwaga shahawa zake nje ya uke.
-    </string>
-
-    <string name="tempoMethodLong">
-        Hizi ni njia ambazo pia zinaweza kurudiwa. Unaweza kupata ujauzito mara utakapoacha kuzitumia.
-        Hizi ni nzuri ikiwa unataka kusubiri zaidi ya miaka miwili kabla ya kupata mtoto mwingine.
-    </string>
-
-    <string name="tempoMethod9Long">Vipandikizi/ Kipandikizi.</string>
-    <string name="tempoMethod9BriefLong">
-        Vipandikizi ni vifaa vidogo vya plastiki mfano wa njiti za kiberiti, ambavyo vina kichocheo/ vichocheo ambavyo vinafanana na vichocheo
-        vya asili vya mwilli wa mwanamke.
-        \nNi njia mojawapo ya muda mrefu ya uzazi wa mpango unayoweza kutumia mwanamke ili usipate ujauzito. Hukuzuia usipate ujauzito kwa muda
-        kati ya miaka miwili hadi mitano.
-        \nKuna vipandikizi vya aina mbili (kipandikizi kimoja na vipandikizi sita) Vipandikizi huwekwa na kutolewa na mtaalamu wa afya.
-    </string>
-    <string name="tempoMethod10Long">Kitanzi (Copper T).</string>
-    <string name="tempoMethod10BriefLong">
-        Kitanzi ni kifaa kidogo cha plastiki chenye madini ya shaba.Huwekwa kwenye mji wa mimba ili kuzuia ujauzito. Hii ni mojawapo
-        ya njia za muda mrefu za uzazi wa mpango. Kitanzi huwekwa na kutolewa na mtaalamu wa afya.
-        \nHuzuia ujauzito kwa kipindi cha miaka 12 na kinaweza kutolewa wakati wowote mwanamke unapohitaji kupata ujauzito, unapotaka
-        kubadilisha njia nyingine ya uzazi wa mpango au ukiwa na matatizo.
-    </string>
-
-    //Emergency
-    <string name="emergencyText">
-        Kuna wakati mtu anaweza kusahau kutumia njia nyingine za uzazi wa mpango au yoyote ile ya kuzuia mimba kabla ya kuanza kujamiiana na mwenzake.
-        \nKwa mfano mpira (kondomu) unaweza kuvuka/kuteleza ama kuchanika kwa bahati mbaya. Kwa hali kama hizi ngono isiyo salama inaweza kuongeza hatari
-        ya mimba zisizo tarajiwa.
-        \n\nWalakini, njia hizi hazizuii maambukizi ya Virusi Vya Ukimwi (VVU) wala magonwa mengine yatokanayo na ngono.
-        \n\nPia usitumie njia hizi mara kwa mara kana kwamba hizi ndio njia zako kuu za kawaida za kuzuia kupata mimba.
-    </string>
 
     <!--    For Dashboard fragment-->
 
@@ -150,6 +20,25 @@
     <string name="hiv_and_stis">
         Virusi vya ukimwi na Maradhi ya zinaa ni magonjwa ya maambukizi zaidi ya 25 ambayo kimsingi husambazwa kutoka mtu mmoja hadi mwingine kwa kujamiiana. Bofya kitufe kujua zaidi…
     </string>
+
+    //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$    Familiy Planning     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+    <string name="family_plan">
+        Family planning allows people to attain their desired number of children and determine the spacing of pregnancies. \nIt is achieved through use of contraceptive methods and the treatment of infertility.
+    </string>
+
+    <string name="benefit1"><li>Preventing pregnancy-related health risks in women.</li></string>
+    <string name="benefit1Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit2"><li>Reducing infant mortality.</li></string>
+    <string name="benefit2Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit3"><li>Helping to prevent HIV/AIDS.</li></string>
+    <string name="benefit3Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit4"><li>Empowering people and enhancing education.</li></string>
+    <string name="benefit4Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit5"><li>Reducing adolescent pregnancies.</li></string>
+    <string name="benefit5Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit6"><li>Slowing population growth.</li></string>
+    <string name="benefit6Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
 
     //******************************************  Balehe/Pubert strings  *********************************************
 
@@ -239,8 +128,7 @@
         \nBaadhi yake ni maalum katika uwajibikaji wa sifa za kiume na utengenezaji wa manii.
     </string>
 
-
-    //########################################### Female Puberty ################################################
+    //###########################################   Female Puberty   ################################################
 
     <string name="pubertyFemale">
         Kubalehe ni kipindi cha mpito kutoka utoto kuelekea kuwa mtu mzima.
@@ -273,6 +161,7 @@
         ya mwili kupitia uwazi wa uke.
         \n\nSiku za kutokwa damu (hedhi) na kiasi cha kutokwa damu huwa inatofautiana baina ya mtu na mtu.
     </string>
+
 
     <string name="desc">This is where you\'ll know everything about\n  you as a male or female so as to make\n\tbetter life decisions</string>
     <string name="qn_sample">Why most African tribes don\'t consider family planning and see it as a bad practise?</string>
@@ -555,6 +444,8 @@ Hapana, mtu anayeishi na VVU ana haki sawa ya kuoa na kuwa na uhusiano wa kawaid
         Hapana, magonjwa ya zinaa ni ngumu kugundua kwa sababu hazioneshi dalili kila wakati. Unaweza kuishi na maambukizi bila matibabu kwa muda mrefu.
     </string>
 
+    <!--    For relationships questions-->
+
     <string name="relationship_q1">
         Mimi ni msichana wa miaka 18 na nina wasiwasi na rafiki yangu ambaye ana mchumba. Aliniambia kwamba mpenzi wake amemshinikiza kufanya naye ngono mara tu wakikutana tena. Alisema kuwa hayuko tayari lakini anaogopa kwamba ikiwa atasema hapana, mpenzi wake hatampenda tena na anaogopa kumpoteza. Ninawezaje kumsaidia?
     </string>
@@ -573,7 +464,196 @@ Hapana, mtu anayeishi na VVU ana haki sawa ya kuoa na kuwa na uhusiano wa kawaid
         \n\nIkiwa mpenzi wake huyo hatompenda kwa sababu tu alikataa kufanya ngono, basi ni wazi kwamba tayari yuko kwenye uhusiano mabaya. Lakini ikiwa anameelewa na atakuwa tayari kungojea, basi hiyo ni ishara kwamba anamjali.
     </string>
 
-<!--    For fact fragment-->
+    <string name="relationship_q2">
+        Mimi ni mvulana wa miaka 17 na nina rafiki wa kike. Nampenda sana na ninamjali. Lakini pia ninavutiwa naye kwa ngono na nahisi kama kufanya naye mapenzi. Lakini anasema kwamba hayuko tayari na inaumiza hisia zangu. Je! Hiyo inamaanisha kuwa havutiwi na mimi au hananipendi?
+    </string>
+
+    <string name="relationship_ans2">
+        Hapana, haina uhusiano wowote na ikiwa anakupenda au anavutiwa na wewe au la.
+
+        \n\nInamaanisha tu kuwa hayuko tayari. Ikiwa unamjali sana unapaswa kuelewa na kuheshimu uamuzi wake anaposema hapana.
+
+        \n\nMbali na hilo, wewe bado ni mdogo sana kufanya ngono.
+
+        \n\nKatika umri wako, bado hauko tayari kuchukua mzigo wa kihemko wa matokeo baada ya kufanya ngono. Kila wakati unapofanya ngono, hata ikiwa ni kwa mara ya kwanza, kuna hatari ya kupata ujauzito na unaweza kupata magonjwa ya zinaa na VVU. Subiri tu, inafaa kusubiri kufanya mapenzi tu baada ya kuwa mtu mzima na umekomaa vya kutosha. Ni muhimu zaidi kwako kuelewa ni ridhaa gani inayopelekea kufanya mapenzi. Haupaswi kamwe kulazimisha mtu mwingine kufanya ngono na wewe. Iwe ya mwili au ya kihemko, kumlazimisha mtu mwingine bila idhini yao inachukuliwa kuwa unyanyasaji wa kijinsia.
+
+        \n\nNa kumbuka kila wakati, wakati mtu mwingine anasema HAPANA, daima ni HAPANA!
+
+        \n\nIkiwa unampenda sana basi ni bora kuungana naye na kutumia wakati mzuri pamoja kufanya shughuli zingine kama kusoma vitabu, kusikiliza muziki, kutazama sinema na kuongea. Kuna mengi zaidi kwa uhusiano wa afya kuliko jinsia tu.
+    </string>
+
+    <string name="relationship_q3">
+        Mimi ni msichana wa miaka 16. Kuna mjomba katika kitongoji changu. Ingawa anaonekana kuwa rafiki sana, sipendi jinsi anavyoangalia mwili wangu. Ananigusa kila wakati, hunikumbatia na wakati mwingine huweka mkono wake kiunoni mwangu. Mimi sipendi. Nifanye nini?
+    </string>
+
+    <string name="relationship_ans3">
+        Kumbuka kila wakati kuwa hakuna mtu anayeruhusiwa kukugusa bila idhini yako hata ikiwa ni mkubwa kwako. Ni wewe tu una haki ya mwili wako mwenyewe na kuruhusu ambaye unaweza kupata uhusiano wa karibu naye.
+
+        \n\nEpuka kuwa na mtu ambaye hauna amani ukiwa nae. Daima dumisha umbali wa kimwili nae.
+
+        \n\nIkiwa mtazamo wake kuhusu wewe unakusumbua, waambie wazazi wako au wazee.
+
+        \n\nMwambie tu mjomba kuwa haupendi yeye kuwa karibu na wewe kimwili. Sema tu HAPANA kwa sauti kubwa na wazi.
+
+        \n\nUsikubali kurahisika tu kwa sababu unaogopa au una wasiwasi wengine watasema nini.
+
+        \n\nMtu yeyote anayekutazama na kukugusa bila idhini yako ni aina ya unyanyasaji wa kijinsia.
+    </string>
+
+    <!--    For know yourself question-->
+
+
+    <!--    For hiv and sti questions-->
+
+    <string name="hiv_and_sti_q1">
+        Nilisikia kwamba VVU vinaweza kutibiwa sasa na watu wenye VVU wanaweza kuishi maisha ya kawaida. Halafu, kwa nini sasa niwe na wasiwasi juu ya kuzuia maambukizo ya VVU?
+    </string>
+
+    <string name="hiv_and_sti_ans1">
+        Ni kweli kwamba watu wanaoishi na VVU wanaweza kuishi maisha ya kawaida, ili mradi tu wanapata tiba ya kuongeza kinga. Lakini bado haina tiba. Dawa hupunguza tu maendeleo ya ugonjwa.
+
+        \n\nMbali na hilo, ni jukumu la kipindi kirefu cha maisha yako kuchukua dawa. Mtu bado anaweza kuwa katika hatari ya kupata maambukizo mazito.
+
+        \n\nDaima ni muhimu kuzuia maambukizi ya VVU kwa sababu kuzuia ni rahisi, salama na bei nafuu kuliko matibabu.
+
+        \n\nVitu viwili rahisi vinaweza kukuzuia kupata maambukizo ya VVU kama vile matumizi sahihi ya kondomu na thabiti katika kila uhusiano wa kimapenzi na kamwe usitumie au kushirikiana sindano zilizotumiwa.
+    </string>
+
+    <string name="hiv_and_sti_q2">
+        Hivi majuzi nilifanya mapenzi na mtu ambaye simjui. Kondomu yangu ilivuka kwa bahati mbaya wakati wa ngono. Je! Hiyo inamaanisha kuwa sasa nitapata VVU?
+    </string>
+
+    <string name="hiv_and_sti_ans2">
+        Haimaanishi kuwa tayari umeshapata VVU. Lakini inaonyesha kuwa una hatari ya kupata VVU.
+
+        Kwanza, unapaswa kwenda kwenye kituo cha kupima na ushauri nasaha cha VVU na kupata ushauri wa kitaalam.
+
+        Utahitaji kupima hali ya VVU na upange kulingana na usaidizi wa kitaalam.
+
+        Pia unahitaji kuwa muangalifu kuhusu ujauzito.
+    </string>
+
+    <string name="hiv_and_sti_q3">
+        Ninaendelea kusikia kipindi kinachoitwa kipindi cha dirisha cha VVU. Ni nini?
+    </string>
+
+    <string name="hiv_and_sti_ans3">
+        Kipindi cha dirisha ni kipindi kati ya kuwemo hatarini ya kuambukizwa virusi mpaka hatua inayoweza kugundulika ya maambukizi.
+
+        \n\nVivyo hivyo, kwa maambukizi ya VVU, ni kipindi kati ya kuwemo hatarini ya kuambukizwa virusi vya ukimwi kwa mara ya kwanza mpaka muda VVU vinaweza kugundulika kwenye damu kwa kipimo cha VVU. Kwa mfano, ngono isiyo salama na mtu aliyeambukizwa na VVU hadi wakati virusi vya VVU vinaweza kugunduliwa kwenye damu kupitia uchunguzi wa VVU.
+
+        \n\nKatika kipindi cha dirisha, mtu anaweza kuwa tayari amepata maambukizo ya VVU na pia anaweza kupitisha maambukizo ya VVU kwa wengine. Lakini kipimo cha damu bado utaonyesha hali ya VVU kuwa hasi. Kwa hivyo inashauriwa kila mara kurudia kupimo cha VVU baada ya wiki 4 kutoka wakati wa kwanza wa kipimo. Daima ni muhimu kutumia kondomu kwa usahihi na mara kwa mara kwa kila tendo la kujamiiana hata wakati upimaji wa VVU ukiwa hasi.
+    </string>
+
+    <string name="hiv_and_sti_q4">
+        Magonjwa ya zinaa yanaweza kutibiwa?
+    </string>
+
+    <string name="hiv_and_sti_ans4">
+        Magonjwa mengi ya zinaa kama klamydia na kisonono yanaweza kutibiwa. Magonjwa mengine ya zinaa kama herpes ya sehemu ya siri hayatibiki lakini madaktari wanaweza kukupa dawa ambazo hupunguza kasi ya maendeleo ya ugonjwa huo. VVU haipatikani lakini kuna dawa za kupunguza makali ya virusi ambazo hupunguza maendeleo ya haraka ya ugonjwa huo.
+    </string>
+
+    <string name="hiv_and_sti_q5">
+        Ni nini kitatokea ikiwa sitatibu magonjwa ya zinaa?
+    </string>
+
+    <string name="hiv_and_sti_ans5">
+        Baadhi ya magonjwa ya zinaa kama kaswende ikiwa yameachwa bila kutibiwa yanaweza kusababisha shida moyoni, kwenye ubongo na mgongo ambapo inaweza kuwa mbaya sana.
+        \nVVU, ikiwa imeachwa bila kutibiwa inaweza kusababisha UKIMWI, na kusababisha shida nyingi za kiafya na maambukizo mazito na saratani, hata kusababisha kifo.
+        \nDaima shauriana na daktari wakati una shaka.
+        \nNa kila wakati tumia kondomu kwa usahihi na mara kwa mara kwa ajili ya kuzuia.
+    </string>
+
+    <string name="hiv_and_sti_q6">
+        Mimi ni msichana. Hivi majuzi nilifanya mapenzi bila kinga na mtu ambaye nilikutana naye kwenye sherehe. Kwa bahati mimi si mjamzito lakini nina kuwashwa ndani ya uke wangu na pia kutokwa kwa harufu mbaya. Nifanye nini?
+    </string>
+
+    <string name="hiv_and_sti_ans6">
+        Ngono zisizo salama sio tu zinaongeza fursa ya kupata ujauzito, pia huongeza hatari ya kuambukizwa VVU na magonjwa mengine ya zinaa.
+        \nUnaweza kuwa na dalili zinazohusiana na magonjwa ya zinaa. Lazima umtembelee daktari mara moja na ueleze dalili zako bila kusita. Unaweza pia kuwa katika hatari kubwa ya kupata maambukizo ya VVU. Lazima upimwe na unahitaji pia ushauri wa kitaalam juu ya upimaji wa VVU. Tafadhali tembelea kituo cha ushauri wa VVU na kituo cha upimaji. Usijali, ni wataalamu wa afya ambao hawatakuhukumu na habari zako zitabaki siri kwao. Lakini tafadhali kumbuka bado wewe ni mdogo sana kufanya ngono na jaribu kuchelewesha kufanya mapenzi hadi utakapokuwa mtu mzima na kuweza kujitunza.
+    </string>
+
+    <string name="hiv_and_sti_q7">
+        Mimi ni mwanamume wa miaka 22 na tamaa kali ya kijinsia. Napenda kufanya ngono na wasichana tofauti. Huwa natumia kondomu wakati mwingi lakini wakati mwingine nasahau. Sina dalili zozote, lakini wasichana wengine ambao nililala nao waliniambia walikuwa na kuwashwa na kutokwa kwa uke baada ya kulala nami. Je! Hiyo inamaanisha nini?
+    </string>
+
+    <string name="hiv_and_sti_ans7">
+        Ni kawaida kuwa na hamu ya kufanya ngono lakini kuwa na wenza wengi wa ngono na kutotumia kondomu mara kwa mara kunaongeza hatari kwako kupata VVU na magonjwa ya zinaa. Hata sehemu moja ya ngono isiyo salama inaweza kusababisha shida nyingi.
+        \nKwa wanaume, hata kama wana magonjwa ya zinaa, wanaweza kubaki bila dalili kwa muda mrefu. Lakini bado wanaweza kuambukiza magonjwa ya zinaa kwa wenza wao wa kingono. Inawezekana umeambukizwa magonjwa ya zinaa na umekuwa ukiyasambaza kwa wenza wako wa kingono. Hata kama maambukizi hayajakukupa shida yoyote hadi sasa, yakiachwa bila kutibiwa yanaweza kuwa tishio kwako kwa siku zijazo. Lazima umtembelee daktari na ukapime kwa kila aina ya magonjwa ya zinaa. unaweza pia kuwa katika hatari kubwa ya kupata maambukizo ya VVU. Lazima upimwe na unahitaji pia ushauri wa kitaalam juu ya upimaji wa VVU. Tafadhali tembelea kituo cha ushauri wa VVU na upimaji. Usijali, ni wataalamu wa afya ambao hawatakuhukumu na habari yako itabaki siri kwao. Na kila wakati kumbuka kuwa kondomu lazima zitumiwe kwa usahihi na mara kwa mara (katika kila tendo la ngono).
+    </string>
+
+    <!--    For family planning questions-->
+
+    <string name="family_planning_q1">
+        Mimi ni mwanamume wa miaka 22. Nifanye nini ikiwa kondomu inachanika wakati wa ngono?
+    </string>
+
+    <string name="family_planning_ans1">
+        Ikiwa kondomu imechanika wakati wa kufungua pakiti mpya, usitumie. Ikiwa tarehe imeisha, usitumie.
+
+        \n\nIkichanika wakati wa kuingizwa, iondoe na utumie mpya mara moja.
+
+        \n\nIkichanika wakati wa ngono, iondoe mara moja hata ikiwa ni kabla ya kumwaga.
+
+        \n\nUwezekano wa kuambukizwa VVU na magonjwa mengine ya zinaa au ujauzito unatokea hata kabla ya kumwaga, kwani majimaji kabla ya kumwaga bado yanaweza kuwa na manii, na bado kutakuwa na kubadilishana kwa majimaji ya mwili.
+
+        \n\nIli kuzuia ujauzito katika kwenye hali kama hizo, mwanamke lazima achukue vidonge vya uzazi wa mpango.
+
+        \n\nIkiwa una wasiwasi kuwa unaweza kuambukizwa VVU au magonjwa mengine ya zinaa, unahitaji kutembelea kituo cha ushauri wa VVU ili ujue zaidi.
+    </string>
+
+    <string name="family_planning_q2">
+        Mimi ni kijana wa umri chini wa miaka 18 na ninataka kufanya mapenzi na mpenzi wa kike. Je! Kondomu ya kiume ni njia sahihi kwangu?
+    </string>
+
+    <string name="family_planning_ans2">
+        Bado wewe ni mdogo sana kufanya mapenzi. Kwa kweli unapaswa kuchelewesha ngono hadi uwe mtu mzima, wakati umekomaa vya kutosha kimhemko na kihisia kufanya ngono.
+
+        \n\nKwa wapenzi vijana, ambao wamekomaa vya kutosha na wako tayari, kondomu itakuwa chaguo sahihi. Lazima itumike kwa usahihi na mfululizo. Kumaanisha kwamba inapaswa kutumiwa kwa uangalifu kwa kila mnapofanya mapenzi.
+
+        \n\nUzembe mdogo unaweza kusababisha ujauzito usiohitajika, hata kuwaweka katika hatari ya kuambukizwa VVU na magonjwa mengine ya zinaa wote wawili.
+    </string>
+
+    <string name="family_planning_q3">
+        Mimi ni msichana wa umri wa miaka chini ya 18 na ninataka kufanya mapenzi na mpenzi wangu. Je! Kondomu ya kike ni njia sahihi kwangu?
+    </string>
+
+    <string name="family_planning_ans3">
+        Bado wewe ni mdogo sana kufanya mapenzi. Kwa kweli unapaswa kuchelewesha ngono hadi uwe mtu mzima, wakati umekomaa vya kutosha kimhemko na kihisia kufanya ngono.
+
+        \n\nKwa wapenzi vijana, ambao wamekomaa vya kutosha na wako tayari, kondomu itakuwa chaguo sahihi.
+
+        \n\nUnapaswa pia kujifunza kuzungumza na mwenza wako juu ya kuchelewesha ngono. Kuongezea kwenye shida ya mihemko, uzembe mdogo unaweza kusababisha ujauzito usiohitajika na kuongeza hatari ya VVU na magonjwa mengine ya zinaa.
+    </string>
+
+    <string name="family_planning_q4">
+        Mimi ni msichana niliyeolewa, niko katika miaka 20 yangu ya mapema. Je! Ninaweza kunywa vidonge siku tu za ngono?
+    </string>
+
+    <string name="family_planning_ans4">
+        Hapana, mara unapoanza kunywa vidonge, lazima utimize mzunguko mzima kamili wa kunywa dawa hizo kwa siku 28.
+
+        \n\nInashauriwa kuanza kuchukua dawa hizo ndani ya siku ya 5 ya mzunguko wa hedhi.
+        \nIkiwa utakosa kuchukua kidonge kwa siku moja, unaweza kuchukua vidonge 2 siku inayofuata. Lakini ukikosa kwa zaidi ya siku 2, lazima uanze kuchukua pakiti mpya ya vidonge tangu mwanzo na utumie kondomu wakati huo kwa kila wakati wa kufanya mapenzi.
+
+        \n\nKutochukua vidonge mara kwa mara haitaweza kusaidia kuzuia ujauzito.
+
+        \n\nKwa kuongezea, inaweza pia kusababisha kutokwa damu kwa hedhi kwa mzunguko huo husika.
+    </string>
+
+    <string name="family_planning_q5">
+        Mimi ni mtoto wa kiume katika umri wa miaka 20 yangu ya mwanzo, ninafanya mapenzi na baadhi ya wasichana mara kwa mara. Je! Njia za uzazi wa mpango za dharura zitasaidia kuzuia ujauzito kwa wenza wangu wote?
+    </string>
+    wengine
+
+    <string name="family_planning_ans5">
+        Uzazi wa dharura ni njia ya kuzuia ujauzito kwa mara moja tu ya ngono isiyo salama.
+        \n\nIkiwa una wenza wengi wa ngono, uko kwenye hatari kubwa ya kuambukizwa VVU/STI. Kwa hivyo lazima utumie Kondomu mfululizo na kwa usahihi.
+
+        \n\nVidonge vya dharura vya uzazi wa mpango HAVITAKIWI kutumiwa kama njia ya kawaida ya uzazi wa mpango! Ni kwa ajili ya dharura tu !!
+    </string>
+
+    <!--    For fact fragment-->
 
     <string name="fact1">
         Takriban wasichana milioni 12 wenye umri wa miaka 15-19 na wasichana wasiopungua 777,000 chini ya miaka 15 huzaa kila mwaka katika nchi zinazoendelea.
@@ -596,7 +676,7 @@ Hapana, mtu anayeishi na VVU ana haki sawa ya kuoa na kuwa na uhusiano wa kawaid
     </string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="swipe_up">Vuta juu…</string>
+    <string name="swipe_up">Bofya au Vuta…</string>
     <string name="enlargmentText">Makende huanza kukua kwa haraka kwa kipindi hiki pamoja na mfuko wake (korodani)
         \n\nNgozi ya korodani kuanza kuwa nyeusi, nyembamba, vidotidoti na kuning\'inia chini kuliko awali.
         \n\nWavulana wengi mara nyingi kende (pumbu) moja huwa chini kidogo kuliko jingine. Mara nyingi kende la kushoto huning\'inia chini kidogo kuliko lile la kulia
@@ -607,4 +687,5 @@ Hapana, mtu anayeishi na VVU ana haki sawa ya kuoa na kuwa na uhusiano wa kawaid
         \n\nKitendo hiki kwa jina la kisayansi huitwa emesisi ya usiku au "ndoto nyevu" kwa lugha ya kawaida. Sio lazima kwa kijana kuota ndoto za ngono ndio kupata ndoto nyevu. Inaweza kutokea hata bila mvulana kuwa na uelewa, wazo au ndoto juu ya ngono.
         \n\nKwa wavulana wengi, kumwaga kwao (manii) kwa mara ya kwanza hufanyika kwa njia hii. Hii ni ishara ya ukomavu wao wa kijinsia. Inaonyesha pia kwamba kijana amesha anza kuzalisha na kutoa manii.
     </string>
+    <string name="title_activity_maps">Map</string>
 </resources>

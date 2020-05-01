@@ -197,7 +197,7 @@
                                 android:text="Baadhi ya mabadiliko wavulana hupitia"
                                 android:layout_marginTop="8dp"
                                 android:gravity="center"
-                                android:textSize="17sp"
+                                android:textSize="16sp"
                                 android:textStyle="bold"
                                 android:fontFamily="@font/source_serif_pro_regular"/>
 
@@ -213,7 +213,6 @@
                                 android:background="@color/lightBlue"
                                 android:textColor="@color/graytext2"
                                 android:inputType="textCapSentences"
-                                android:clickable="false"
                                 android:fontFamily="@font/source_sans_pro_regular"
                                 android:text="Kutanuka kwa korodani na kende"
                                 android:id="@+id/enlargmentBtn"/>
@@ -713,7 +712,7 @@
 
                         <Button
                             android:drawableRight="@android:drawable/arrow_down_float"
-                            android:text="Menstruation"
+                            android:text="Menstruation hygiene"
                             android:layout_below="@id/ovulationLayout"
                             android:background="@color/lightBlue"
                             android:backgroundTint="@color/white"

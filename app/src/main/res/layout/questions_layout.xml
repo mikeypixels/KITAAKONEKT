@@ -27,6 +27,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/question"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/qn_sample"
@@ -42,32 +43,36 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toTopOf="parent"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
                     android:layout_marginTop="7dp"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
-<!--                    <com.alexzh.circleimageview.CircleImageView-->
-<!--                        android:layout_width="45dp"-->
-<!--                        android:layout_height="45dp"-->
-<!--                        android:src="@drawable/user_cicle"/>-->
+                    <TextView
+                        android:id="@+id/answer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="70dp"
+                        android:text="@string/relationship_ans1"
+                        android:textColor="@color/black"/>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
+                        android:layout_marginTop="7dp"
                         android:layout_marginStart="5dp">
 
                         <TextView
                             android:id="@+id/user_name"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
                             android:text="You posted this"
                             android:textColor="@color/black"
-                            android:layout_marginTop="6dp"
-                            android:textSize="14sp"/>
+                            android:textSize="14sp" />
 
                         <TextView
+                            android:id="@+id/duration"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="2 days ago"
@@ -130,6 +135,7 @@
                     android:layout_marginTop="13dp">
 
                     <TextView
+                        android:id="@+id/ans_no"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
@@ -151,7 +157,7 @@
                             android:id="@+id/comment_txt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Comment"
+                            android:text="Toa maoni"
                             android:layout_marginStart="5dp"
                             android:layout_marginTop="2dp"
                             android:layout_toEndOf="@+id/comment_img"/>
@@ -159,9 +165,10 @@
                     </LinearLayout>
 
                     <TextView
+                        android:id="@+id/view_more"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="View More..."
+                        android:text="Angalia zaidi..."
                         android:layout_marginTop="2dp"
                         android:layout_alignParentEnd="true"/>
 

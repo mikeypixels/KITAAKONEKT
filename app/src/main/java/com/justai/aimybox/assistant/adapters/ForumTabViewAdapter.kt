@@ -25,9 +25,9 @@ class ForumTabViewAdapter(fm: FragmentManager): FragmentStatePagerAdapter(fm) {
     //To make only images tabs this method should return null
     override fun getPageTitle(position: Int): CharSequence? {
         return when (position) {
-            0 -> "Answered"
-            1 -> "Unanswered"
-            2 -> "Answers For You"
+            0 -> "Yaliyojibiwa"
+            1 -> "Yasiyojibiwa"
+            2 -> "Kwa ajili yako"
             else -> null
         }
     }
