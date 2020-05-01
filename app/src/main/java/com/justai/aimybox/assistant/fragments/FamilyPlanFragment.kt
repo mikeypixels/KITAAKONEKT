@@ -16,7 +16,12 @@ import com.justai.aimybox.assistant.utils.ExitWithAnimation
 class FamilyPlanFragment : Fragment(), ExitWithAnimation {
 
     private var expPermanentContraLayout: ExpandableLinearLayout? = null
+    private var expTemporaryContraLayout: ExpandableLinearLayout? = null
+    private var expEmergencyContraLayout: ExpandableLinearLayout? = null
+
     lateinit var btnPermanentContra: Button
+    lateinit var btnTemporaryContra: Button
+    lateinit var btnEmergencyContra: Button
 
     override var posX: Int? = null
     override var posY: Int? = null
@@ -55,6 +60,8 @@ class FamilyPlanFragment : Fragment(), ExitWithAnimation {
 
         //Buttons
         btnPermanentContra = view.findViewById(R.id.btnPermanentContraception)
+        btnTemporaryContra = view.findViewById(R.id.btnTemporaryContraception)
+        //btnPermanentContra = view.findViewById(R.id.btnPermanentContraception)
 
         //Expendable buttons and Layouts
         expPermanentContraLayout = view.findViewById(R.id.permanentContraLayout)
@@ -62,12 +69,17 @@ class FamilyPlanFragment : Fragment(), ExitWithAnimation {
             onClick(btnPermanentContra)
         }
 
+        expTemporaryContraLayout = view.findViewById(R.id.tempoContraLayout)
+        btnTemporaryContra.setOnClickListener{
+            onClick(btnTemporaryContra)
+        }
+
         return view
     }
 
     private fun initmyLayout() {
         expPermanentContraLayout?.initLayout()
-//        expReproductiveOrgaLayout?.initLayout()
+        expTemporaryContraLayout?.initLayout()
 //        expSemenLayout?.initLayout()
 //        expSpermLayout?.initLayout()
 //        expHormonesLayout?.initLayout()
@@ -81,12 +93,13 @@ class FamilyPlanFragment : Fragment(), ExitWithAnimation {
 
                     Log.d("Family plan", "Button clicked")
                     expPermanentContraLayout?.toggle()
-//                    expReproductiveOrgaLayout?.collapse()
+                    expTemporaryContraLayout?.collapse()
 //                    expSemenLayout?.collapse()
                 }
 
                 R.id.btnTemporaryContraception -> {
-//                    expReproductiveOrgaLayout?.toggle()
+                    expPermanentContraLayout?.collapse()
+                    expTemporaryContraLayout?.toggle()
 //                    expPubertyLayout?.collapse()
 //                    expSemenLayout?.collapse()
                 }

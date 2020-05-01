@@ -277,6 +277,139 @@
                             android:fontFamily="@font/pt_serif_regular"
                             android:textSize="15sp" />
 
+                        <TextView
+                            android:id="@+id/tempMethod4Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/temporaryMethod4"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod4BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/temporaryMethod4Brief"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod5Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod5Asili"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod5BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod5BriefAsili"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod6Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod6Asili"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod6BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod6BriefAsili"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod7Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod7Asili"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod7BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod7BriefAsili"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod8Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod8Asili"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod8BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod8BriefAsili"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod9Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod9Long"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod9BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod9BriefLong"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod10Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod10Long"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod10BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod10BriefLong"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
                     </com.github.aakira.expandablelayout.ExpandableLinearLayout>
 
                     <Button
