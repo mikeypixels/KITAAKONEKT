@@ -34,7 +34,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:fontFamily="@font/proxima_nova_soft_regular"
-                    android:text="FAMILY PLAN"
+                    android:text="UZAZI WA MPANGO"
                     android:textSize="20sp" />
 
             </androidx.appcompat.widget.Toolbar>
@@ -89,10 +89,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="3dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="18dp"
                     android:fontFamily="@font/pt_serif_bold"
                     android:gravity="left"
-                    android:text="Methods"
+                    android:text="Njia za Uzazi wa Mpango"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -111,7 +111,7 @@
 
                     <Button
 
-                        android:id="@+id/btnFemalePuberty"
+                        android:id="@+id/btnPermanentContraception"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="4dp"
@@ -119,14 +119,14 @@
                         android:background="@color/lightBlue"
                         android:backgroundTint="@color/white"
                         android:fontFamily="@font/proxima_nova_soft_regular"
-                        android:text="Permanent"
+                        android:text="Njia za kudumu"
                         android:textColor="@color/graytext" />
 
                     <com.github.aakira.expandablelayout.ExpandableLinearLayout
-                        android:id="@+id/pubertyFemaleLayout"
+                        android:id="@+id/permanentContraLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/btnFemalePuberty"
+                        android:layout_below="@id/btnPermanentContraception"
                         android:orientation="vertical"
                         android:paddingStart="8dp"
                         android:paddingTop="2dp"
@@ -136,10 +136,391 @@
                         app:ael_expanded="false">
 
                         <TextView
-                            android:id="@+id/pubertyFemaleText"
+                            android:id="@+id/permanentContraText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="2dp"
+                            android:text="@string/permantentText"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/permanetMethod1Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/permanentMethod1"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/permanetMethod1BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/permanentMethod1Brief"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="110dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/kufunga_kizazi_mme"/>
+
+                        <TextView
+                            android:id="@+id/permanetMethod2Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/permanentMethod2"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/permanetMethod2BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/permanentMethod2Brief"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="130dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/funga_kizazi_mke"/>
+
+                    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+                    <Button
+                        android:id="@+id/btnTemporaryContraception"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/permanentContraLayout"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:background="@color/lightBlue"
+                        android:backgroundTint="@color/white"
+                        android:fontFamily="@font/proxima_nova_soft_regular"
+                        android:text="Njia za Muda"
+                        android:textColor="@color/graytext" />
+
+                    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                        android:id="@+id/tempoContraLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btnTemporaryContraception"
+                        android:orientation="vertical"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="2dp"
+                        app:ael_duration="100"
+                        app:ael_expanded="false">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="2dp"
+                            android:id="@+id/shortLabel">
+
+                        <TextView
+                            android:id="@+id/temporaryShort"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:gravity="center"
+                            android:layout_width="0dp"
+                            app:layout_constraintWidth_percent=".26"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:paddingStart="2dp"
+                            android:paddingEnd="2dp"
+                            android:paddingTop="1dp"
+                            android:paddingBottom="1dp"
+                            android:text="Muda mfupi"
+                            android:textColor="@color/white"
+                            android:background="@color/lightBlue"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/temporaryContraText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/temporaryText"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod1Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/temporaryMethod1"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod1BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:text="@string/temporaryMethod1Brief"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="160dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="#c8a8cf"
+                            android:src="@drawable/vidonge"/>
+
+                        <TextView
+                            android:id="@+id/tempMethod2Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/temporaryMethod2"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod2BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/temporaryMethod2Brief"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="160dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="#c8a8cf"
+                            android:src="@drawable/sindano"/>
+
+                        <TextView
+                            android:id="@+id/tempMethod3Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/temporaryMethod3"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod3BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/temporaryMethod3Brief"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="140dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="#c8a8cf"
+                            android:src="@drawable/condom_me"/>
+
+                        <TextView
+                            android:id="@+id/tempMethod4Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/temporaryMethod4"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod4BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/temporaryMethod4Brief"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="130dp"
+                            android:layout_gravity="center"
+                            android:backgroundTint="#c8a8cf"
+                            android:src="@drawable/condom_ke"/>
+
+                        <TextView
+                            android:id="@+id/tempMethod5Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod5Asili"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod5BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod5BriefAsili"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod6Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod6Asili"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod6BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod6BriefAsili"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod7Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod7Asili"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod7BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod7BriefAsili"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod8Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod8Asili"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod8BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod8BriefAsili"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="2dp"
+                            android:id="@+id/longLabel">
+
+                            <TextView
+                                android:id="@+id/temporaryLong"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:gravity="center"
+                                android:layout_width="0dp"
+                                app:layout_constraintWidth_percent=".26"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:paddingStart="2dp"
+                                android:paddingEnd="2dp"
+                                android:paddingTop="1dp"
+                                android:paddingBottom="1dp"
+                                android:text="Muda mrefu"
+                                android:textColor="@color/white"
+                                android:background="@color/lightBlue"
+                                android:fontFamily="@font/pt_serif_regular"
+                                android:textSize="15sp" />
+
+<!--                            <view-->
+<!--                                android:layout_width="match_parent"-->
+
+<!--                                android:layout_height="1dp"-->
+<!--                                android:background="@color/lightBlue"-->
+<!--                                app:layout_constraintStart_toStartOf="parent"-->
+<!--                                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                                app:layout_constraintTop_toBottomOf="@id/temporaryLong"-->
+<!--                                app:layout_constraintBottom_toBottomOf="parent"/>-->
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <TextView
+                            android:id="@+id/tempLongText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethodLong"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod9Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod9Long"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod9BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod9BriefLong"
+                            android:fontFamily="@font/pt_serif_regular"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod10Text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod10Long"
+                            android:fontFamily="@font/pt_serif_bold"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tempMethod10BriefText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:text="@string/tempoMethod10BriefLong"
                             android:fontFamily="@font/pt_serif_regular"
                             android:textSize="15sp" />
 
@@ -147,23 +528,23 @@
 
                     <Button
 
-                        android:id="@+id/btnFemaleReprOrgans"
+                        android:id="@+id/btnEmergencyContraception"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/pubertyFemaleLayout"
+                        android:layout_below="@id/tempoContraLayout"
                         android:layout_marginStart="4dp"
                         android:layout_marginEnd="4dp"
                         android:background="@color/lightBlue"
                         android:backgroundTint="@color/white"
                         android:fontFamily="@font/proxima_nova_soft_regular"
-                        android:text="Temporary"
+                        android:text="Njia za dharura"
                         android:textColor="@color/graytext" />
 
                     <com.github.aakira.expandablelayout.ExpandableLinearLayout
-                        android:id="@+id/femaleReprOrgansLayout"
+                        android:id="@+id/emergencyLayout"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/btnFemaleReprOrgans"
+                        android:layout_below="@id/btnEmergencyContraception"
                         android:orientation="vertical"
                         android:paddingStart="8dp"
                         android:paddingTop="2dp"
@@ -173,47 +554,11 @@
                         app:ael_expanded="false">
 
                         <TextView
-                            android:id="@+id/femaleReprOrganText"
+                            android:id="@+id/emergenctContraText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="2dp"
-                            android:fontFamily="@font/pt_serif_regular"
-                            android:textSize="15sp" />
-
-                    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
-
-                    <Button
-
-                        android:id="@+id/btnFemaleHormones"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/femaleReprOrgansLayout"
-                        android:layout_marginStart="4dp"
-                        android:layout_marginEnd="4dp"
-                        android:background="@color/lightBlue"
-                        android:backgroundTint="@color/white"
-                        android:fontFamily="@font/proxima_nova_soft_regular"
-                        android:text="Emergency"
-                        android:textColor="@color/graytext" />
-
-                    <com.github.aakira.expandablelayout.ExpandableLinearLayout
-                        android:id="@+id/femaleHormonesLayout"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/btnFemaleHormones"
-                        android:orientation="vertical"
-                        android:paddingStart="8dp"
-                        android:paddingTop="2dp"
-                        android:paddingEnd="8dp"
-                        android:paddingBottom="2dp"
-                        app:ael_duration="100"
-                        app:ael_expanded="false">
-
-                        <TextView
-                            android:id="@+id/femaleHormonesText"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="2dp"
+                            android:text="@string/emergencyText"
                             android:fontFamily="@font/pt_serif_regular"
                             android:textSize="15sp" />
 
@@ -226,9 +571,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="18dp"
                     android:fontFamily="@font/pt_serif_bold"
-                    android:text="Benefits of family planning/ contraception"
+                    android:text="Faida za Uzazi wa Mpango"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -267,7 +612,8 @@
                         android:textSize="16sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/gender_label" />
+                        app:layout_constraintTop_toBottomOf="@id/gender_label"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:id="@+id/benefit1"
@@ -292,7 +638,8 @@
                         android:textSize="16sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/benefit1" />
+                        app:layout_constraintTop_toBottomOf="@id/benefit1"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:id="@+id/benefit3"
@@ -317,7 +664,8 @@
                         android:textSize="16sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/benefit3" />
+                        app:layout_constraintTop_toBottomOf="@id/benefit3"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:id="@+id/benefit4"
@@ -342,7 +690,8 @@
                         android:textSize="16sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/benefit4" />
+                        app:layout_constraintTop_toBottomOf="@id/benefit4"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:id="@+id/benefit5"
@@ -367,7 +716,8 @@
                         android:textSize="16sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/benefit5" />
+                        app:layout_constraintTop_toBottomOf="@id/benefit5"
+                        android:visibility="gone"/>
 
                     <TextView
                         android:id="@+id/benefit6"
@@ -392,7 +742,21 @@
                         android:textSize="16sp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/benefit6" />
+                        app:layout_constraintTop_toBottomOf="@id/benefit6"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/benefit7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="2dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/pt_serif_regular"
+                        android:text="@string/benefit7"
+                        android:textSize="17sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/benefit6Explanation" />
 
 
                 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,6 +2,136 @@
     <string name="app_name">Kitaa Konekt</string>
     <string name="prompt">Karibu Kitaa Konekt! Nikusaidie nini?</string>
     <string name="initial_phrase">Habari! Nikusaidie vipi?</string>
+    
+    //---------------------------------------   Family Planing   -------------------------------------------------
+
+    <string name="family_plan">
+        Uzazi wa mpango ni uamuzi wa hiari unaofanywa na mtu binafsi, mke/mume/mwenzi/kijana katika kupanga ni lini wapate watoto,
+        idadi ya watoto, baada ya muda gani na njia ipi ya uzazi wa mpango wangependa kutumia.
+        \n\nUzazi wa mpango pia unajumuisha taarifa kuhusu namna ya kushika mimba inapohitajika na kutibu ugumba.
+    </string>
+
+    <string name="benefit1"><li>Inamsaidia mtu kurudisha afya yake kabla ya kubeba ujauzito mwingine</li></string>
+    <string name="benefit1Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit2"><li>Husaidia kupunguza vifo vya wanawake vinavyotokana na ujauzito na uzazi.</li></string>
+    <string name="benefit2Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit3"><li>Hupunguza vifo vya watoto walio chini ya umri wa miaka 5 iwapo mtoto mmoja na mwingine watapishana kwa miaka 3 au zaidi.</li></string>
+    <string name="benefit3Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit4"><li>Husaidia kudumisha mahusiano na mwezi wako</li></string>
+    <string name="benefit4Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit5"><li>Husaidia kupanga shughuli za maendeleo ya familia yako, jamii na taifa.</li></string>
+    <string name="benefit5Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit6"><li>Huwasaidia wazazi gharama/ majukumu ya kulea familia kubwa</li></string>
+    <string name="benefit6Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+    <string name="benefit7"><li>Huwawezesha vijana,wanawake kufikia malengo yao ya maisha.</li></string>
+    <string name="benefit7Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
+
+    <!--    Methods za Uzazi wa Mpango    -->
+    //Permanent
+    <string name="permantentText">Hizi ni njia ambazo huwezi kuzirudia na ukitumia huwezi kupata mtoto tena. Na hutumiwa
+        na watu ambao hawataki kupata mtoto tena. Nazo ni: -
+    </string>
+
+    <string name="permanentMethod1">Kufunga kizazi kwa mwanaume</string>
+    <string name="permanentMethod1Brief">Njia hii inahusisha upasuaji mdogo ambapo mirija ya uzazi ya mwanaume ukatwa au kufungwa hivyo
+        kuzuia yai kusafiri na kukutana na shahawa. Mwanaume anaendelea kuwa na hamu ya kujamiiana na kutoa mbegu lakini mbegu zake
+        hazitaweza kutunga mimba.
+    </string>
+    <string name="permanentMethod2">Kufunga kizazi kwa mwanamke</string>
+    <string name="permanentMethod2Brief">Njia hii inahusisha upasuaji mdogo inafanyika kwa kuziba au kukata mirija ya
+        kizazi kuzuia yai kukutana na mbegu.Mwanaumke ataendelea kuwa na hamu ya kujamiiana na kuona siku zake za hedhi.
+        \nNjia hii hufanywa kwa hiari na wale walioridhika na idadi ya watoto walionao.Kwa kawaida ufungaji huu hufanywa
+        kwa muda mfupi tu, pia mtu hauhitaji kulazwa hospitalini.
+    </string>
+
+    //Temporary
+    <string name="temporaryText">Hizi ni njia za kisasa au asili za uzazi wa mpango ambazo unaweza kuzibadilisha. Unaweza kupata ujauzito pindi
+        utakapoacha kuzitumia. Njia hizi ni nzuri kwa mama anayetaka kupata ujauzito baada ya miaka miwili baada ya kujifungua. Nazo ni: –
+    </string>
+
+    <string name="temporaryMethod1">Vidonge vya uzazi wa mpango.</string>
+    <string name="temporaryMethod1Brief">Ni vidonge vyenye kiwango kidogo cha kichocheo(kimoja au viwili) ambavyo
+        vinafanana na vichocheo asili vya mwili wa mwanamke.
+        \nHivi ni vidonge ambavyo mwanamke anameza kidonge kimoja kila siku ili kuzuia ujauzito. Hupatikana katika pakiti yenye vidonge 28,na 35.
+        \nVidonge hivi pia husaidia kurekebisha matatizo wakati wa siku za hedhi.
+        \nPia hutumika kama njia ya dharura ya kuzuia ujauzito iwapo mwanamke umejamiiana bila kinga,kamavile kubakwa.
+        Vipo vidonge ambavyo vinaweza kutumiwa na mama unayenyonyeha kwa sababu havipunguzi kiasi na ubora wa maziwa yako.
+    </string>
+    <string name="temporaryMethod2">Sindano.</string>
+    <string name="temporaryMethod2Brief">
+        Hii ni njia ya uzazi wa mpango yenye kichocheo kimoja ambacho huitwa projestin ambayo
+        hufanana na kichocheo cha sili katika mwili wa mwanamke. Njia hii inatolewa kwa sindano kwenye msuli wa bega au tako la mwanamke
+        kila baada ya miezi mitatu na hutolewa na mtaalam wa afya.
+        \nMwanamke anayenyonyesha pia anaweza kutumia njia ya sindano kwani haipunguzi kiasi na ubora wa maziwa yako.
+    </string>
+    <string name="temporaryMethod3">Kondomu ya kiume.</string>
+    <string name="temporaryMethod3Brief">
+        Kondomu ya kiume ni mpira laini ulio kama mfuko, ambao huvishwa kwenye uume uliosimama kabla ya kujamiiana ili kuzuia ujauzito na
+        uambukizo utokanao na kujamiana ikiwemo VVU.
+        \nTumia kondomu mpya kwa kila mshindo mmoja na uitupe kwa usalama katika choo cha shimo au ichome moto. Kondomu hutumika
+        pamoja na njia nyingine za uzazi wa mpango. Itumie kondomu kwa usahihi na ukamilifu kila mara unapohitaji kujamiana.
+    </string>
+    <string name="temporaryMethod4">Kondomu ya kike.</string>
+    <string name="temporaryMethod4Brief">
+        Kondomu ya kike ni mpira laini unaoingizwa ukeni na kuushikisha kwenye shingo ya kizazi ili kuzuia ujauzito na uambukizo utokanao
+        na kujamiana ikiwemo VVU.
+        \nTumia kondomu mpya kwa kila tendo la kujamiana kisha itupe kwa usalama katika choo cha shimo
+        au ichome moto. Kondomu pia hutumika pamoja na njia nyingine za uzazi wa mpango. Tumia kondomu kwa usahihi na ukamilifu
+        kila mara moja unapohitaji kujamiana.
+    </string>
+    <string name="tempoMethod5Asili">Kutopata hedhi wakati wa kunyonyesha.</string>
+    <string name="tempoMethod5BriefAsili">
+        Mwanamke unaweza kuzuia usipate ujauzito iwapo utamnyonyesha mtoto wako maziwa yako pekee kikamilifu,muda wa kunyonyesha
+        usipite masaa manne mchana na usiku masaa sita.
+        \nInatakiwa mama uwe hujapata hedhi tangu kujifungua. Mtoto awe chini ya miezi sita. Njia hii ni ya uhakika katika
+        kipindi cha miezi sita ya mwanzo baada ya kujifungua.
+    </string>
+    <string name="tempoMethod6Asili">Kuchunguza ute wa ukeni.</string>
+    <string name="tempoMethod6BriefAsili">
+        Ni njia mojawapo ya uzazi wa mpango ambayo mwanamke unachunguza mabadiliko ya ute ndani ya uke wako kwa kutumia vidole.
+        \nKipindi cha ute mzito unaoteleza ni wakati wa rutuba wa kupevuka yai, hivyo mume na mke/ mwenzi mnaweza kuzuia ujauzito kwa kuepuka
+        kujamiiana kwa siku mbili. Baada ya hapo mnaweza kuendelea kujamiana bila kinga katika siku za ukavu.
+    </string>
+    <string name="tempoMethod7Asili">Kuacha/kuahirisha kujamiiana.</string>
+    <string name="tempoMethod7BriefAsili">
+        Ni njia ya uzazi wa mpango ambayo kijana, mke na mume/mwenzi mnaamua kuacha kabisa au kuahirisha kujamiana.
+        Wenzi na hasa vijana mnaweza kuzuia mimba iwapo hamtajamiana kabisa. Kuahirisha kuanza kwa kiasi kikubwa huchangia kupunguza uambukizo utokanao
+        na kujamiiana, Virusi vya UKIMWI (VVU) na mimba katika umri mdogo.
+    </string>
+    <string name="tempoMethod8Asili">Kukojoa nje.</string>
+    <string name="tempoMethod8BriefAsili">
+        Hii inafanywa na mwanamume wakati wa tendo la ndoa ambapo humwaga shahawa zake nje ya uke.
+    </string>
+
+    <string name="tempoMethodLong">
+        Hizi ni njia ambazo pia zinaweza kurudiwa. Unaweza kupata ujauzito mara utakapoacha kuzitumia.
+        Hizi ni nzuri ikiwa unataka kusubiri zaidi ya miaka miwili kabla ya kupata mtoto mwingine.
+    </string>
+
+    <string name="tempoMethod9Long">Vipandikizi/ Kipandikizi.</string>
+    <string name="tempoMethod9BriefLong">
+        Vipandikizi ni vifaa vidogo vya plastiki mfano wa njiti za kiberiti, ambavyo vina kichocheo/ vichocheo ambavyo vinafanana na vichocheo
+        vya asili vya mwilli wa mwanamke.
+        \nNi njia mojawapo ya muda mrefu ya uzazi wa mpango unayoweza kutumia mwanamke ili usipate ujauzito. Hukuzuia usipate ujauzito kwa muda
+        kati ya miaka miwili hadi mitano.
+        \nKuna vipandikizi vya aina mbili (kipandikizi kimoja na vipandikizi sita) Vipandikizi huwekwa na kutolewa na mtaalamu wa afya.
+    </string>
+    <string name="tempoMethod10Long">Kitanzi (Copper T).</string>
+    <string name="tempoMethod10BriefLong">
+        Kitanzi ni kifaa kidogo cha plastiki chenye madini ya shaba.Huwekwa kwenye mji wa mimba ili kuzuia ujauzito. Hii ni mojawapo
+        ya njia za muda mrefu za uzazi wa mpango. Kitanzi huwekwa na kutolewa na mtaalamu wa afya.
+        \nHuzuia ujauzito kwa kipindi cha miaka 12 na kinaweza kutolewa wakati wowote mwanamke unapohitaji kupata ujauzito, unapotaka
+        kubadilisha njia nyingine ya uzazi wa mpango au ukiwa na matatizo.
+    </string>
+
+    //Emergency
+    <string name="emergencyText">
+        Kuna wakati mtu anaweza kusahau kutumia njia nyingine za uzazi wa mpango au yoyote ile ya kuzuia mimba kabla ya kuanza kujamiiana na mwenzake.
+        \nKwa mfano mpira (kondomu) unaweza kuvuka/kuteleza ama kuchanika kwa bahati mbaya. Kwa hali kama hizi ngono isiyo salama inaweza kuongeza hatari
+        ya mimba zisizo tarajiwa.
+        \n\nWalakini, njia hizi hazizuii maambukizi ya Virusi Vya Ukimwi (VVU) wala magonwa mengine yatokanayo na ngono.
+        \n\nPia usitumie njia hizi mara kwa mara kana kwamba hizi ndio njia zako kuu za kawaida za kuzuia kupata mimba.
+    </string>
 
     <!--    For Dashboard fragment-->
 
@@ -20,25 +150,6 @@
     <string name="hiv_and_stis">
         Virusi vya ukimwi na Maradhi ya zinaa ni magonjwa ya maambukizi zaidi ya 25 ambayo kimsingi husambazwa kutoka mtu mmoja hadi mwingine kwa kujamiiana. Bofya kitufe kujua zaidi…
     </string>
-
-    //$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$    Familiy Planning     $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-
-    <string name="family_plan">
-        Family planning allows people to attain their desired number of children and determine the spacing of pregnancies. \nIt is achieved through use of contraceptive methods and the treatment of infertility.
-    </string>
-
-    <string name="benefit1"><li>Preventing pregnancy-related health risks in women.</li></string>
-    <string name="benefit1Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
-    <string name="benefit2"><li>Reducing infant mortality.</li></string>
-    <string name="benefit2Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
-    <string name="benefit3"><li>Helping to prevent HIV/AIDS.</li></string>
-    <string name="benefit3Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
-    <string name="benefit4"><li>Empowering people and enhancing education.</li></string>
-    <string name="benefit4Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
-    <string name="benefit5"><li>Reducing adolescent pregnancies.</li></string>
-    <string name="benefit5Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
-    <string name="benefit6"><li>Slowing population growth.</li></string>
-    <string name="benefit6Explanation">It is achieved through use of contraceptive methods and the treatment of infertility.</string>
 
     //******************************************  Balehe/Pubert strings  *********************************************
 
@@ -128,7 +239,8 @@
         \nBaadhi yake ni maalum katika uwajibikaji wa sifa za kiume na utengenezaji wa manii.
     </string>
 
-    //###########################################   Female Puberty   ################################################
+
+    //########################################### Female Puberty ################################################
 
     <string name="pubertyFemale">
         Kubalehe ni kipindi cha mpito kutoka utoto kuelekea kuwa mtu mzima.
@@ -161,7 +273,6 @@
         ya mwili kupitia uwazi wa uke.
         \n\nSiku za kutokwa damu (hedhi) na kiasi cha kutokwa damu huwa inatofautiana baina ya mtu na mtu.
     </string>
-
 
     <string name="desc">This is where you\'ll know everything about\n  you as a male or female so as to make\n\tbetter life decisions</string>
     <string name="qn_sample">Why most African tribes don\'t consider family planning and see it as a bad practise?</string>
@@ -443,8 +554,6 @@ Hapana, mtu anayeishi na VVU ana haki sawa ya kuoa na kuwa na uhusiano wa kawaid
 
         Hapana, magonjwa ya zinaa ni ngumu kugundua kwa sababu hazioneshi dalili kila wakati. Unaweza kuishi na maambukizi bila matibabu kwa muda mrefu.
     </string>
-
-    <!--    For relationships questions-->
 
     <string name="relationship_q1">
         Mimi ni msichana wa miaka 18 na nina wasiwasi na rafiki yangu ambaye ana mchumba. Aliniambia kwamba mpenzi wake amemshinikiza kufanya naye ngono mara tu wakikutana tena. Alisema kuwa hayuko tayari lakini anaogopa kwamba ikiwa atasema hapana, mpenzi wake hatampenda tena na anaogopa kumpoteza. Ninawezaje kumsaidia?
