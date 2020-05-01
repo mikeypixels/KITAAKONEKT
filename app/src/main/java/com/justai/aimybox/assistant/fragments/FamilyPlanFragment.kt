@@ -61,7 +61,7 @@ class FamilyPlanFragment : Fragment(), ExitWithAnimation {
         //Buttons
         btnPermanentContra = view.findViewById(R.id.btnPermanentContraception)
         btnTemporaryContra = view.findViewById(R.id.btnTemporaryContraception)
-        //btnPermanentContra = view.findViewById(R.id.btnPermanentContraception)
+        btnEmergencyContra = view.findViewById(R.id.btnEmergencyContraception)
 
         //Expendable buttons and Layouts
         expPermanentContraLayout = view.findViewById(R.id.permanentContraLayout)
@@ -74,13 +74,18 @@ class FamilyPlanFragment : Fragment(), ExitWithAnimation {
             onClick(btnTemporaryContra)
         }
 
+        expEmergencyContraLayout = view.findViewById(R.id.emergencyLayout)
+        btnEmergencyContra.setOnClickListener{
+            onClick(btnEmergencyContra)
+        }
+
         return view
     }
 
     private fun initmyLayout() {
         expPermanentContraLayout?.initLayout()
         expTemporaryContraLayout?.initLayout()
-//        expSemenLayout?.initLayout()
+        expEmergencyContraLayout?.initLayout()
 //        expSpermLayout?.initLayout()
 //        expHormonesLayout?.initLayout()
     }
@@ -91,23 +96,21 @@ class FamilyPlanFragment : Fragment(), ExitWithAnimation {
             when (v.id) {
                 R.id.btnPermanentContraception -> {
 
-                    Log.d("Family plan", "Button clicked")
                     expPermanentContraLayout?.toggle()
                     expTemporaryContraLayout?.collapse()
-//                    expSemenLayout?.collapse()
+                    expEmergencyContraLayout?.collapse()
                 }
 
                 R.id.btnTemporaryContraception -> {
                     expPermanentContraLayout?.collapse()
                     expTemporaryContraLayout?.toggle()
-//                    expPubertyLayout?.collapse()
-//                    expSemenLayout?.collapse()
+                    expEmergencyContraLayout?.collapse()
                 }
 
                 R.id.btnEmergencyContraception -> {
-//                    expSemenLayout?.toggle()
-//                    expPubertyLayout?.collapse()
-//                    expReproductiveOrgaLayout?.collapse()
+                    expPermanentContraLayout?.collapse()
+                    expTemporaryContraLayout?.collapse()
+                    expEmergencyContraLayout?.toggle()
                 }
 
                 else -> {

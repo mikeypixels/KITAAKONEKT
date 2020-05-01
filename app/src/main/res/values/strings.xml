@@ -124,6 +124,15 @@
         kubadilisha njia nyingine ya uzazi wa mpango au ukiwa na matatizo.
     </string>
 
+    //Emergency
+    <string name="emergencyText">
+        Kuna wakati mtu anaweza kusahau kutumia njia nyingine za uzazi wa mpango au yoyote ile ya kuzuia mimba kabla ya kuanza kujamiiana na mwenzake.
+        \nMpira (kondomu) unaweza kuvuka/kuteleza ama kuchanika kwa bahati mbaya. Kwa hali kama hizi ngono isiyo salama inaweza kuongeza hatari
+        ya mimba zisizo tarajiwa.
+        \n\nWalakini, njia hizi hazizuii maambukizi ya Virusi Vya Ukimwi (VVU) wala magonwa mengine yatokanayo na ngono.
+        \n\nPia usitumie njia hizi mara kwa mara kana kwamba hizi ndio njia zako kuu za kawaida za kuzuia kupata mimba.
+    </string>
+
     <!--    For Dashboard fragment-->
 
     <string name="know_yourself">
