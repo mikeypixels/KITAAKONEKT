@@ -4,6 +4,7 @@ import android.R.color
 import android.app.Dialog
 import android.content.Context
 import android.graphics.Color
+import android.graphics.ColorFilter
 import android.graphics.drawable.ColorDrawable
 import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
@@ -19,6 +20,7 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
+import androidx.core.graphics.drawable.DrawableCompat.getColorFilter
 import androidx.recyclerview.widget.RecyclerView
 import com.justai.aimybox.assistant.AnsweredQ
 import com.justai.aimybox.assistant.R
@@ -145,16 +147,11 @@ class AnsweredQAdapter(context: Context, post_array: ArrayList<AnsweredQ>, check
 //        DrawableCompat.setTint(wrappedDrawable, color)
 
         holder.thumb_up.setOnClickListener {
-            if (holder.thumb_up.getColorFilter().equals(ContextCompat.getColor(context, R.color.blue))) {
+            if (holder.thumb_up.solidColor == Color.BLUE) {
                 holder.thumb_up.setColorFilter(ContextCompat.getColor(context, R.color.silver))
-                holder.thumb_up_txt.setText(holder.thumb_up_txt.text.toString().toInt() - 1)
+                holder.thumb_up_txt.setText((holder.thumb_up_txt.text.toString().toInt() - 1).toString())
             } else {
-                if (holder.thumb_down.getColorFilter().equals(
-                        ContextCompat.getColor(
-                            context,
-                            R.color.red
-                        )
-                    )
+                if (holder.thumb_up.solidColor == Color.RED
                 ) {
                     holder.thumb_down.setColorFilter(
                         ContextCompat.getColor(
@@ -162,24 +159,21 @@ class AnsweredQAdapter(context: Context, post_array: ArrayList<AnsweredQ>, check
                             R.color.silver
                         )
                     )
-                    holder.thumb_down_txt.setText(holder.thumb_down_txt.text.toString().toInt() - 1)
+                    holder.thumb_down_txt.setText((holder.thumb_down_txt.text.toString().toInt() - 1).toString())
                 }else{
                     holder.thumb_up.setColorFilter(ContextCompat.getColor(context, R.color.blue))
-                    holder.thumb_up_txt.setText(holder.thumb_up_txt.text.toString().toInt() + 1)
+                    holder.thumb_up_txt.setText((holder.thumb_up_txt.text.toString().toInt() + 1).toString())
                 }
             }
         }
 
         holder.thumb_down.setOnClickListener {
-            if (holder.thumb_down.colorFilter.equals(ContextCompat.getColor(context, R.color.red))) {
+            if (holder.thumb_down.colorFilter.equals(getColorFilter(holder.thumb_down.drawable))) {
                 holder.thumb_down.setColorFilter(ContextCompat.getColor(context, R.color.silver))
-                holder.thumb_down_txt.setText(holder.thumb_down_txt.text.toString().toInt() - 1)
+                holder.thumb_down_txt.setText((holder.thumb_down_txt.text.toString().toInt() - 1).toString())
             } else {
                 if (holder.thumb_up.colorFilter.equals(
-                        ContextCompat.getColor(
-                            context,
-                            R.color.red
-                        )
+                        getColorFilter(holder.thumb_up.drawable)
                     )
                 ) {
                     holder.thumb_up.setColorFilter(
@@ -188,10 +182,10 @@ class AnsweredQAdapter(context: Context, post_array: ArrayList<AnsweredQ>, check
                             R.color.silver
                         )
                     )
-                    holder.thumb_up_txt.setText(holder.thumb_up_txt.text.toString().toInt() - 1)
+                    holder.thumb_up_txt.setText((holder.thumb_up_txt.text.toString().toInt() - 1).toString())
                 }else{
                     holder.thumb_down.setColorFilter(ContextCompat.getColor(context, R.color.red))
-                    holder.thumb_down_txt.setText(holder.thumb_down_txt.text.toString().toInt() + 1)
+                    holder.thumb_down_txt.setText((holder.thumb_down_txt.text.toString().toInt() + 1).toString())
                 }
             }
         }

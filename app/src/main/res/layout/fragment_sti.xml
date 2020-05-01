@@ -49,7 +49,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="15dp"
                     android:text="Maambukizi ya zinaa ni nini?"
-                    android:textColor="@color/black"
+                    android:textColor="@color/deeppink"
                     android:textSize="19sp"
                     android:fontFamily="@font/pt_serif_regular"/>
 
@@ -101,7 +101,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="15dp"
                     android:text="Aina zake ni zipi?"
-                    android:textColor="@color/black"
+                    android:textColor="@color/deeppink"
                     android:textSize="19sp"
                     android:fontFamily="@font/pt_serif_regular"/>
 
@@ -153,7 +153,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="15dp"
                     android:text="Mawazo potofu kuhusu maambukizi ya zinaa"
-                    android:textColor="@color/black"
+                    android:textColor="@color/deeppink"
                     android:textSize="19sp"
                     android:fontFamily="@font/pt_serif_regular"/>
 
